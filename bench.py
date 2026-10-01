@@ -1,6 +1,5 @@
 """
 Questions:     evaluations/<name>/prompts.yaml
-Brand facts:   evaluations/<name>/brand_profile.yaml
 LLM info:      engines.yaml
 
 Commands:
@@ -23,7 +22,7 @@ Commands:
   python bench.py probe  [chatgpt, gemini, perplexity] --ask "prompt 1" "prompt 2"
       test multiple-turn conversations
 
-  python bench.py run    good_culture
+  python bench.py run    good_culture --wave 2026_Q4 --limit 12
       prompt the LLMs and save their answers
 
   python bench.py status good_culture
@@ -41,7 +40,7 @@ import json as _json
 
 
 ROOT = Path(__file__).resolve().parent
-STAGES = ["discovery", "attributes", "personas", "comparisons", "objections", "hallucination"]
+STAGES = ["discovery", "attributes", "personas", "comparisons", "objections"]
 SPEED = 1.0                      # 1.0 = human pacing; --fast sets 0 (testing only)
 WALL_WORDS = ["verify you are human", "just a moment", "captcha", "unusual traffic", "are you a robot"]
 
@@ -140,15 +139,15 @@ def validate(ev):
     for e in ev["prompts"]["engines"]:
         if e not in ev["engines"]:
             errs.append(f"engine '{e}' not in engines.yaml")
-    for f in p["facts"]:
-        if f["brand"] not in p["brands"]:
-            errs.append(f"facts row brand '{f['brand']}' not under brands")
-        # if f.get("serving") != p["serving"]:
-        #     warns.append(f"{f['brand']} / {f['product']} is per '{f.get('serving')}', not '{p['serving']}': don't compare per-serving")
-        if not f.get("source_url"):
-            warns.append(f"{f['brand']} / {f['product']}: no source_url yet")
-    if not {p["target"], p["market_leader"]} <= {f["brand"] for f in p["facts"]}:
-        warns.append("facts should include rows for both the target and the market leader")
+    # for f in p["facts"]:
+    #     if f["brand"] not in p["brands"]:
+    #         errs.append(f"facts row brand '{f['brand']}' not under brands")
+    #     # if f.get("serving") != p["serving"]:
+    #     #     warns.append(f"{f['brand']} / {f['product']} is per '{f.get('serving')}', not '{p['serving']}': don't compare per-serving")
+    #     if not f.get("source_url"):
+    #         warns.append(f"{f['brand']} / {f['product']}: no source_url yet")
+    # if not {p["target"], p["market_leader"]} <= {f["brand"] for f in p["facts"]}:
+    #     warns.append("facts should include rows for both the target and the market leader")
     names = [t["name"] for _, t in all_tests(ev)]
     if len(names) != len(set(names)):
         errs.append("duplicate test names in prompts.yaml")
@@ -332,12 +331,21 @@ def send_message(page, cfg, engine, text):
     inside = turn.evaluate("el => [...el.querySelectorAll('a[href^=http]')].map(a => a.href)")
     anywhere = page.evaluate("() => [...document.querySelectorAll('a[href^=http]')].map(a => a.href)")
     uniq = lambda xs: list(dict.fromkeys(clean_url(x) for x in xs))
+    
     sources = flatten_sources(extract_payloads(turn, "[data-assistant-sources-payload]", "data-assistant-sources-payload")) \
         if cfg.get("sources_payload") else []
+        
+    if cfg.get("sources_panel"):
+        panel_loc = page.locator(cfg["sources_panel"])
+        if panel_loc.count() > 0:
+            panel_links = panel_loc.last.evaluate("el => [...el.querySelectorAll('a[href^=http]')].map(a => a.href)")
+            sources.extend(panel_links)
+
     products = extract_payloads(turn, "[data-assistant-product-payload]", "data-assistant-product-payload") \
         if cfg.get("product_payload") else []
+        
     return dict(text=prose_text(turn, cfg), full_text=turn_text(turn), html=turn.inner_html(),
-                cited_urls=list(dict.fromkeys(sources + uniq(inside))),
+                cited_urls=list(dict.fromkeys(clean_url(u) for u in sources + uniq(inside))),
                 products=products,
                 page_links=[u for u in uniq(anywhere) if own_host not in urlparse(u).netloc])
 
@@ -387,7 +395,13 @@ def ask_chatbot(browser, engine, cfg, turns, web_search):
             if i:
                 nap(3, 8)                                                # pause as if reading the first answer
             results.append(send_message(page, cfg, engine, t))
-        return results, page.evaluate("navigator.userAgent")
+        
+        model_shown = None
+        if cfg.get("model_label"):
+            model_loc = page.locator(cfg["model_label"]).first
+            if model_loc.is_visible():
+                model_shown = model_loc.inner_text().strip()
+        return results, page.evaluate("navigator.userAgent"), model_shown
     except Exception:
         try:
             page.screenshot(path=str(ROOT / f"last_error_{engine}.png"))
@@ -519,6 +533,12 @@ def cmd_run(a):
     if not plan_p.exists():
         die("no plan yet. Run `python bench.py plan <evaluation>` first.")
     plan = pd.read_csv(plan_p)
+
+    if a.only_test:
+        plan = plan[plan.test == a.only_test]
+        if plan.empty:
+            die(f"no runs for test '{a.only_test}' in {plan_p}")
+
     todo = plan[~plan.run_id.isin(read_done(answers_p))]
     todo = todo.head(a.limit) if a.limit else todo
     print(f"{len(todo)} runs to do")
@@ -532,16 +552,38 @@ def cmd_run(a):
             t0, turns = time.time(), json.loads(r.turns)
             print(f"[{done + 1}/{len(todo)}] {r.engine:10s} {r.prompt_id} rep{r.rep} search={r.web_search}", flush=True)
             try:
-                results, ua = ask_chatbot(get_browser(p, cache, ev["engines"][r.engine], a.port),
-                                          r.engine, ev["engines"][r.engine], turns, r.web_search)
-                rec = dict(run_id=r.run_id, prompt_id=r.prompt_id, test=r.test, stage=r.stage, group=r.group, engine=r.engine,
-                           web_search=r.web_search, rep=int(r.rep), timestamp=datetime.now().isoformat(timespec="seconds"),
-                           turns=turns, answers=[x["text"] for x in results], full_answers=[x["full_text"] for x in results], products=results[-1].get("products", []),
-                           final_answer=results[-1]["text"],
-                           cited_urls=results[-1]["cited_urls"], other_page_links=results[-1]["page_links"],
-                           final_answer_html=results[-1]["html"], private_window=ev["engines"][r.engine].get("private_window", True),
-                           model_shown=None, location_note=ev["profile"].get("location_note"), user_agent=ua,
-                           seconds=round(time.time() - t0, 1))
+                results, ua, model_shown = ask_chatbot(
+                    get_browser(p, cache, ev["engines"][r.engine], a.port),
+                    r.engine, ev["engines"][r.engine], turns, r.web_search)
+
+                # --- NEW: per-turn detail + whether the final turn produced a fresh answer ---
+                turn_results = [
+                    {
+                        "user": turns[i],
+                        "answer": res["text"],
+                        "html": res["html"],
+                        "cited_urls": res["cited_urls"],
+                    }
+                    for i, res in enumerate(results)
+                ]
+                final_turn_is_new = (
+                    results[-1]["text"] != results[-2]["text"]
+                ) if len(results) > 1 else True
+
+                rec = dict(
+                    run_id=r.run_id, prompt_id=r.prompt_id, test=r.test,
+                    stage=r.stage, group=r.group, engine=r.engine,
+                    web_search=r.web_search, rep=int(r.rep),
+                    timestamp=datetime.now().isoformat(timespec="seconds"),
+                    turn_results=turn_results,
+                    final_answer=results[-1]["text"],
+                    n_turns=len(turns),
+                    final_turn_is_new=final_turn_is_new,
+                    model_shown=model_shown,
+                    location_note=ev["profile"].get("location_note"),
+                    user_agent=ua,
+                    seconds=round(time.time() - t0, 1),
+                )
                 answers_p.parent.mkdir(parents=True, exist_ok=True)
                 with open(answers_p, "a", encoding="utf-8") as f:
                     f.write(json.dumps(rec, ensure_ascii=False) + "\n")
@@ -552,7 +594,11 @@ def cmd_run(a):
                 failures_in_a_row += 1
                 print("   FAILED:", repr(e)[:200])
                 with open(errors_p, "a", encoding="utf-8") as f:
-                    f.write(json.dumps(dict(run_id=r.run_id, error=repr(e)[:500], traceback=traceback.format_exc()[-800:])) + "\n")
+                    f.write(json.dumps(dict(
+                        run_id=r.run_id,
+                        error=repr(e)[:500],
+                        traceback=traceback.format_exc()[-800:],
+                    )) + "\n")
                 if failures_in_a_row >= 5:
                     die("5 failures in a row: selectors in engines.yaml probably broke. Use `probe`, fix them, rerun.")
             done += 1
@@ -568,11 +614,12 @@ def main():
                      ("probe", cmd_probe), ("run", cmd_run), ("status", cmd_status)]:
         s = sub.add_parser(name); s.set_defaults(fn=fn)
         if name == "probe":
-            s.add_argument("engine"); s.add_argument("--ask", nargs="+", help="send one or more messages sequentially to test multi-turn chats")
+            s.add_argument("engine")
+            s.add_argument("--ask", nargs="+", help="send one or more messages sequentially to test multi-turn chats")
         elif name != "chrome":
             s.add_argument("evaluation")
         s.add_argument("--wave", default=wave_default(), help="results subfolder, default = current quarter")
-        s.add_argument("--port", type=int, default=None)          # changed: default None so engines.yaml can supply it
+        s.add_argument("--port", type=int, default=None)          # default None so engines.yaml can supply it
         if name == "chrome":
             s.add_argument("--profile", choices=list(PROFILES), default="private")
         if name == "plan":
@@ -581,6 +628,7 @@ def main():
         if name == "run":
             s.add_argument("--limit", type=int, help="only do the next N runs (use ~12 as a pilot)")
             s.add_argument("--fast", action="store_true", help="no human pacing (tests only)")
+            s.add_argument("--only-test", help="run only a specific test name")
     a = ap.parse_args()
     a.fn(a)
 

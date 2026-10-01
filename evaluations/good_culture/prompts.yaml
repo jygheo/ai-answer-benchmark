@@ -71,14 +71,8 @@ core_tests:
         switch_from_leader: "I've always bought {market_leader}. Is there any real reason to switch to {target}?"
         switch_from_store:  "I normally buy the store brand {category}. Is {target} worth paying more for?"
 
-  - name: spec_accuracy
-    stage: hallucination                    # does it quote the real label numbers? (graded against `facts`)
-    turns: ["how many grams of protein, calories, and mg of sodium are there per {serving} of {brand} {product}?"]
-    per_fact_row: true                      # one prompt for every product listed in brand_profile.yaml facts
-
 # ------------------------------------------------------------------ DIAGNOSTIC TESTS
 diagnostic_tests:
-
   - name: reworded_feature_searches
     stage: attributes                       # same questions as feature_searches, different wording: do answers change?
     turns: ["{feature}"]
