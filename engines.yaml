@@ -9,6 +9,8 @@
 #   busy_indicator   CSS selectors visible only while the bot is still writing. need to verify
 #   web_search_off   click these selectors, in order, to turn web search off. Empty =  can't be
 #                    run without search, so web-search-off runs are skipped
+#   model_label      CSS selector for the label showing which model served the answer
+#   sources_panel    CSS selector for the sources/citations panel, when it isn't inside the turn
 
 chatgpt:
   url: https://chatgpt.com/
@@ -27,7 +29,9 @@ chatgpt:
   busy_indicator:
     - "button[data-composer-submit]:not([aria-disabled='true']) [data-composer-stop-icon]:visible"
   web_search_off: [] # auto searches
-  
+  model_label: "div.text-token-text-secondary:has(svg)"
+  sources_panel: "[data-testid='sources-panel'], .sources-drawer"
+
 gemini:
   url: https://gemini.google.com/app
   private_window: true
@@ -35,6 +39,8 @@ gemini:
   reply_blocks: ["message-content", ".model-response-text"]
   busy_indicator: ["button[aria-label*='Stop']"]
   web_search_off: [] # can't toggle
+  model_label: ".model-selector-button .label"
+  sources_panel: "bottom-sheet.sources"
 
 perplexity:
   url: https://www.perplexity.ai/
@@ -44,6 +50,8 @@ perplexity:
   reply_blocks: ["div[id^='markdown-content']", ".prose"]
   busy_indicator: ["button[aria-label*='Stop']"]
   web_search_off: []          # always searches
+  model_label: ".model-badge, [aria-label='Model']"
+  sources_panel: ".sources-list, div[class*='Sources']"
 
 # claude forces login
 # claude:
@@ -53,3 +61,5 @@ perplexity:
 #   reply_blocks: ["div.font-claude-response"]
 #   busy_indicator: ["button[aria-label*='Stop']"]
 #   web_search_off: []
+#   model_label: ""
+#   sources_panel: ""
