@@ -1,0 +1,102 @@
+# list of prompts, which LLMs, and how many times
+
+engines: [chatgpt, gemini, perplexity]
+seed: 42
+
+core_tests:
+
+  - name: generic_category_questions
+    stage: discovery                        # does the LLM bring up the brand unprompted?
+    turns: ["{question}"]
+    matrix:
+      question:
+        best_overall:  "what is the best {category} brand to buy?"
+        new_brands:    "what are some popular new {category} brands?"
+        high_protein:  "what's the best {category} for eating more protein?"
+        vs_greek_yogurt: "should i eat {category} or greek yogurt for high protein?"
+    reps: 2
+    also_without_web_search: true           # extra run with search off if available based on engines.yaml 
+
+  - name: health_question_then_brand
+    stage: discovery                      
+    turns:
+      - "What's the health benefit of cottage cheese? Should I have it?"
+      - "Then what brand of {category} should I get?"
+    reps: 2
+    also_without_web_search: true
+
+  - name: feature_searches
+    stage: attributes                       # is the brand tied to specific features?
+    turns: ["{feature}"]
+    matrix:
+      feature:
+        protein:       "highest protein {category}"
+        ingredients:   "cleanest ingredients {category}"
+        live_cultures: "{category} with live cultures"
+        taste_texture: "best tasting {category}"
+        sodium:        "lowest sodium {category}"
+        lactose_free:  "lactose free {category}"
+        price_value:   "most affordable {category}"
+        availability:  "easiest {category} to find in stores"
+        all_of_our_positioning: "can you recommend a {category} with live cultures, no gums or thickeners, and lots of protein?"
+    reps: 2
+
+  - name: buyer_types
+    stage: personas                         # is the brand recommended for a described buyer?
+    turns: ["{buyer}", "Which brand of {category} should I get?"]
+    matrix:
+      buyer:
+        glp1_user:          "I'm on a GLP-1 and trying to get enough protein while I'm losing weight."
+        toddler_parent:     "I'm looking for some healthy dairy snacks for my toddler. I'd rather avoid a lot of added stuff."
+        lactose_intolerant: "I like dairy but regular dairy doesn't always agree with my stomach."
+        budget_shopper:     "I'm trying to eat more protein without spending a ton at the grocery store."
+        low_sodium:         "I've been told to cut back on sodium, so I'm trying to be more careful about what I buy."
+    reps: 2
+
+  - name: head_to_head
+    stage: comparisons                      # who wins when two brands are named?
+    turns: ["{target} vs {rival}, which should I buy?"]
+    matrix:
+      rival: [Daisy, Breakstone's, Knudsen, store brand]
+    counterbalance: true                    # also asks "{rival} vs {target}" so naming order can't skew the result
+
+  - name: doubts_and_switching
+    stage: objections                       # what negatives does the chatbot raise?
+    turns: ["{doubt}"]
+    matrix:
+      doubt:
+        downsides:        "what are the downsides of {target} {category}?"
+        complaints:       "what do people complain about with {target} {category}?"
+        worth_the_price:  "is {target} {category} worth the price?"
+        switch_from_leader: "I've always bought {market_leader}. Is there any real reason to switch to {target}?"
+        switch_from_store:  "I normally buy the store brand {category}. Is {target} worth paying more for?"
+
+  - name: spec_accuracy
+    stage: hallucination                    # does it quote the real label numbers? (graded against `facts`)
+    turns: ["how many grams of protein, calories, and mg of sodium are there per {serving} of {brand} {product}?"]
+    per_fact_row: true                      # one prompt for every product listed in brand_profile.yaml facts
+
+# ------------------------------------------------------------------ DIAGNOSTIC TESTS
+diagnostic_tests:
+
+  - name: reworded_feature_searches
+    stage: attributes                       # same questions as feature_searches, different wording: do answers change?
+    turns: ["{feature}"]
+    matrix:
+      feature:
+        protein:       "{category} with the most protein"
+        ingredients:   "{category} without gums or thickeners"
+        live_cultures: "best {category} for gut health"
+        taste_texture: "thick and creamy {category}"
+        sodium:        "{category} for a low sodium diet"
+        lactose_free:  "{category} for lactose intolerance"
+        price_value:   "best value {category}"
+        availability:  "most widely available {category}"
+    engines: [chatgpt, gemini]
+
+  - name: leading_question_bias
+    stage: comparisons                      # does the chatbot just agree with whichever brand the user praises?
+    turns: ["I think {target} is way better than {rival}, right?"]
+    matrix:
+      rival: [Daisy]
+    counterbalance: true                    # also asks "I think Daisy is way better than Good Culture, right?"

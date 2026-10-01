@@ -1,0 +1,38 @@
+# BRAND PROFILE: who is being measured and what is true about them. (Blank version with explanations: ../_template/)
+
+category: cottage cheese
+target: Good Culture
+market_leader: Daisy
+serving: 1/2 cup
+location_note: "SET ME: city, state; IP-based, no VPN"
+
+brands:                              # name: [other spellings answers might use]
+  Good Culture: [GoodCulture, goodculture.com]
+  Daisy: [Daisy Brand]
+  Breakstone's: [Breakstones, Breakstone]
+  Knudsen: []
+  Lactaid: []
+  Hood: [HP Hood]
+  Friendship Dairies: [Friendship]
+  Kalona SuperNatural: [Kalona]
+  Nancy's: [Nancys]
+  Organic Valley: []
+  Good & Gather: [Good and Gather]
+  365 Everyday Value: [365 by Whole Foods]
+  Kirkland Signature: [Kirkland]
+  Trader Joe's: [Trader Joes]
+  store brand: [store-brand, generic, private label]
+
+# Ground truth: Good Culture + Daisy only (the only brands we fact-check). TO DO: paste a full source_url on each row,
+# and confirm the single-serve product name. The single-serve row is per container, so never compare it per 1/2 cup.
+facts:
+  - {brand: Good Culture, product: Simply 2% Low-Fat Classic, serving: 1/2 cup, protein_g: 14, calories: 90, sodium_mg: 380, sugar_g: 4, live_cultures: true, lactose_free: false, price_usd: 4.29, pkg_oz: 16.0, ingredients: 'Skim Milk, Whole Milk, Cream, Sea Salt, Live And Active Cultures (Lactococcus Ssp., Lactobacillus Ssp.)', source_url: ''}
+  - {brand: Good Culture, product: Simply Lactose Free 2%, serving: 1/2 cup, protein_g: 14, calories: 80, sodium_mg: 340, sugar_g: 3, live_cultures: true, lactose_free: true, price_usd: 4.29, pkg_oz: 16.0, ingredients: 'Cultured skim milk, whole milk/cream, sea salt, lactase enzyme, live and active cultures', source_url: ''}
+  - {brand: Good Culture, product: Simply 4% Whole Milk Single Serve, serving: 5.3 oz container, protein_g: 19, calories: 130, sodium_mg: 520, sugar_g: 5, live_cultures: true, lactose_free: false, price_usd: 1.69, pkg_oz: 5.3, ingredients: 'Skim milk, whole milk, cream, sea salt, live and active cultures', source_url: ''}
+  - {brand: Daisy, product: 2% Low Fat, serving: 1/2 cup, protein_g: 13, calories: 90, sodium_mg: 350, sugar_g: 4, live_cultures: false, lactose_free: false, price_usd: 3.99, pkg_oz: 16.0, ingredients: 'Cultured skim milk, cream, salt', source_url: ''}
+
+domains:                             # classifies cited URLs; brand-owned sites come from `brands` aliases
+  retailer: [target.com, walmart.com, kroger.com, wholefoodsmarket.com, samsclub.com, costco.com, amazon.com, instacart.com]
+  editorial: [thekitchn.com, foodnetwork.com, epicurious.com, eatingwell.com, eatthis.com, allrecipes.com, berryondairy.com]   # verify berryondairy.com
+  health_authority: [clevelandclinic.org, mayoclinic.org, healthline.com, webmd.com]
+  community: [reddit.com, tiktok.com, fooducate.com, myfitnesspal.com]
