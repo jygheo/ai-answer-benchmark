@@ -1,0 +1,55 @@
+#
+#   url              page to open
+#   private_window   true  = isolated browser context per run 
+#                    false = reuse the logged-in Chrome profile (needed for sites that force login)
+#   input_box        CSS selectors for the text box, tried in order
+#   reply_blocks     CSS selectors for the chatbot's answer blocks (last match is read)
+#   busy_indicator   CSS selectors visible only while the bot is still writing. need to verify
+#   web_search_off   click these selectors, in order, to turn web search off. Empty =  can't be
+#                    run without search, so web-search-off runs are skipped
+
+chatgpt:
+  url: https://chatgpt.com/
+  private_window: true
+  input_box:
+    - "#mobile-composer-prompt"
+    - "textarea[aria-label='Chat with ChatGPT']"
+    - "textarea[name='prompt']"
+    - "#prompt-textarea"
+    - "div[contenteditable='true']"
+  reply_blocks:
+    - "[data-assistant-stream-block]"
+    - "[data-message-author-role='assistant']"
+  busy_indicator:
+    - "marker[name*='pending']"
+    - "start[name*='pending']"
+    - "button[aria-label*='Stop']"
+    - "[data-testid='stop-button']"
+  web_search_off:
+    - "button:has(use[*|href*='add-attachment'])"
+    - "button:has-text('Web search')"
+  
+gemini:
+  url: https://gemini.google.com/app
+  private_window: true
+  input_box: ["rich-textarea div[contenteditable='true']", "div[contenteditable='true']"]
+  reply_blocks: ["message-content", ".model-response-text"]
+  busy_indicator: ["button[aria-label*='Stop']"]
+  web_search_off: []
+
+perplexity:
+  url: https://www.perplexity.ai/
+  private_window: true
+  input_box: ["#ask-input", "div[contenteditable='true']", "textarea"]
+  reply_blocks: ["div[id^='markdown-content']", ".prose"]
+  busy_indicator: ["button[aria-label*='Stop']"]
+  web_search_off: []          # Perplexity always searches
+
+# claude forces login
+# claude:
+#   url: https://claude.ai/new
+#   private_window: false
+#   input_box: ["div[contenteditable='true']"]
+#   reply_blocks: ["div.font-claude-response"]
+#   busy_indicator: ["button[aria-label*='Stop']"]
+#   web_search_off: []
