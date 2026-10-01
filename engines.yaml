@@ -1,3 +1,5 @@
+# if a run fails, run `python bench.py probe <engine>`
+# to see which selectors match on the live page, fix  here
 #
 #   url              page to open
 #   private_window   true  = isolated browser context per run 
