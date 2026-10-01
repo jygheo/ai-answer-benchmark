@@ -1,15 +1,34 @@
-#!/usr/bin/env python3
 """
-Questions are in  evaluations/<name>/prompts.yaml
-Brand facts are in evaluations/<name>/brand_profile.yaml
-LLM info is in engines.yaml
+Questions:     evaluations/<name>/prompts.yaml
+Brand facts:   evaluations/<name>/brand_profile.yaml
+LLM info:      engines.yaml
 
-  python bench.py check  good_culture            validate the two yaml files
-  python bench.py plan   good_culture --core-only            write results/<wave>/plan.csv
-  python bench.py chrome                         start Chrome with remote debugging (private)
-  python bench.py probe  chatgpt                 test the selectors in engines.yaml on the live site
-  python bench.py run    good_culture            ask the LLMs, save answers 
-  python bench.py status good_culture            progress
+Commands:
+
+  python bench.py check  good_culture
+      validate the prompts.yaml and brand_profile.yaml files
+
+  python bench.py plan   good_culture --core-only
+      write results/<wave>/plan.csv
+
+  python bench.py chrome
+      start Chrome with remote debugging, private window
+
+  python bench.py chrome --profile regular
+      start Chrome with remote debugging, normal window
+
+  python bench.py probe  [chatgpt, gemini, perplexity]
+      test the selectors in engines.yaml on the live site
+
+  python bench.py probe  [chatgpt, gemini, perplexity] --ask "prompt 1" "prompt 2"
+      test multiple-turn conversations
+
+  python bench.py run    good_culture
+      prompt the LLMs and save their answers
+
+  python bench.py status good_culture
+      show progress
+
 """
 import argparse, itertools, json, math, os, random, re, shutil, subprocess, sys, tempfile, time, traceback
 from datetime import datetime
@@ -18,6 +37,8 @@ from urllib.parse import parse_qsl, urlencode, urlparse, urlsplit, urlunsplit
 
 import pandas as pd
 import yaml
+import json as _json
+
 
 ROOT = Path(__file__).resolve().parent
 STAGES = ["discovery", "attributes", "personas", "comparisons", "objections", "hallucination"]
@@ -216,9 +237,109 @@ def clean_url(u):
     return urlunsplit((p.scheme, p.netloc, p.path, urlencode(q), ""))
 
 
-def replies(page, cfg):
-    return page.locator(", ".join(cfg["reply_blocks"]))
+def turn_selectors(cfg):
+    return cfg.get("turn_blocks") or [", ".join(cfg["reply_blocks"])]
 
+
+def snapshot_counts(page, cfg):
+    return {s: page.locator(s).count() for s in turn_selectors(cfg)}
+
+
+def new_turn(page, cfg, before):
+    """Highest-priority selector that gained a match since `before`; returns its last element."""
+    for s in turn_selectors(cfg):
+        loc = page.locator(s)
+        if loc.count() > before.get(s, 0):
+            return loc.last
+    return None
+
+
+def turn_text(turn):
+    return turn.inner_text().strip()
+
+
+CHIP_SEL = "[data-assistant-content-reference], [data-assistant-sources-trigger], [data-assistant-grouped-webpages]"
+
+def prose_text(turn, cfg):
+    sel = (cfg.get("prose_parts") or [None])[0]
+    return turn.evaluate("""(el, a) => {
+        const chips = [...el.querySelectorAll(a.chips)];
+        const old = chips.map(c => c.style.display);
+        chips.forEach(c => c.style.display = 'none');
+        const nodes = a.sel ? [...el.querySelectorAll(a.sel)] : [el];
+        const text = nodes.map(n => n.innerText.trim()).filter(Boolean).join('\\n\\n');
+        chips.forEach((c, i) => c.style.display = old[i]);
+        return text;
+    }""", dict(sel=sel, chips=CHIP_SEL)) or turn_text(turn)
+
+def extract_payloads(turn, attr_sel, attr_name):
+    raw = turn.evaluate(
+        "(el, a) => [...el.querySelectorAll(a.sel)].map(n => n.getAttribute(a.name))",
+        dict(sel=attr_sel, name=attr_name))
+    out = []
+    for r in raw:
+        try:
+            out.append(_json.loads(r))
+        except Exception:
+            pass
+    return out
+
+def flatten_sources(payloads):
+    urls = []
+    for p in payloads:
+        for item in (p if isinstance(p, list) else [p]):
+            if isinstance(item, dict):
+                u = item.get("url") or item.get("href") or item.get("link")
+                if u:
+                    urls.append(u)
+    return list(dict.fromkeys(clean_url(u) for u in urls))
+
+
+
+def wait_until_answer_finished(page, cfg, before, timeout=300):
+    done_attr = cfg.get("done_attr")
+    start, last, since = time.time(), None, None
+    stable_for = 3 * SPEED if SPEED else 0.3
+    while time.time() - start < timeout:
+        time.sleep(1.0 * SPEED if SPEED else 0.05)
+        turn = new_turn(page, cfg, before)
+        if turn is None:
+            continue
+        if done_attr and turn.get_attribute(done_attr) is not None:
+            time.sleep(1.5 * SPEED)            # let late cards/sources render
+            return turn
+        text = turn_text(turn)                  # fallback for engines without a done attribute
+        busy = any(page.locator(s).first.is_visible() for s in cfg["busy_indicator"])
+        if text and text == last and not busy:
+            since = since or time.time()
+            if time.time() - since >= max(stable_for, 8 * SPEED):
+                return turn
+        else:
+            since = None
+        last = text
+    raise TimeoutError("answer did not finish")
+
+def send_message(page, cfg, engine, text):
+    box = get_input_box(page, cfg, engine)
+    before = snapshot_counts(page, cfg)
+    human_click(page, box)
+    nap(0.3, 0.9)
+    human_type(page, text)
+    nap(0.5, 1.8)
+    page.keyboard.press("Enter")
+    turn = wait_until_answer_finished(page, cfg, before)
+    own_host = urlparse(cfg["url"]).netloc.replace("www.", "")
+    inside = turn.evaluate("el => [...el.querySelectorAll('a[href^=http]')].map(a => a.href)")
+    anywhere = page.evaluate("() => [...document.querySelectorAll('a[href^=http]')].map(a => a.href)")
+    uniq = lambda xs: list(dict.fromkeys(clean_url(x) for x in xs))
+    sources = flatten_sources(extract_payloads(turn, "[data-assistant-sources-payload]", "data-assistant-sources-payload")) \
+        if cfg.get("sources_payload") else []
+    products = extract_payloads(turn, "[data-assistant-product-payload]", "data-assistant-product-payload") \
+        if cfg.get("product_payload") else []
+    return dict(text=prose_text(turn, cfg), full_text=turn_text(turn), html=turn.inner_html(),
+                cited_urls=list(dict.fromkeys(sources + uniq(inside))),
+                products=products,
+                page_links=[u for u in uniq(anywhere) if own_host not in urlparse(u).netloc])
 
 def find_input_box(page, cfg):
     for sel in cfg["input_box"]:
@@ -250,47 +371,9 @@ def get_input_box(page, cfg, engine):
     raise Blocked(f"{engine}: still blocked")
 
 
-def wait_until_answer_finished(page, cfg, count_before, timeout=240):
-    stable_for = 5 * SPEED if SPEED else 0.3
-    start, last, since = time.time(), None, None
-    while time.time() - start < timeout:
-        time.sleep(1.0 * SPEED if SPEED else 0.05)
-        blocks = replies(page, cfg)
-        if blocks.count() <= count_before:
-            continue
-        text = blocks.last.inner_text()
-        still_writing = any(page.locator(s).first.is_visible() for s in cfg["busy_indicator"])
-        if text.strip() and text == last and not still_writing:
-            since = since or time.time()
-            if time.time() - since >= stable_for:
-                return
-        else:
-            since = None
-        last = text
-    raise TimeoutError("answer did not finish")
-
-
-def send_message(page, cfg, engine, text):
-    box = get_input_box(page, cfg, engine)
-    count_before = replies(page, cfg).count()
-    human_click(page, box)
-    nap(0.3, 0.9)
-    human_type(page, text)
-    nap(0.5, 1.8)
-    page.keyboard.press("Enter")
-    wait_until_answer_finished(page, cfg, count_before)
-    block = replies(page, cfg).last
-    own_host = urlparse(cfg["url"]).netloc.replace("www.", "")
-    inside = block.evaluate("el => [...el.querySelectorAll('a[href^=http]')].map(a => a.href)")
-    anywhere = page.evaluate("() => [...document.querySelectorAll('a[href^=http]')].map(a => a.href)")
-    uniq = lambda xs: list(dict.fromkeys(clean_url(x) for x in xs))
-    return dict(text=block.inner_text().strip(), html=block.inner_html(), cited_urls=uniq(inside),
-                page_links=[u for u in uniq(anywhere) if own_host not in urlparse(u).netloc])
-
-
 def ask_chatbot(browser, engine, cfg, turns, web_search):
     private = cfg.get("private_window", True)
-    ctx = browser.new_context() if private else browser.contexts[0]      # new_context() = isolated, like incognito
+    ctx = browser.new_context(viewport={"width": 1440, "height": 900}) if private else browser.contexts[0]
     page = ctx.new_page()
     try:
         page.goto(cfg["url"], wait_until="domcontentloaded", timeout=60000)
@@ -342,6 +425,7 @@ def cmd_plan(a):
     print(plan.pivot_table(index=["group", "stage"], columns="engine", values="run_id", aggfunc="count", margins=True).fillna(0).astype(int).to_string())
     print("runs per repeat:", plan.groupby("rep").size().to_dict())
 
+PROFILES = {"private": 9222, "regular": 9223}
 
 def cmd_chrome(a):
     cands = [os.environ.get("CHROME_BIN"), shutil.which("google-chrome"), shutil.which("google-chrome-stable"), shutil.which("chromium"),
@@ -350,8 +434,13 @@ def cmd_chrome(a):
     exe = next((c for c in cands if c and Path(c).exists()), None)
     if not exe:
         die("Chrome not found; set the CHROME_BIN environment variable.")
-    cmd = [exe, f"--remote-debugging-port={a.port}", f"--user-data-dir={Path(tempfile.gettempdir()) / 'bench_chrome'}",
-           "--incognito", "--no-first-run", "--no-default-browser-check"]
+    regular = a.profile == "regular"
+    port = a.port or PROFILES[a.profile]
+    udd = Path.home() / ".bench_chrome_regular" if regular else Path(tempfile.gettempdir()) / "bench_chrome"
+    cmd = [exe, f"--remote-debugging-port={port}", f"--user-data-dir={udd}", "--no-first-run", "--no-default-browser-check"]
+    if not regular:
+        cmd.append("--incognito")
+
     print("launching:", " ".join(cmd))
     subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
@@ -362,23 +451,52 @@ def connect(pw, port):
     except Exception:
         die(f"can't reach Chrome on port {port}. Run `python bench.py chrome` first.")
 
+def get_browser(pw, cache, cfg, cli_port=None):
+    port = cli_port or cfg.get("port", 9222)
+    if port not in cache:
+        cache[port] = connect(pw, port)
+    return cache[port]
+
 
 def cmd_probe(a):
     from playwright.sync_api import sync_playwright
     cfg = yaml.safe_load(open(ROOT / "engines.yaml"))[a.engine]
     with sync_playwright() as p:
-        browser = connect(p, a.port)
-        ctx = browser.new_context(); page = ctx.new_page()
+        browser = connect(p, a.port or cfg.get("port", 9222))
+        private = cfg.get("private_window", True)
+        ctx = browser.new_context(viewport={"width": 1440, "height": 900}) if private else browser.contexts[0]
+        page = ctx.new_page()
         page.goto(cfg["url"], wait_until="domcontentloaded"); nap(3, 5)
         print("challenge page detected:", blocked_by_challenge(page))
-        for kind in ("input_box", "reply_blocks", "busy_indicator"):
-            for sel in cfg[kind]:
+        for kind in ("input_box", "turn_blocks", "busy_indicator"):
+            for sel in cfg.get(kind, []):
                 print(f"{kind:15s} {sel:55s} matches={page.locator(sel).count()}")
         if a.ask:
-            r = send_message(page, cfg, a.engine, a.ask)
-            print("ANSWER:", r["text"][:400], "\nCITED:", r["cited_urls"], "\nOTHER LINKS ON PAGE:", r["page_links"][:10])
+            for i, msg in enumerate(a.ask):
+                if i > 0:
+                    print(f"\n--- Pausing before turn {i + 1} ---")
+                    nap(3, 6)
+                print(f"\n[Turn {i + 1}] Asking: {msg}")
+                r = send_message(page, cfg, a.engine, msg)
+                print(f"[Turn {i + 1}] Answer ({len(r['text'])} chars):\n", r["text"])
+                print("Cited:", r["cited_urls"])
+                print("Products:", [p.get("title") if isinstance(p, dict) else p for p in r.get("products", [])])
+
+        # html = page.evaluate("""() => {
+        #   const out = [];
+        #   document.querySelectorAll('main *').forEach(el => {
+        #     const attrs = [...el.attributes].filter(a => /^(data-|role|aria-)/.test(a.name))
+        #                     .map(a => `${a.name}="${a.value.slice(0,40)}"`).join(' ');
+        #     if (attrs) out.push(el.tagName.toLowerCase() + ' ' + attrs);
+        #   });
+        #   return [...new Set(out)].join('\\n');
+        # }""")
+        # Path("dom_dump.txt").write_text(html, encoding="utf-8")
+        # print("wrote dom_dump.txt")
         input("Press Enter to close... ")
-        page.close(); ctx.close()
+        page.close()
+        if private:
+            ctx.close()
 
 
 def cmd_status(a):
@@ -406,15 +524,20 @@ def cmd_run(a):
     print(f"{len(todo)} runs to do")
     failures_in_a_row = done = 0
     with sync_playwright() as p:
-        browser = connect(p, a.port)
+        cache = {}
+        # Preflight: fail early if any needed Chrome instance isn't reachable
+        for eng in todo.engine.unique():
+            get_browser(p, cache, ev["engines"][eng], a.port)
         for _, r in todo.iterrows():
             t0, turns = time.time(), json.loads(r.turns)
             print(f"[{done + 1}/{len(todo)}] {r.engine:10s} {r.prompt_id} rep{r.rep} search={r.web_search}", flush=True)
             try:
-                results, ua = ask_chatbot(browser, r.engine, ev["engines"][r.engine], turns, r.web_search)
+                results, ua = ask_chatbot(get_browser(p, cache, ev["engines"][r.engine], a.port),
+                                          r.engine, ev["engines"][r.engine], turns, r.web_search)
                 rec = dict(run_id=r.run_id, prompt_id=r.prompt_id, test=r.test, stage=r.stage, group=r.group, engine=r.engine,
                            web_search=r.web_search, rep=int(r.rep), timestamp=datetime.now().isoformat(timespec="seconds"),
-                           turns=turns, answers=[x["text"] for x in results], final_answer=results[-1]["text"],
+                           turns=turns, answers=[x["text"] for x in results], full_answers=[x["full_text"] for x in results], products=results[-1].get("products", []),
+                           final_answer=results[-1]["text"],
                            cited_urls=results[-1]["cited_urls"], other_page_links=results[-1]["page_links"],
                            final_answer_html=results[-1]["html"], private_window=ev["engines"][r.engine].get("private_window", True),
                            model_shown=None, location_note=ev["profile"].get("location_note"), user_agent=ua,
@@ -449,7 +572,9 @@ def main():
         elif name != "chrome":
             s.add_argument("evaluation")
         s.add_argument("--wave", default=wave_default(), help="results subfolder, default = current quarter")
-        s.add_argument("--port", type=int, default=9222)
+        s.add_argument("--port", type=int, default=None)          # changed: default None so engines.yaml can supply it
+        if name == "chrome":
+            s.add_argument("--profile", choices=list(PROFILES), default="private")
         if name == "plan":
             s.add_argument("--core-only", action="store_true", help="leave out diagnostic tests")
             s.add_argument("--force", action="store_true")

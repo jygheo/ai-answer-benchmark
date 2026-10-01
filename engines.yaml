@@ -14,22 +14,19 @@ chatgpt:
   url: https://chatgpt.com/
   private_window: true
   input_box:
-    - "#mobile-composer-prompt"
     - "textarea[aria-label='Chat with ChatGPT']"
+    - "#mobile-composer-prompt"
     - "textarea[name='prompt']"
-    - "#prompt-textarea"
-    - "div[contenteditable='true']"
-  reply_blocks:
-    - "[data-assistant-stream-block]"
-    - "[data-message-author-role='assistant']"
+  turn_blocks:
+    - "li[data-message-role='assistant']"
+  done_attr: "data-message-complete"
+  prose_parts: ["[data-assistant-markdown] > :not([data-assistant-product-list]):not([data-assistant-grouped-webpages]):not([data-content-reference-type])"]
+  sources_payload: "[data-assistant-sources-payload]"
+  product_payload: "[data-assistant-product-payload]"
+  reply_blocks: ["li[data-message-role='assistant']"]
   busy_indicator:
-    - "marker[name*='pending']"
-    - "start[name*='pending']"
-    - "button[aria-label*='Stop']"
-    - "[data-testid='stop-button']"
-  web_search_off:
-    - "button:has(use[*|href*='add-attachment'])"
-    - "button:has-text('Web search')"
+    - "button[data-composer-submit]:not([aria-disabled='true']) [data-composer-stop-icon]:visible"
+  web_search_off: [] # auto searches
   
 gemini:
   url: https://gemini.google.com/app
@@ -37,15 +34,16 @@ gemini:
   input_box: ["rich-textarea div[contenteditable='true']", "div[contenteditable='true']"]
   reply_blocks: ["message-content", ".model-response-text"]
   busy_indicator: ["button[aria-label*='Stop']"]
-  web_search_off: []
+  web_search_off: [] # can't toggle
 
 perplexity:
   url: https://www.perplexity.ai/
-  private_window: true
+  private_window: false #requires signin
+  port: 9223 
   input_box: ["#ask-input", "div[contenteditable='true']", "textarea"]
   reply_blocks: ["div[id^='markdown-content']", ".prose"]
   busy_indicator: ["button[aria-label*='Stop']"]
-  web_search_off: []          # Perplexity always searches
+  web_search_off: []          # always searches
 
 # claude forces login
 # claude:
