@@ -25,7 +25,7 @@ Commands:
   python bench.py run    good_culture --wave 2026_Q4 --limit 12
       prompt the LLMs and save their answers
 
-  python bench.py status good_culture
+  python bench.py status good_culture --wave 2026_Q4
       show progress
 
 """
