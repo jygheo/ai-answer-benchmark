@@ -1,0 +1,115 @@
+brands:
+  MULU: []
+  Great Value: []
+  Green Valley Creamery: []
+  Prairie Farms: []
+  Kemps: []
+  Crowley: []
+  Friendly Farms: []
+ignore_names:
+- Priority
+- Snack
+- Flavor Profile
+- Added Probiotics
+- Milkfat
+- Curd Size
+- Store
+- Recommendation
+- Eggs
+- Sponsored
+- Taste/texture
+- Tofu
+- Lactose-Free Dairy
+- No Salt Added
+- Food
+- High Price Point
+- High-protein
+- Clean Ingredients
+- No-salt-added
+- Protein Content
+- Downside
+- Probiotics
+- Lactose-free
+- Sponsored by
+- Hy-Vee
+- Member's mark
+domains:
+  health_authority:
+  - consumerreports.org
+  - healthychildren.org
+  - ochsner.org
+  - thekidneydietitian.org
+  - health.com
+  - ama-assn.org
+  - nm.org
+  - nutrientall.com
+  - davita.com
+  - ewg.org
+  - heart.org
+  - goodrx.com
+  - helpguide.org
+  - cornucopia.org
+  - bswhealth.com
+  - uchealth.org
+  - ucsfhealth.org
+  - osfhealthcare.org
+  - noom.com
+  - bannerhealth.com
+  - aap.org
+  - backushospital.org
+  editorial:
+  - seriouseats.com
+  - delish.com
+  - tastingtable.com
+  - labelgrade.com
+  - theskimm.com
+  - foodandwine.com
+  - nytimes.com
+  - mashed.com
+  - thetakeout.com
+  - foodnavigator.com
+  - dairyreporter.com
+  - bonappetit.com
+  - tasteofhome.com
+  - supermarketperimeter.com
+  - foodsguy.com
+  - foodrepublic.com
+  - seattletimes.com
+  - realsimple.com
+  - inkl.com
+  - parade.com
+  - dairyfoods.com
+  - dietaryhabit.com
+  - eathealthy365.com
+  - edairynews.com
+  - getfoodfacts.com
+  - columbusreport.com
+  - agristuff.com
+  - womenshealthmag.com
+  - substack.com
+  - whatagirleats.com
+  - today.com
+  - moneytalksnews.com
+  - marthastewart.com
+  - yahoo.com
+  retailer:
+  - hood.com
+  - prairiefarms.com
+  - doordash.com
+  - daisybrand.com
+  - nancysyogurt.com
+  - greenvalleylactosefree.com
+  - dfamilk.com
+  - giantfood.com
+  - gelsons.com
+  - hannaford.com
+  - kalonasupernatural.com
+  - knudsen.com
+  - littlespoon.com
+  - shoprite.com
+  - smithsfoodanddrug.com
+  - spoonfulapp.com
+  - hungryroot.com
+  - aldi.us
+  other:
+  - openai.com

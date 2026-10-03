@@ -1,0 +1,124 @@
+run_id,turn,candidate,group,kept
+head_to_head__daisy|perplexity|search_default|rep1,1,Food and Wine,Food and Wine,False
+head_to_head__daisy|perplexity|search_default|rep1,1,Food Republic,Food Republic,False
+head_to_head__daisy__swapped|perplexity|search_default|rep1,1,Positioning,Positioning,False
+generic_category_questions__vs_greek_yogurt|chatgpt|search_default|rep1,1,Texture/taste,Texture/taste,False
+feature_searches__price_value|chatgpt|search_default|rep1,1,12¢/oz,12¢/oz,False
+feature_searches__price_value|chatgpt|search_default|rep1,1,11.4¢/oz,11.4¢/oz,False
+feature_searches__price_value|chatgpt|search_default|rep1,1,13¢/oz,13¢/oz,False
+feature_searches__price_value|chatgpt|search_default|rep1,1,12.3¢/oz,12.3¢/oz,False
+head_to_head__breakstone_s__swapped|perplexity|search_default|rep1,1,Downsides,Downsides,False
+generic_category_questions__vs_greek_yogurt|gemini|search_default|rep1,1,Nutrient,Nutrient,False
+generic_category_questions__vs_greek_yogurt|gemini|search_default|rep1,1,Both,Both,False
+buyer_types__budget_shopper|gemini|search_default|rep1,1,Canned Tuna,Canned Tuna,False
+buyer_types__budget_shopper|chatgpt|search_default|rep1,2,Budget-friendly,Budget Friendly,False
+feature_searches__lactose_free|chatgpt|search_default|rep1,1,Important,Important,False
+buyer_types__low_sodium|gemini|search_default|rep1,1,Rinse Canned Goods,Rinse Canned Goods,False
+buyer_types__low_sodium|gemini|search_default|rep1,1,Reduced Sodium,Reduced Sodium,False
+feature_searches__lactose_free|perplexity|search_default|rep1,1,Dairy-free/vegan,Dairy-free/vegan,False
+head_to_head__breakstone_s__swapped|gemini|search_default|rep1,1,Texture and Consistency,Texture and Consistency,False
+head_to_head__breakstone_s__swapped|gemini|search_default|rep1,1,Ingredients and Additives,Ingredients and Additives,False
+doubts_and_switching__switch_from_leader|gemini|search_default|rep1,1,Sourcing,Milk Sourcing,False
+doubts_and_switching__switch_from_leader|gemini|search_default|rep1,1,Milk Sourcing,Milk Sourcing,False
+doubts_and_switching__switch_from_leader|gemini|search_default|rep1,1,Probiotic Boost,Probiotic Boost,False
+generic_category_questions__high_protein|perplexity|search_default|rep1,1,Standard,Standard,False
+feature_searches__availability|gemini|search_default|rep1,1,National Dairy Brands,National Dairy Brands,False
+feature_searches__availability|gemini|search_default|rep1,1,Health-Forward Brands,Health-Forward Brands,False
+head_to_head__store_brand|gemini|search_default|rep1,1,Superior Ingredients,Superior Ingredients,False
+head_to_head__store_brand|gemini|search_default|rep1,1,Budget Friendly,Budget Friendly,False
+head_to_head__store_brand|gemini|search_default|rep1,1,Neutral Flavor,Neutral Flavor,False
+head_to_head__store_brand__swapped|gemini|search_default|rep1,1,Additives and Gums,Additives and Gums,False
+head_to_head__store_brand__swapped|gemini|search_default|rep1,1,Price Point,Higher Price Point,False
+buyer_types__toddler_parent|perplexity|search_default|rep1,1,Labels,Labels,False
+doubts_and_switching__switch_from_store|gemini|search_default|rep1,1,Superior Texture,Superior Texture,False
+doubts_and_switching__switch_from_store|gemini|search_default|rep1,1,Downsides,Downsides,False
+doubts_and_switching__downsides|gemini|search_default|rep1,1,Higher Price Point,Higher Price Point,False
+doubts_and_switching__downsides|gemini|search_default|rep1,1,Sodium Content,Sodium Content,False
+doubts_and_switching__downsides|gemini|search_default|rep1,1,Dairy Restrictions,Dairy Restrictions,False
+head_to_head__store_brand|perplexity|search_default|rep1,1,Private-label,Private-label,False
+buyer_types__low_sodium|perplexity|search_default|rep1,1,Instead of,Instead of,False
+generic_category_questions__high_protein|gemini|search_default|rep1,1,Fat Content,Fat Content,False
+doubts_and_switching__worth_the_price|gemini|search_default|rep1,1,Superior Texture,Superior Texture,False
+doubts_and_switching__worth_the_price|gemini|search_default|rep1,1,Approximate Price,Approximate Price,False
+feature_searches__ingredients|gemini|search_default|rep1,1,Salt,Salt,False
+feature_searches__ingredients|gemini|search_default|rep1,1,Gums,Additives and Gums,False
+feature_searches__ingredients|gemini|search_default|rep1,1,Thickeners and Stabilizers,Thickeners and Stabilizers,False
+feature_searches__ingredients|gemini|search_default|rep1,1,Clover Sonoma,Clover Sonoma,False
+head_to_head__knudsen__swapped|gemini|search_default|rep1,1,Ingredients and Additives,Ingredients and Additives,False
+head_to_head__knudsen__swapped|gemini|search_default|rep1,1,Standout Feature,Standout Feature,False
+feature_searches__ingredients|perplexity|search_default|rep1,1,Optional,Optional,False
+feature_searches__ingredients|perplexity|search_default|rep1,1,Aldi Friendly Farms,Aldi Friendly Farms,False
+doubts_and_switching__switch_from_leader|perplexity|search_default|rep1,1,Factor,Factor,False
+doubts_and_switching__switch_from_leader|perplexity|search_default|rep1,1,Sodium/protein,Sodium/protein,False
+doubts_and_switching__switch_from_leader|perplexity|search_default|rep1,1,Price/availability,Price/availability,False
+doubts_and_switching__switch_from_leader|chatgpt|search_default|rep1,1,Organic/pasture-raised,Organic/pasture-raised,False
+buyer_types__budget_shopper|perplexity|search_default|rep1,1,Oatmeal,Oatmeal,False
+buyer_types__budget_shopper|perplexity|search_default|rep1,1,Pasta,Pasta,False
+buyer_types__budget_shopper|perplexity|search_default|rep1,1,Rice,Rice,False
+buyer_types__budget_shopper|perplexity|search_default|rep1,1,Soup,Soup,False
+buyer_types__budget_shopper|perplexity|search_default|rep1,1,Tacos,Tacos,False
+buyer_types__budget_shopper|perplexity|search_default|rep1,1,Snacks,Snacks,False
+head_to_head__knudsen|perplexity|search_default|rep1,1,Factor,Factor,False
+buyer_types__glp1_user|gemini|search_default|rep1,1,Bone Broth,Bone Broth,False
+buyer_types__glp1_user|gemini|search_default|rep1,1,Clear Protein Powders,Clear Protein Powders,False
+buyer_types__glp1_user|gemini|search_default|rep1,1,Unflavored Protein Powder,Unflavored Protein Powder,False
+buyer_types__glp1_user|gemini|search_default|rep1,2,Special Feature,Special Feature,False
+head_to_head__breakstone_s|gemini|search_default|rep1,1,Curd Style,Curd Style,False
+head_to_head__breakstone_s|gemini|search_default|rep1,1,Texture and Creaminess,Texture and Creaminess,False
+doubts_and_switching__complaints|gemini|search_default|rep1,1,Stock Shortages,Stock Shortages,False
+doubts_and_switching__complaints|gemini|search_default|rep1,1,Sodium Levels,Sodium Levels,False
+doubts_and_switching__complaints|gemini|search_default|rep1,1,Drawbacks,Drawbacks,False
+health_question_then_brand|gemini|search_default|rep1,1,Bone Health,Bone Health,False
+health_question_then_brand|gemini|search_default|rep1,1,Weight Management,Weight Management,False
+health_question_then_brand|gemini|search_default|rep1,1,B-Vitamins,B-Vitamins,False
+health_question_then_brand|gemini|search_default|rep1,2,Fat Content,Fat Content,False
+feature_searches__sodium|gemini|search_default|rep1,1,Farmer Cheese,Farmer Cheese,False
+feature_searches__price_value|perplexity|search_default|rep1,1,12–15¢/oz,12–15¢/oz,False
+generic_category_questions__new_brands|chatgpt|search_default|rep1,1,FroCo,FroCo,False
+generic_category_questions__new_brands|chatgpt|search_default|rep1,1,Alterego,Alterego,False
+generic_category_questions__new_brands|chatgpt|search_default|rep1,1,U.S,U.S,False
+generic_category_questions__new_brands|chatgpt|search_default|rep1,1,Midwest,Midwest,False
+doubts_and_switching__downsides|chatgpt|search_default|rep1,1,Like,Like,False
+generic_category_questions__high_protein|gemini|search_default|rep2,1,Fat Level,Fat Level,False
+feature_searches__taste_texture|perplexity|search_default|rep2,1,Hood Country Style,Hood Country Style,False
+buyer_types__glp1_user|chatgpt|search_default|rep2,1,Snacks,Snacks,False
+buyer_types__low_sodium|gemini|search_default|rep2,1,Rinse Canned Goods,Rinse Canned Goods,False
+buyer_types__low_sodium|gemini|search_default|rep2,1,Pro Tip,Pro Tip,False
+buyer_types__low_sodium|gemini|search_default|rep2,1,Reduced Sodium,Reduced Sodium,False
+generic_category_questions__vs_greek_yogurt|gemini|search_default|rep2,1,Nutrient,Nutrient,False
+generic_category_questions__vs_greek_yogurt|gemini|search_default|rep2,1,Both,Both,False
+feature_searches__live_cultures|gemini|search_default|rep2,1,Milk Type,Milk Type,False
+health_question_then_brand|chatgpt|search_default|rep2,1,Convenient,Convenient,False
+buyer_types__budget_shopper|gemini|search_default|rep2,1,Canned Tuna,Canned Tuna,False
+buyer_types__budget_shopper|gemini|search_default|rep2,1,Peanut Butter,Peanut Butter,False
+buyer_types__budget_shopper|perplexity|search_default|rep2,1,Beans/chickpeas,Beans/chickpeas,False
+generic_category_questions__new_brands|chatgpt|search_default|rep2,1,Cotto,Cotto,False
+generic_category_questions__new_brands|chatgpt|search_default|rep2,1,U.S,U.S,False
+feature_searches__availability|perplexity|search_default|rep2,1,Costco/Sam's Club,Costco/Sam's Club,False
+generic_category_questions__best_overall|gemini|search_default|rep2,1,Standout Feature,Standout Feature,False
+head_to_head__knudsen|chatgpt|search_default|rep1,1,Texture/taste,Texture/taste,False
+feature_searches__protein|perplexity|search_default|rep2,1,Low-fat,Low-fat,False
+buyer_types__glp1_user|perplexity|search_default|rep2,1,"Eggs, 2","Eggs, 2",False
+health_question_then_brand|perplexity|search_default|rep2,1,Goal,Goal,False
+health_question_then_brand|perplexity|search_default|rep2,2,Texture/fullness,Texture/fullness,False
+buyer_types__lactose_intolerant|gemini|search_default|rep2,1,Alternative Dairy Options,Alternative Dairy Options,False
+buyer_types__lactose_intolerant|gemini|search_default|rep2,1,A2 Milk,A2 Milk,False
+buyer_types__lactose_intolerant|gemini|search_default|rep2,1,Pecorino Romano,Pecorino Romano,False
+buyer_types__lactose_intolerant|gemini|search_default|rep2,1,Parmesan,Parmesan,False
+buyer_types__lactose_intolerant|gemini|search_default|rep2,1,Lactase Enzyme Supplements,Lactase Enzyme Supplements,False
+buyer_types__lactose_intolerant|gemini|search_default|rep2,1,Fermented Dairy,Fermented Dairy,False
+buyer_types__lactose_intolerant|gemini|search_default|rep2,1,Gradual Introduction,Gradual Introduction,False
+buyer_types__lactose_intolerant|gemini|search_default|rep2,2,Because,Because,False
+feature_searches__availability|gemini|search_default|rep2,1,National Supermarkets,National Supermarkets,False
+feature_searches__price_value|gemini|search_default|rep2,1,Curd Style,Curd Style,False
+feature_searches__price_value|gemini|search_default|rep2,1,Estimated Price,Estimated Price,False
+feature_searches__price_value|perplexity|search_default|rep2,1,Private-label,Private-label,False
+generic_category_questions__high_protein|perplexity|search_default|rep2,1,Goal,Goal,False
+generic_category_questions__high_protein|perplexity|search_default|rep2,1,Fruit-flavored,Fruit-flavored,False
+feature_searches__protein|gemini|search_default|rep2,1,Specialty High-Protein Brands,Specialty High-Protein Brands,False
+feature_searches__protein|gemini|search_default|rep2,1,Dry Curd Varieties,Dry Curd Varieties,False
+feature_searches__sodium|perplexity|search_default|rep2,1,Notes Dry-curd,Notes Dry-curd,False
+buyer_types__low_sodium|perplexity|search_default|rep2,1,Category,Category,False
+buyer_types__low_sodium|perplexity|search_default|rep2,1,Condiments,Condiments,False
+health_question_then_brand|gemini|search_default|rep2,1,Bone Health,Bone Health,False
+health_question_then_brand|gemini|search_default|rep2,2,Because,Because,False

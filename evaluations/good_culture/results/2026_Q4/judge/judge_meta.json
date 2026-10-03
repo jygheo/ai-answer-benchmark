@@ -1,0 +1,13 @@
+{
+  "judge_model": "gemini-ui-flash",
+  "models_used": {
+    "gemini-ui-flash": 153
+  },
+  "date": "2026-10-02T02:06:17",
+  "blinded_to_brand": false,
+  "schema_constrained": true,
+  "answers_cleaned_of_shopping_cards": true,
+  "items": 153,
+  "accepted": 153,
+  "rejected": 0
+}

@@ -1,0 +1,498 @@
+run_id,turn,brand,position,list_rank,mentions_in_answer,known
+doubts_and_switching__complaints|chatgpt|search_default|rep1,1,Good Culture,80,3.0,6,True
+head_to_head__daisy|perplexity|search_default|rep1,1,Good Culture,0,,7,True
+head_to_head__daisy|perplexity|search_default|rep1,1,Daisy,16,,7,True
+head_to_head__daisy__swapped|perplexity|search_default|rep1,1,Daisy,81,1.0,7,True
+head_to_head__daisy__swapped|perplexity|search_default|rep1,1,Good Culture,91,2.0,5,True
+feature_searches__price_value|chatgpt|search_default|rep1,1,Great Value,62,1.0,3,True
+feature_searches__price_value|chatgpt|search_default|rep1,1,Friendly Farms,211,3.0,1,True
+feature_searches__taste_texture|perplexity|search_default|rep1,1,Good Culture,64,,2,True
+feature_searches__taste_texture|perplexity|search_default|rep1,1,Daisy,521,1.0,1,True
+feature_searches__taste_texture|perplexity|search_default|rep1,1,Breakstone's,631,2.0,1,True
+feature_searches__taste_texture|perplexity|search_default|rep1,1,Great Value,795,4.0,1,True
+generic_category_questions__best_overall|gemini|search_default|rep1,1,Daisy,208,1.0,3,True
+generic_category_questions__best_overall|gemini|search_default|rep1,1,Good Culture,430,2.0,3,True
+generic_category_questions__best_overall|gemini|search_default|rep1,1,Breakstone's,668,,2,True
+generic_category_questions__best_overall|gemini|search_default|rep1,1,Organic Valley,931,,2,True
+head_to_head__breakstone_s__swapped|perplexity|search_default|rep1,1,Breakstone's,0,,6,True
+head_to_head__breakstone_s__swapped|perplexity|search_default|rep1,1,Good Culture,16,,8,True
+feature_searches__protein|chatgpt|search_default|rep1,1,Friendship Dairies,58,1.0,1,True
+feature_searches__protein|chatgpt|search_default|rep1,1,Good Culture,153,2.0,2,True
+head_to_head__daisy__swapped|chatgpt|search_default|rep1,1,Good Culture,32,,2,True
+head_to_head__daisy__swapped|chatgpt|search_default|rep1,1,Daisy,182,,2,True
+head_to_head__breakstone_s|chatgpt|search_default|rep1,1,Good Culture,8,1.0,3,True
+head_to_head__breakstone_s|chatgpt|search_default|rep1,1,Breakstone's,236,2.0,1,True
+buyer_types__budget_shopper|gemini|search_default|rep1,2,Daisy,0,,3,True
+buyer_types__budget_shopper|gemini|search_default|rep1,2,Breakstone's,187,,2,True
+buyer_types__budget_shopper|gemini|search_default|rep1,2,Hood,417,,4,True
+buyer_types__budget_shopper|gemini|search_default|rep1,2,Kalona SuperNatural,830,,2,True
+buyer_types__budget_shopper|gemini|search_default|rep1,2,Knudsen,1031,,2,True
+buyer_types__budget_shopper|gemini|search_default|rep1,2,Organic Valley,1237,,2,True
+buyer_types__budget_shopper|gemini|search_default|rep1,2,Nancy's,1441,,3,True
+buyer_types__budget_shopper|gemini|search_default|rep1,2,Good Culture,1771,,1,True
+head_to_head__knudsen__swapped|perplexity|search_default|rep1,1,Good Culture,23,,9,True
+head_to_head__knudsen__swapped|perplexity|search_default|rep1,1,Knudsen,297,,6,True
+buyer_types__budget_shopper|chatgpt|search_default|rep1,2,Daisy,67,,2,True
+buyer_types__budget_shopper|chatgpt|search_default|rep1,2,store brand,391,,2,True
+buyer_types__budget_shopper|chatgpt|search_default|rep1,2,Great Value,427,,1,True
+doubts_and_switching__worth_the_price|perplexity|search_default|rep1,1,Good Culture,40,,5,True
+doubts_and_switching__worth_the_price|perplexity|search_default|rep1,1,Daisy,259,,2,True
+doubts_and_switching__worth_the_price|perplexity|search_default|rep1,1,store brand,268,,2,True
+buyer_types__lactose_intolerant|gemini|search_default|rep1,1,Lactaid,1271,1.0,1,True
+buyer_types__lactose_intolerant|gemini|search_default|rep1,2,Lactaid,156,,4,True
+buyer_types__lactose_intolerant|gemini|search_default|rep1,2,Good Culture,415,,2,True
+feature_searches__all_of_our_positioning|perplexity|search_default|rep1,1,Good Culture,20,,2,True
+feature_searches__all_of_our_positioning|perplexity|search_default|rep1,1,Nancy's,830,,2,True
+head_to_head__breakstone_s|perplexity|search_default|rep1,1,Good Culture,4,1.0,10,True
+head_to_head__breakstone_s|perplexity|search_default|rep1,1,Breakstone's,132,2.0,10,True
+feature_searches__lactose_free|chatgpt|search_default|rep1,1,Lactaid,107,1.0,1,True
+feature_searches__lactose_free|chatgpt|search_default|rep1,1,Good Culture,171,2.0,1,True
+feature_searches__lactose_free|chatgpt|search_default|rep1,1,Green Valley Creamery,266,3.0,1,True
+feature_searches__lactose_free|chatgpt|search_default|rep1,1,Prairie Farms,389,4.0,1,True
+buyer_types__low_sodium|gemini|search_default|rep1,2,Good Culture,238,,3,True
+buyer_types__low_sodium|gemini|search_default|rep1,2,Daisy,490,,3,True
+buyer_types__low_sodium|gemini|search_default|rep1,2,Hood,726,,3,True
+buyer_types__low_sodium|gemini|search_default|rep1,2,Nancy's,968,,3,True
+head_to_head__knudsen__swapped|chatgpt|search_default|rep1,1,Good Culture,8,1.0,3,True
+head_to_head__knudsen__swapped|chatgpt|search_default|rep1,1,Knudsen,275,2.0,3,True
+buyer_types__toddler_parent|chatgpt|search_default|rep1,2,Good Culture,134,1.0,2,True
+buyer_types__toddler_parent|chatgpt|search_default|rep1,2,Daisy,267,1.0,2,True
+buyer_types__toddler_parent|chatgpt|search_default|rep1,2,Trader Joe's,823,,1,True
+feature_searches__lactose_free|perplexity|search_default|rep1,1,Good Culture,356,,5,True
+feature_searches__lactose_free|perplexity|search_default|rep1,1,Lactaid,534,,2,True
+feature_searches__lactose_free|perplexity|search_default|rep1,1,Prairie Farms,673,,1,True
+feature_searches__lactose_free|perplexity|search_default|rep1,1,Green Valley Creamery,797,,2,True
+head_to_head__store_brand__swapped|perplexity|search_default|rep1,1,store brand,8,2.0,8,True
+head_to_head__store_brand__swapped|perplexity|search_default|rep1,1,Good Culture,104,1.0,14,True
+head_to_head__breakstone_s__swapped|gemini|search_default|rep1,1,Good Culture,0,1.0,4,True
+head_to_head__breakstone_s__swapped|gemini|search_default|rep1,1,Breakstone's,103,2.0,4,True
+doubts_and_switching__switch_from_leader|gemini|search_default|rep1,1,Daisy,22,1.0,6,True
+doubts_and_switching__switch_from_leader|gemini|search_default|rep1,1,Good Culture,82,1.0,6,True
+generic_category_questions__high_protein|perplexity|search_default|rep1,1,MULU,42,,2,True
+generic_category_questions__high_protein|perplexity|search_default|rep1,1,Good Culture,261,,2,True
+generic_category_questions__high_protein|perplexity|search_default|rep1,1,Daisy,756,,1,True
+generic_category_questions__high_protein|perplexity|search_default|rep1,1,store brand,847,,1,True
+feature_searches__availability|gemini|search_default|rep1,1,Daisy,240,1.0,3,True
+feature_searches__availability|gemini|search_default|rep1,1,Breakstone's,435,1.0,3,True
+feature_searches__availability|gemini|search_default|rep1,1,Good Culture,688,3.0,3,True
+feature_searches__availability|gemini|search_default|rep1,1,store brand,1080,2.0,1,True
+feature_searches__availability|gemini|search_default|rep1,1,Great Value,1116,2.0,1,True
+feature_searches__availability|gemini|search_default|rep1,1,Friendly Farms,1138,2.0,1,True
+head_to_head__store_brand|gemini|search_default|rep1,1,Good Culture,17,1.0,6,True
+head_to_head__store_brand|gemini|search_default|rep1,1,store brand,36,1.0,6,True
+head_to_head__store_brand|gemini|search_default|rep1,1,Daisy,2102,,1,True
+head_to_head__store_brand__swapped|gemini|search_default|rep1,1,Good Culture,17,1.0,5,True
+head_to_head__store_brand__swapped|gemini|search_default|rep1,1,store brand,71,2.0,4,True
+head_to_head__store_brand__swapped|gemini|search_default|rep1,1,Trader Joe's,1358,2.0,1,True
+head_to_head__store_brand__swapped|gemini|search_default|rep1,1,Daisy,1926,,1,True
+buyer_types__toddler_parent|perplexity|search_default|rep1,2,Daisy,52,1.0,5,True
+buyer_types__toddler_parent|perplexity|search_default|rep1,2,Good Culture,270,2.0,4,True
+buyer_types__glp1_user|perplexity|search_default|rep1,2,Good Culture,17,,7,True
+buyer_types__glp1_user|perplexity|search_default|rep1,2,Daisy,560,,3,True
+buyer_types__glp1_user|perplexity|search_default|rep1,2,MULU,801,,1,True
+buyer_types__glp1_user|chatgpt|search_default|rep1,2,Good Culture,81,,1,True
+buyer_types__glp1_user|chatgpt|search_default|rep1,2,Daisy,331,,1,True
+doubts_and_switching__switch_from_store|gemini|search_default|rep1,1,Good Culture,8,1.0,8,True
+doubts_and_switching__switch_from_store|gemini|search_default|rep1,1,store brand,94,1.0,7,True
+doubts_and_switching__switch_from_store|gemini|search_default|rep1,1,Daisy,1300,2.0,3,True
+doubts_and_switching__switch_from_store|gemini|search_default|rep1,1,Breakstone's,2084,,1,True
+buyer_types__lactose_intolerant|perplexity|search_default|rep1,2,Good Culture,54,,4,True
+buyer_types__lactose_intolerant|perplexity|search_default|rep1,2,Green Valley Creamery,690,,1,True
+buyer_types__lactose_intolerant|perplexity|search_default|rep1,2,Lactaid,929,,1,True
+doubts_and_switching__downsides|gemini|search_default|rep1,1,Good Culture,6,,3,True
+doubts_and_switching__downsides|gemini|search_default|rep1,1,store brand,190,1.0,1,True
+health_question_then_brand|chatgpt|search_default|rep1,2,Good Culture,102,1.0,3,True
+health_question_then_brand|chatgpt|search_default|rep1,2,Daisy,304,2.0,3,True
+health_question_then_brand|chatgpt|search_default|rep1,2,Nancy's,567,4.0,1,True
+health_question_then_brand|chatgpt|search_default|rep1,2,Trader Joe's,1143,,1,True
+feature_searches__availability|chatgpt|search_default|rep1,1,Daisy,86,,1,True
+feature_searches__availability|chatgpt|search_default|rep1,1,Breakstone's,242,1.0,1,True
+feature_searches__availability|chatgpt|search_default|rep1,1,store brand,288,1.0,1,True
+feature_searches__availability|chatgpt|search_default|rep1,1,Great Value,301,2.0,1,True
+feature_searches__availability|chatgpt|search_default|rep1,1,Good Culture,381,3.0,1,True
+feature_searches__live_cultures|perplexity|search_default|rep1,1,Nancy's,719,,2,True
+feature_searches__live_cultures|perplexity|search_default|rep1,1,Good Culture,974,,2,True
+feature_searches__live_cultures|perplexity|search_default|rep1,1,Daisy,1137,,1,True
+feature_searches__all_of_our_positioning|chatgpt|search_default|rep1,1,Good Culture,6,1.0,6,True
+feature_searches__all_of_our_positioning|chatgpt|search_default|rep1,1,Nancy's,424,3.0,1,True
+feature_searches__all_of_our_positioning|chatgpt|search_default|rep1,1,Daisy,584,4.0,2,True
+feature_searches__all_of_our_positioning|gemini|search_default|rep1,1,Good Culture,0,1.0,3,True
+feature_searches__all_of_our_positioning|gemini|search_default|rep1,1,Daisy,261,2.0,3,True
+feature_searches__all_of_our_positioning|gemini|search_default|rep1,1,Nancy's,537,3.0,3,True
+feature_searches__ingredients|chatgpt|search_default|rep1,1,Daisy,145,1.0,2,True
+feature_searches__ingredients|chatgpt|search_default|rep1,1,Good Culture,219,1.0,2,True
+feature_searches__ingredients|chatgpt|search_default|rep1,1,Kalona SuperNatural,342,1.0,1,True
+head_to_head__store_brand|perplexity|search_default|rep1,1,Good Culture,4,5.0,11,True
+head_to_head__store_brand|perplexity|search_default|rep1,1,store brand,144,2.0,9,True
+head_to_head__store_brand|perplexity|search_default|rep1,1,Great Value,976,,1,True
+head_to_head__knudsen|gemini|search_default|rep1,1,Good Culture,0,,4,True
+head_to_head__knudsen|gemini|search_default|rep1,1,Knudsen,148,,4,True
+buyer_types__low_sodium|perplexity|search_default|rep1,2,Good Culture,66,3.0,8,True
+buyer_types__low_sodium|perplexity|search_default|rep1,2,Hood,254,1.0,2,True
+buyer_types__low_sodium|perplexity|search_default|rep1,2,Breakstone's,554,,1,True
+buyer_types__low_sodium|perplexity|search_default|rep1,2,Daisy,999,,2,True
+buyer_types__low_sodium|perplexity|search_default|rep1,2,Friendship Dairies,1248,1.0,1,True
+buyer_types__low_sodium|perplexity|search_default|rep1,2,store brand,1265,1.0,1,True
+generic_category_questions__high_protein|gemini|search_default|rep1,1,Good Culture,202,,8,True
+generic_category_questions__high_protein|gemini|search_default|rep1,1,Organic Valley,477,,4,True
+feature_searches__price_value|gemini|search_default|rep1,1,store brand,24,,3,True
+feature_searches__price_value|gemini|search_default|rep1,1,Daisy,103,,1,True
+feature_searches__price_value|gemini|search_default|rep1,1,Good Culture,112,,1,True
+feature_searches__price_value|gemini|search_default|rep1,1,Great Value,273,,2,True
+feature_searches__price_value|gemini|search_default|rep1,1,Crowley,645,,2,True
+feature_searches__price_value|gemini|search_default|rep1,1,Good & Gather,1016,,1,True
+head_to_head__store_brand__swapped|chatgpt|search_default|rep1,1,Good Culture,68,1.0,7,True
+head_to_head__store_brand__swapped|chatgpt|search_default|rep1,1,store brand,256,2.0,3,True
+head_to_head__store_brand__swapped|chatgpt|search_default|rep1,1,Great Value,321,2.0,3,True
+buyer_types__toddler_parent|gemini|search_default|rep1,2,Daisy,207,,2,True
+buyer_types__toddler_parent|gemini|search_default|rep1,2,Good Culture,486,,2,True
+buyer_types__toddler_parent|gemini|search_default|rep1,2,Nancy's,746,,2,True
+buyer_types__toddler_parent|gemini|search_default|rep1,2,Organic Valley,974,,2,True
+generic_category_questions__best_overall|perplexity|search_default|rep1,1,Good Culture,19,,6,True
+generic_category_questions__best_overall|perplexity|search_default|rep1,1,Daisy,689,,2,True
+generic_category_questions__best_overall|perplexity|search_default|rep1,1,Organic Valley,824,,1,True
+generic_category_questions__best_overall|perplexity|search_default|rep1,1,Lactaid,936,,1,True
+feature_searches__protein|gemini|search_default|rep1,1,Good Culture,0,,3,True
+feature_searches__protein|gemini|search_default|rep1,1,Daisy,278,,2,True
+feature_searches__protein|gemini|search_default|rep1,1,Breakstone's,515,,2,True
+feature_searches__protein|gemini|search_default|rep1,1,Nancy's,820,,2,True
+feature_searches__protein|gemini|search_default|rep1,1,Hood,1059,,4,True
+feature_searches__protein|gemini|search_default|rep1,1,MULU,1854,,1,True
+feature_searches__availability|perplexity|search_default|rep1,1,Daisy,71,1.0,7,True
+feature_searches__availability|perplexity|search_default|rep1,1,Breakstone's,245,,2,True
+feature_searches__availability|perplexity|search_default|rep1,1,Knudsen,262,,3,True
+feature_searches__availability|perplexity|search_default|rep1,1,store brand,371,3.0,2,True
+feature_searches__availability|perplexity|search_default|rep1,1,Good Culture,841,,1,True
+head_to_head__breakstone_s__swapped|chatgpt|search_default|rep1,1,Good Culture,83,1.0,4,True
+head_to_head__breakstone_s__swapped|chatgpt|search_default|rep1,1,Breakstone's,229,2.0,4,True
+feature_searches__live_cultures|gemini|search_default|rep1,1,Good Culture,229,2.0,7,True
+feature_searches__live_cultures|gemini|search_default|rep1,1,Nancy's,469,1.0,6,True
+feature_searches__live_cultures|gemini|search_default|rep1,1,Daisy,704,3.0,3,True
+feature_searches__live_cultures|gemini|search_default|rep1,1,Lactaid,1643,,2,True
+feature_searches__live_cultures|gemini|search_default|rep1,1,Kalona SuperNatural,1840,,2,True
+head_to_head__daisy|gemini|search_default|rep1,1,Good Culture,5,,5,True
+head_to_head__daisy|gemini|search_default|rep1,1,Daisy,22,,5,True
+feature_searches__taste_texture|chatgpt|search_default|rep1,1,Daisy,41,1.0,4,True
+feature_searches__taste_texture|chatgpt|search_default|rep1,1,Good Culture,53,2.0,3,True
+feature_searches__taste_texture|chatgpt|search_default|rep1,1,Nancy's,383,3.0,1,True
+feature_searches__taste_texture|chatgpt|search_default|rep1,1,Breakstone's,478,4.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,MULU,75,1.0,5,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,Good Culture,81,4.0,5,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,Nancy's,99,3.0,4,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,Kalona SuperNatural,976,4.0,2,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,Lactaid,1176,5.0,2,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,365 Everyday Value,1314,,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,Daisy,1916,1.0,2,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,Friendship Dairies,1978,2.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,Breakstone's,2073,3.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,Organic Valley,2185,5.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,Trader Joe's,2250,6.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep1,1,store brand,2280,6.0,2,True
+generic_category_questions__high_protein|chatgpt|search_default|rep1,1,Good Culture,159,1.0,5,True
+generic_category_questions__high_protein|chatgpt|search_default|rep1,1,Daisy,401,3.0,2,True
+feature_searches__live_cultures|chatgpt|search_default|rep1,1,Good Culture,206,1.0,1,True
+feature_searches__live_cultures|chatgpt|search_default|rep1,1,Nancy's,302,2.0,1,True
+buyer_types__lactose_intolerant|chatgpt|search_default|rep1,2,Good Culture,161,1.0,2,True
+buyer_types__lactose_intolerant|chatgpt|search_default|rep1,2,Lactaid,368,2.0,1,True
+buyer_types__lactose_intolerant|chatgpt|search_default|rep1,2,Green Valley Creamery,486,3.0,1,True
+buyer_types__lactose_intolerant|chatgpt|search_default|rep1,2,Trader Joe's,822,,1,True
+head_to_head__daisy__swapped|gemini|search_default|rep1,1,Daisy,17,1.0,6,True
+head_to_head__daisy__swapped|gemini|search_default|rep1,1,Good Culture,27,2.0,6,True
+doubts_and_switching__worth_the_price|gemini|search_default|rep1,1,Good Culture,5,1.0,6,True
+doubts_and_switching__worth_the_price|gemini|search_default|rep1,1,store brand,220,2.0,4,True
+doubts_and_switching__worth_the_price|gemini|search_default|rep1,1,Daisy,1526,1.0,1,True
+doubts_and_switching__worth_the_price|gemini|search_default|rep1,1,Great Value,1652,2.0,2,True
+doubts_and_switching__worth_the_price|gemini|search_default|rep1,1,Trader Joe's,1667,2.0,1,True
+doubts_and_switching__worth_the_price|gemini|search_default|rep1,1,Hood,1827,,1,True
+feature_searches__ingredients|gemini|search_default|rep1,1,Good Culture,1081,1.0,2,True
+feature_searches__ingredients|gemini|search_default|rep1,1,Kalona SuperNatural,1402,2.0,1,True
+feature_searches__ingredients|gemini|search_default|rep1,1,Organic Valley,1612,3.0,1,True
+feature_searches__ingredients|gemini|search_default|rep1,1,Daisy,1783,4.0,2,True
+head_to_head__knudsen__swapped|gemini|search_default|rep1,1,Good Culture,41,1.0,4,True
+head_to_head__knudsen__swapped|gemini|search_default|rep1,1,Knudsen,169,2.0,3,True
+doubts_and_switching__downsides|perplexity|search_default|rep1,1,Good Culture,22,,6,True
+feature_searches__ingredients|perplexity|search_default|rep1,1,Daisy,394,,3,True
+feature_searches__ingredients|perplexity|search_default|rep1,1,Good Culture,580,,2,True
+feature_searches__ingredients|perplexity|search_default|rep1,1,Nancy's,816,,2,True
+feature_searches__ingredients|perplexity|search_default|rep1,1,Kalona SuperNatural,1025,,2,True
+feature_searches__ingredients|perplexity|search_default|rep1,1,Friendly Farms,2339,,1,True
+generic_category_questions__best_overall|chatgpt|search_default|rep1,1,Good Culture,49,1.0,6,True
+generic_category_questions__best_overall|chatgpt|search_default|rep1,1,Daisy,401,2.0,5,True
+generic_category_questions__best_overall|chatgpt|search_default|rep1,1,Breakstone's,700,5.0,1,True
+doubts_and_switching__switch_from_leader|perplexity|search_default|rep1,1,Daisy,81,,11,True
+doubts_and_switching__switch_from_leader|perplexity|search_default|rep1,1,Good Culture,116,3.0,10,True
+head_to_head__daisy|chatgpt|search_default|rep1,1,Good Culture,37,1.0,4,True
+head_to_head__daisy|chatgpt|search_default|rep1,1,Daisy,218,2.0,3,True
+doubts_and_switching__switch_from_leader|chatgpt|search_default|rep1,1,Daisy,119,1.0,6,True
+doubts_and_switching__switch_from_leader|chatgpt|search_default|rep1,1,Good Culture,249,2.0,8,True
+buyer_types__budget_shopper|perplexity|search_default|rep1,1,store brand,250,3.0,3,True
+buyer_types__budget_shopper|perplexity|search_default|rep1,2,Hood,118,,2,True
+buyer_types__budget_shopper|perplexity|search_default|rep1,2,Good Culture,575,,5,True
+buyer_types__budget_shopper|perplexity|search_default|rep1,2,store brand,817,,1,True
+buyer_types__budget_shopper|perplexity|search_default|rep1,2,Daisy,1028,,2,True
+doubts_and_switching__worth_the_price|chatgpt|search_default|rep1,1,Good Culture,91,1.0,7,True
+doubts_and_switching__worth_the_price|chatgpt|search_default|rep1,1,Daisy,633,2.0,4,True
+feature_searches__taste_texture|gemini|search_default|rep1,1,Good Culture,190,,4,True
+feature_searches__taste_texture|gemini|search_default|rep1,1,Daisy,432,,4,True
+feature_searches__taste_texture|gemini|search_default|rep1,1,Kalona SuperNatural,683,,3,True
+feature_searches__taste_texture|gemini|search_default|rep1,1,Hood,929,,3,True
+feature_searches__taste_texture|gemini|search_default|rep1,1,Nancy's,1179,,2,True
+head_to_head__knudsen|perplexity|search_default|rep1,1,Good Culture,4,1.0,12,True
+head_to_head__knudsen|perplexity|search_default|rep1,1,Knudsen,112,2.0,9,True
+doubts_and_switching__switch_from_store|perplexity|search_default|rep1,1,Good Culture,61,,9,True
+doubts_and_switching__switch_from_store|perplexity|search_default|rep1,1,store brand,222,2.0,9,True
+buyer_types__glp1_user|gemini|search_default|rep1,2,Good Culture,294,,4,True
+buyer_types__glp1_user|gemini|search_default|rep1,2,Daisy,565,,4,True
+buyer_types__glp1_user|gemini|search_default|rep1,2,Great Value,780,,3,True
+buyer_types__glp1_user|gemini|search_default|rep1,2,Hood,1020,,3,True
+buyer_types__glp1_user|gemini|search_default|rep1,2,Crowley,1233,,3,True
+head_to_head__breakstone_s|gemini|search_default|rep1,1,Good Culture,17,,5,True
+head_to_head__breakstone_s|gemini|search_default|rep1,1,Breakstone's,34,,5,True
+feature_searches__sodium|perplexity|search_default|rep1,1,Friendship Dairies,56,,2,True
+feature_searches__sodium|perplexity|search_default|rep1,1,Hood,134,,1,True
+feature_searches__sodium|perplexity|search_default|rep1,1,Breakstone's,540,,1,True
+feature_searches__sodium|perplexity|search_default|rep1,1,Prairie Farms,681,,1,True
+feature_searches__sodium|chatgpt|search_default|rep1,1,Friendship Dairies,89,1.0,2,True
+feature_searches__sodium|chatgpt|search_default|rep1,1,Hood,226,,1,True
+feature_searches__sodium|chatgpt|search_default|rep1,1,Prairie Farms,277,3.0,1,True
+doubts_and_switching__complaints|gemini|search_default|rep1,1,Good Culture,6,2.0,6,True
+doubts_and_switching__complaints|gemini|search_default|rep1,1,store brand,700,3.0,1,True
+doubts_and_switching__switch_from_store|chatgpt|search_default|rep1,1,Good Culture,55,1.0,8,True
+doubts_and_switching__switch_from_store|chatgpt|search_default|rep1,1,Great Value,572,,1,True
+doubts_and_switching__switch_from_store|chatgpt|search_default|rep1,1,store brand,768,2.0,3,True
+generic_category_questions__new_brands|gemini|search_default|rep1,1,Daisy,25,,1,True
+generic_category_questions__new_brands|gemini|search_default|rep1,1,Good Culture,333,,4,True
+generic_category_questions__new_brands|gemini|search_default|rep1,1,Nancy's,595,,4,True
+generic_category_questions__new_brands|gemini|search_default|rep1,1,Kalona SuperNatural,841,,2,True
+generic_category_questions__new_brands|gemini|search_default|rep1,1,Organic Valley,1135,,2,True
+buyer_types__low_sodium|chatgpt|search_default|rep1,2,Friendship Dairies,171,1.0,2,True
+buyer_types__low_sodium|chatgpt|search_default|rep1,2,Breakstone's,343,2.0,2,True
+buyer_types__low_sodium|chatgpt|search_default|rep1,2,Daisy,560,3.0,1,True
+head_to_head__store_brand|chatgpt|search_default|rep1,1,Good Culture,53,1.0,4,True
+head_to_head__store_brand|chatgpt|search_default|rep1,1,store brand,165,2.0,5,True
+head_to_head__store_brand|chatgpt|search_default|rep1,1,Great Value,266,2.0,1,True
+doubts_and_switching__complaints|perplexity|search_default|rep1,1,Good Culture,60,5.0,3,True
+health_question_then_brand|gemini|search_default|rep1,2,Good Culture,295,,1,True
+health_question_then_brand|gemini|search_default|rep1,2,Daisy,704,1.0,3,True
+health_question_then_brand|gemini|search_default|rep1,2,Trader Joe's,1057,2.0,3,True
+health_question_then_brand|gemini|search_default|rep1,2,Friendly Farms,1081,2.0,2,True
+feature_searches__protein|perplexity|search_default|rep1,1,MULU,29,1.0,1,True
+feature_searches__sodium|gemini|search_default|rep1,1,Nancy's,241,,2,True
+feature_searches__sodium|gemini|search_default|rep1,1,Breakstone's,539,,2,True
+feature_searches__sodium|gemini|search_default|rep1,1,Daisy,901,,2,True
+feature_searches__sodium|gemini|search_default|rep1,1,Good Culture,1180,,2,True
+feature_searches__sodium|gemini|search_default|rep1,1,Hood,1653,1.0,1,True
+feature_searches__sodium|gemini|search_default|rep1,1,Friendship Dairies,1764,2.0,1,True
+feature_searches__sodium|gemini|search_default|rep1,1,Prairie Farms,1895,3.0,2,True
+feature_searches__lactose_free|gemini|search_default|rep1,1,Lactaid,0,,9,True
+feature_searches__lactose_free|gemini|search_default|rep1,1,Good Culture,214,,4,True
+feature_searches__lactose_free|gemini|search_default|rep1,1,Prairie Farms,366,,3,True
+feature_searches__price_value|perplexity|search_default|rep1,1,store brand,46,,2,True
+feature_searches__price_value|perplexity|search_default|rep1,1,Great Value,110,,2,True
+feature_searches__price_value|perplexity|search_default|rep1,1,Kirkland Signature,693,,1,True
+feature_searches__price_value|perplexity|search_default|rep1,1,Trader Joe's,841,,1,True
+feature_searches__price_value|perplexity|search_default|rep1,1,Kemps,1017,,2,True
+feature_searches__price_value|perplexity|search_default|rep1,1,Daisy,1614,5.0,2,True
+generic_category_questions__new_brands|chatgpt|search_default|rep1,1,Daisy,174,1.0,3,True
+generic_category_questions__new_brands|chatgpt|search_default|rep1,1,Good Culture,184,1.0,3,True
+generic_category_questions__new_brands|chatgpt|search_default|rep1,1,Nancy's,688,1.0,2,True
+generic_category_questions__new_brands|chatgpt|search_default|rep1,1,Kalona SuperNatural,835,1.0,2,True
+generic_category_questions__new_brands|chatgpt|search_default|rep1,1,Kemps,955,1.0,1,True
+health_question_then_brand|perplexity|search_default|rep1,2,Good Culture,20,1.0,7,True
+health_question_then_brand|perplexity|search_default|rep1,2,Hood,399,,1,True
+doubts_and_switching__downsides|chatgpt|search_default|rep1,1,Good Culture,12,4.0,5,True
+generic_category_questions__high_protein|gemini|search_default|rep2,1,Good Culture,435,,4,True
+generic_category_questions__high_protein|gemini|search_default|rep2,1,Lactaid,731,,4,True
+generic_category_questions__high_protein|gemini|search_default|rep2,1,Breakstone's,1016,,3,True
+generic_category_questions__high_protein|gemini|search_default|rep2,1,Nancy's,1551,,3,True
+generic_category_questions__high_protein|chatgpt|search_default|rep2,1,Good Culture,171,1.0,3,True
+generic_category_questions__high_protein|chatgpt|search_default|rep2,1,Great Value,487,2.0,1,True
+generic_category_questions__high_protein|chatgpt|search_default|rep2,1,Daisy,570,3.0,1,True
+buyer_types__toddler_parent|gemini|search_default|rep2,2,Good Culture,195,1.0,1,True
+buyer_types__toddler_parent|gemini|search_default|rep2,2,Daisy,516,2.0,2,True
+buyer_types__toddler_parent|gemini|search_default|rep2,2,Trader Joe's,800,3.0,2,True
+feature_searches__taste_texture|perplexity|search_default|rep2,1,Good Culture,52,1.0,5,True
+feature_searches__taste_texture|perplexity|search_default|rep2,1,Hood,693,,1,True
+feature_searches__taste_texture|perplexity|search_default|rep2,1,Kalona SuperNatural,848,4.0,2,True
+feature_searches__taste_texture|perplexity|search_default|rep2,1,Daisy,1039,,1,True
+buyer_types__toddler_parent|perplexity|search_default|rep2,2,Daisy,33,,5,True
+buyer_types__toddler_parent|perplexity|search_default|rep2,2,Good Culture,416,,6,True
+buyer_types__glp1_user|chatgpt|search_default|rep2,2,Good Culture,183,,1,True
+buyer_types__glp1_user|chatgpt|search_default|rep2,2,Trader Joe's,791,,1,True
+buyer_types__low_sodium|gemini|search_default|rep2,2,Friendship Dairies,0,,4,True
+buyer_types__low_sodium|gemini|search_default|rep2,2,Nancy's,300,,3,True
+buyer_types__low_sodium|gemini|search_default|rep2,2,Daisy,543,,4,True
+buyer_types__low_sodium|gemini|search_default|rep2,2,Hood,1565,,1,True
+feature_searches__all_of_our_positioning|gemini|search_default|rep2,1,Daisy,0,,4,True
+feature_searches__all_of_our_positioning|gemini|search_default|rep2,1,Good Culture,383,,7,True
+feature_searches__all_of_our_positioning|gemini|search_default|rep2,1,Nancy's,782,,4,True
+feature_searches__sodium|gemini|search_default|rep2,1,Nancy's,351,,2,True
+feature_searches__sodium|gemini|search_default|rep2,1,Daisy,606,,2,True
+feature_searches__sodium|gemini|search_default|rep2,1,Hood,944,1.0,1,True
+feature_searches__sodium|gemini|search_default|rep2,1,Breakstone's,1108,2.0,1,True
+feature_searches__sodium|gemini|search_default|rep2,1,Prairie Farms,1277,3.0,2,True
+generic_category_questions__best_overall|chatgpt|search_default|rep2,1,Good Culture,37,1.0,4,True
+generic_category_questions__best_overall|chatgpt|search_default|rep2,1,Daisy,277,2.0,4,True
+generic_category_questions__best_overall|chatgpt|search_default|rep2,1,Nancy's,431,3.0,1,True
+feature_searches__live_cultures|gemini|search_default|rep2,1,Daisy,0,,4,True
+feature_searches__live_cultures|gemini|search_default|rep2,1,Good Culture,196,,13,True
+feature_searches__live_cultures|gemini|search_default|rep2,1,Nancy's,660,,7,True
+feature_searches__live_cultures|gemini|search_default|rep2,1,Lactaid,1300,,3,True
+buyer_types__glp1_user|gemini|search_default|rep2,2,Good Culture,0,1.0,3,True
+buyer_types__glp1_user|gemini|search_default|rep2,2,Daisy,260,2.0,3,True
+buyer_types__glp1_user|gemini|search_default|rep2,2,Organic Valley,500,3.0,3,True
+buyer_types__glp1_user|gemini|search_default|rep2,2,Breakstone's,720,,2,True
+feature_searches__price_value|chatgpt|search_default|rep2,1,store brand,82,,1,True
+feature_searches__price_value|chatgpt|search_default|rep2,1,Great Value,96,1.0,4,True
+feature_searches__price_value|chatgpt|search_default|rep2,1,Breakstone's,349,4.0,1,True
+buyer_types__lactose_intolerant|chatgpt|search_default|rep2,2,Good Culture,132,,3,True
+buyer_types__lactose_intolerant|chatgpt|search_default|rep2,2,Lactaid,369,,2,True
+buyer_types__lactose_intolerant|chatgpt|search_default|rep2,2,Trader Joe's,670,,1,True
+feature_searches__ingredients|chatgpt|search_default|rep2,1,Good Culture,176,1.0,2,True
+feature_searches__ingredients|chatgpt|search_default|rep2,1,Daisy,368,1.0,2,True
+feature_searches__ingredients|chatgpt|search_default|rep2,1,Kalona SuperNatural,547,1.0,2,True
+feature_searches__ingredients|chatgpt|search_default|rep2,1,Trader Joe's,1051,,1,True
+health_question_then_brand|chatgpt|search_default|rep2,2,Good Culture,156,1.0,2,True
+health_question_then_brand|chatgpt|search_default|rep2,2,Daisy,310,2.0,3,True
+feature_searches__lactose_free|chatgpt|search_default|rep2,1,Lactaid,71,1.0,1,True
+feature_searches__lactose_free|chatgpt|search_default|rep2,1,Good Culture,149,2.0,1,True
+feature_searches__lactose_free|chatgpt|search_default|rep2,1,Green Valley Creamery,237,3.0,1,True
+feature_searches__lactose_free|chatgpt|search_default|rep2,1,Prairie Farms,349,4.0,1,True
+feature_searches__ingredients|gemini|search_default|rep2,1,Daisy,0,,2,True
+feature_searches__ingredients|gemini|search_default|rep2,1,Good Culture,232,,2,True
+feature_searches__ingredients|gemini|search_default|rep2,1,Kalona SuperNatural,521,,2,True
+feature_searches__ingredients|gemini|search_default|rep2,1,Nancy's,770,,2,True
+buyer_types__budget_shopper|gemini|search_default|rep2,1,store brand,751,4.0,5,True
+buyer_types__budget_shopper|gemini|search_default|rep2,2,Great Value,163,,4,True
+buyer_types__budget_shopper|gemini|search_default|rep2,2,Daisy,408,,4,True
+buyer_types__budget_shopper|gemini|search_default|rep2,2,Breakstone's,659,,3,True
+buyer_types__budget_shopper|gemini|search_default|rep2,2,Hood,905,,3,True
+buyer_types__budget_shopper|gemini|search_default|rep2,2,store brand,1968,,1,True
+feature_searches__live_cultures|chatgpt|search_default|rep2,1,Good Culture,256,1.0,1,True
+feature_searches__live_cultures|chatgpt|search_default|rep2,1,Nancy's,269,2.0,1,True
+feature_searches__live_cultures|chatgpt|search_default|rep2,1,Kalona SuperNatural,277,3.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,MULU,75,1.0,5,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,Good Culture,81,2.0,4,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,Nancy's,99,3.0,3,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,Kalona SuperNatural,1057,4.0,2,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,Lactaid,1267,5.0,2,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,Daisy,1931,1.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,Organic Valley,2058,2.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,365 Everyday Value,2166,3.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,Friendship Dairies,2267,4.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,Trader Joe's,2358,5.0,1,True
+generic_category_questions__new_brands|perplexity|search_default|rep2,1,store brand,2456,5.0,1,True
+buyer_types__budget_shopper|perplexity|search_default|rep2,1,store brand,243,2.0,2,True
+buyer_types__budget_shopper|perplexity|search_default|rep2,2,Hood,24,,2,True
+buyer_types__budget_shopper|perplexity|search_default|rep2,2,Good Culture,471,2.0,5,True
+buyer_types__budget_shopper|perplexity|search_default|rep2,2,store brand,663,3.0,2,True
+generic_category_questions__new_brands|gemini|search_default|rep2,1,Daisy,181,,1,True
+generic_category_questions__new_brands|gemini|search_default|rep2,1,Breakstone's,191,,1,True
+generic_category_questions__new_brands|gemini|search_default|rep2,1,Good Culture,417,,2,True
+generic_category_questions__new_brands|gemini|search_default|rep2,1,Kalona SuperNatural,1133,,2,True
+generic_category_questions__new_brands|gemini|search_default|rep2,1,Nancy's,1425,,2,True
+generic_category_questions__new_brands|chatgpt|search_default|rep2,1,Daisy,505,1.0,2,True
+generic_category_questions__new_brands|chatgpt|search_default|rep2,1,Nancy's,749,1.0,1,True
+generic_category_questions__new_brands|chatgpt|search_default|rep2,1,Kalona SuperNatural,950,1.0,1,True
+generic_category_questions__new_brands|chatgpt|search_default|rep2,1,Good Culture,1591,,1,True
+feature_searches__availability|perplexity|search_default|rep2,1,Daisy,51,1.0,11,True
+feature_searches__availability|perplexity|search_default|rep2,1,store brand,499,,2,True
+feature_searches__availability|perplexity|search_default|rep2,1,Great Value,597,,2,True
+feature_searches__availability|perplexity|search_default|rep2,1,Good Culture,681,3.0,3,True
+feature_searches__availability|perplexity|search_default|rep2,1,Breakstone's,844,,2,True
+generic_category_questions__best_overall|gemini|search_default|rep2,1,Good Culture,231,1.0,4,True
+generic_category_questions__best_overall|gemini|search_default|rep2,1,Daisy,510,2.0,4,True
+generic_category_questions__best_overall|gemini|search_default|rep2,1,Organic Valley,769,,3,True
+feature_searches__taste_texture|chatgpt|search_default|rep2,1,Daisy,48,1.0,4,True
+feature_searches__taste_texture|chatgpt|search_default|rep2,1,Good Culture,239,2.0,2,True
+feature_searches__taste_texture|chatgpt|search_default|rep2,1,Nancy's,621,4.0,1,True
+head_to_head__knudsen|chatgpt|search_default|rep1,1,Good Culture,73,1.0,4,True
+head_to_head__knudsen|chatgpt|search_default|rep1,1,Knudsen,205,2.0,3,True
+feature_searches__protein|perplexity|search_default|rep2,1,MULU,78,,3,True
+generic_category_questions__best_overall|perplexity|search_default|rep2,1,Good Culture,0,,7,True
+generic_category_questions__best_overall|perplexity|search_default|rep2,1,Daisy,816,,2,True
+generic_category_questions__best_overall|perplexity|search_default|rep2,1,Lactaid,976,,1,True
+buyer_types__lactose_intolerant|perplexity|search_default|rep2,2,Good Culture,13,,3,True
+buyer_types__lactose_intolerant|perplexity|search_default|rep2,2,Lactaid,712,,1,True
+feature_searches__lactose_free|perplexity|search_default|rep2,1,Good Culture,362,3.0,4,True
+feature_searches__lactose_free|perplexity|search_default|rep2,1,Lactaid,549,3.0,3,True
+feature_searches__lactose_free|perplexity|search_default|rep2,1,Prairie Farms,663,,1,True
+feature_searches__lactose_free|perplexity|search_default|rep2,1,Green Valley Creamery,783,,1,True
+buyer_types__glp1_user|perplexity|search_default|rep2,2,Good Culture,4,,3,True
+buyer_types__glp1_user|perplexity|search_default|rep2,2,MULU,1251,,1,True
+health_question_then_brand|perplexity|search_default|rep2,2,Good Culture,13,1.0,6,True
+health_question_then_brand|perplexity|search_default|rep2,2,Hood,1752,2.0,1,True
+feature_searches__live_cultures|perplexity|search_default|rep2,1,Nancy's,340,,2,True
+feature_searches__live_cultures|perplexity|search_default|rep2,1,Good Culture,577,,3,True
+feature_searches__live_cultures|perplexity|search_default|rep2,1,Daisy,714,,1,True
+buyer_types__lactose_intolerant|gemini|search_default|rep2,2,Good Culture,385,,3,True
+buyer_types__lactose_intolerant|gemini|search_default|rep2,2,Lactaid,597,,3,True
+buyer_types__lactose_intolerant|gemini|search_default|rep2,2,Prairie Farms,861,,2,True
+buyer_types__lactose_intolerant|gemini|search_default|rep2,2,Daisy,1094,,2,True
+feature_searches__all_of_our_positioning|chatgpt|search_default|rep2,1,Good Culture,72,,3,True
+feature_searches__all_of_our_positioning|chatgpt|search_default|rep2,1,Nancy's,89,,3,True
+feature_searches__sodium|chatgpt|search_default|rep2,1,Prairie Farms,130,1.0,1,True
+feature_searches__availability|gemini|search_default|rep2,1,Daisy,297,1.0,3,True
+feature_searches__availability|gemini|search_default|rep2,1,Great Value,535,2.0,3,True
+feature_searches__availability|gemini|search_default|rep2,1,store brand,729,2.0,2,True
+feature_searches__availability|gemini|search_default|rep2,1,Breakstone's,779,1.0,3,True
+feature_searches__availability|gemini|search_default|rep2,1,Hood,1043,,2,True
+feature_searches__availability|gemini|search_default|rep2,1,Friendly Farms,1497,2.0,1,True
+buyer_types__low_sodium|chatgpt|search_default|rep2,2,Hood,58,,2,True
+buyer_types__low_sodium|chatgpt|search_default|rep2,2,Nancy's,321,2.0,1,True
+buyer_types__low_sodium|chatgpt|search_default|rep2,2,Breakstone's,383,3.0,1,True
+buyer_types__low_sodium|chatgpt|search_default|rep2,2,Good Culture,459,4.0,1,True
+buyer_types__low_sodium|chatgpt|search_default|rep2,2,Trader Joe's,762,,1,True
+feature_searches__price_value|gemini|search_default|rep2,1,store brand,24,,4,True
+feature_searches__price_value|gemini|search_default|rep2,1,Great Value,63,,2,True
+feature_searches__price_value|gemini|search_default|rep2,1,Crowley,367,,3,True
+feature_searches__price_value|gemini|search_default|rep2,1,Hood,601,,3,True
+feature_searches__price_value|gemini|search_default|rep2,1,Daisy,801,,3,True
+feature_searches__price_value|perplexity|search_default|rep2,1,store brand,36,,3,True
+feature_searches__price_value|perplexity|search_default|rep2,1,Great Value,83,5.0,4,True
+feature_searches__price_value|perplexity|search_default|rep2,1,Good & Gather,427,,1,True
+feature_searches__protein|chatgpt|search_default|rep2,1,Good Culture,69,1.0,4,True
+feature_searches__protein|chatgpt|search_default|rep2,1,Daisy,297,4.0,1,True
+generic_category_questions__high_protein|perplexity|search_default|rep2,1,MULU,391,,3,True
+generic_category_questions__high_protein|perplexity|search_default|rep2,1,Good Culture,1125,,2,True
+feature_searches__protein|gemini|search_default|rep2,1,Daisy,356,,2,True
+feature_searches__protein|gemini|search_default|rep2,1,Kemps,787,,2,True
+feature_searches__protein|gemini|search_default|rep2,1,Good Culture,1051,1.0,1,True
+feature_searches__protein|gemini|search_default|rep2,1,MULU,1152,1.0,1,True
+feature_searches__sodium|perplexity|search_default|rep2,1,Friendship Dairies,97,,3,True
+feature_searches__sodium|perplexity|search_default|rep2,1,Prairie Farms,340,,2,True
+feature_searches__sodium|perplexity|search_default|rep2,1,Breakstone's,732,,1,True
+feature_searches__sodium|perplexity|search_default|rep2,1,Hood,1660,,1,True
+feature_searches__sodium|perplexity|search_default|rep2,1,store brand,1686,,1,True
+buyer_types__budget_shopper|chatgpt|search_default|rep2,1,store brand,333,4.0,1,True
+buyer_types__budget_shopper|chatgpt|search_default|rep2,2,Daisy,71,1.0,4,True
+buyer_types__budget_shopper|chatgpt|search_default|rep2,2,Good Culture,398,3.0,1,True
+buyer_types__budget_shopper|chatgpt|search_default|rep2,2,Breakstone's,499,4.0,1,True
+feature_searches__taste_texture|gemini|search_default|rep2,1,Good Culture,207,,2,True
+feature_searches__taste_texture|gemini|search_default|rep2,1,Daisy,585,,2,True
+feature_searches__taste_texture|gemini|search_default|rep2,1,Breakstone's,926,,2,True
+feature_searches__taste_texture|gemini|search_default|rep2,1,Hood,1281,,2,True
+feature_searches__lactose_free|gemini|search_default|rep2,1,Lactaid,0,,5,True
+feature_searches__lactose_free|gemini|search_default|rep2,1,Good Culture,309,,3,True
+feature_searches__lactose_free|gemini|search_default|rep2,1,Prairie Farms,836,,2,True
+feature_searches__all_of_our_positioning|perplexity|search_default|rep2,1,Nancy's,0,1.0,3,True
+feature_searches__all_of_our_positioning|perplexity|search_default|rep2,1,Good Culture,617,2.0,5,True
+buyer_types__low_sodium|perplexity|search_default|rep2,2,Friendship Dairies,25,1.0,3,True
+buyer_types__low_sodium|perplexity|search_default|rep2,2,Good Culture,671,3.0,4,True
+feature_searches__ingredients|perplexity|search_default|rep2,1,Good Culture,317,,2,True
+feature_searches__ingredients|perplexity|search_default|rep2,1,Kalona SuperNatural,544,,2,True
+feature_searches__ingredients|perplexity|search_default|rep2,1,Nancy's,725,,2,True
+feature_searches__ingredients|perplexity|search_default|rep2,1,Daisy,1061,,1,True
+buyer_types__toddler_parent|chatgpt|search_default|rep2,2,Daisy,151,,3,True
+buyer_types__toddler_parent|chatgpt|search_default|rep2,2,Good Culture,289,,1,True
+buyer_types__toddler_parent|chatgpt|search_default|rep2,2,Trader Joe's,788,,1,True
+feature_searches__availability|chatgpt|search_default|rep2,1,Daisy,78,1.0,4,True
+feature_searches__availability|chatgpt|search_default|rep2,1,Breakstone's,222,2.0,2,True
+feature_searches__availability|chatgpt|search_default|rep2,1,Good Culture,325,3.0,1,True
+health_question_then_brand|gemini|search_default|rep2,2,Good Culture,218,1.0,1,True
+health_question_then_brand|gemini|search_default|rep2,2,Daisy,552,2.0,2,True
+health_question_then_brand|gemini|search_default|rep2,2,Organic Valley,866,3.0,2,True
+health_question_then_brand|gemini|search_default|rep2,2,Breakstone's,1167,4.0,1,True
+health_question_then_brand|gemini|search_default|rep2,2,Trader Joe's,1420,5.0,2,True
+health_question_then_brand|gemini|search_default|rep2,2,store brand,1436,5.0,2,True
+health_question_then_brand|gemini|search_default|rep2,2,Friendly Farms,1567,,1,True

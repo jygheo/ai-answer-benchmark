@@ -1,0 +1,1321 @@
+stage,engine,brand,metric,value,ci_lo,ci_hi,n_answers,flag
+discovery,chatgpt,Good Culture,mention,0.8,0.4,1.0,10,
+discovery,chatgpt,Good Culture,top_pick,0.6,0.2,1.0,10,
+discovery,chatgpt,Good Culture,avg_rank,1.0,,,7,*
+discovery,chatgpt,Good Culture,sentiment,2.0,2.0,2.0,8,
+discovery,chatgpt,Good Culture,sov,0.2577777777777778,0.11666666666666665,0.3833333333333333,10,
+discovery,chatgpt,Daisy,mention,0.8,0.4,1.0,10,
+discovery,chatgpt,Daisy,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Daisy,avg_rank,2.0,1.3333333333333333,2.75,8,
+discovery,chatgpt,Daisy,sentiment,1.375,1.0,1.875,8,
+discovery,chatgpt,Daisy,sov,0.2577777777777778,0.11666666666666665,0.3833333333333333,10,
+discovery,chatgpt,Breakstone's,mention,0.1,0.0,0.4,10,
+discovery,chatgpt,Breakstone's,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Breakstone's,avg_rank,5.0,,,1,*
+discovery,chatgpt,Breakstone's,sentiment,1.0,,,1,*
+discovery,chatgpt,Breakstone's,sov,0.03333333333333333,0.0,0.13333333333333333,10,
+discovery,chatgpt,Knudsen,mention,0.0,,,10,
+discovery,chatgpt,Knudsen,top_pick,0.0,,,10,
+discovery,chatgpt,Knudsen,avg_rank,,,,0,*
+discovery,chatgpt,Knudsen,sentiment,,,,0,*
+discovery,chatgpt,Knudsen,sov,0.0,,,10,
+discovery,chatgpt,Lactaid,mention,0.0,0.0,0.0,10,
+discovery,chatgpt,Lactaid,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Lactaid,avg_rank,,,,0,*
+discovery,chatgpt,Lactaid,sentiment,,,,0,*
+discovery,chatgpt,Lactaid,sov,0.0,0.0,0.0,10,
+discovery,chatgpt,Hood,mention,0.0,0.0,0.0,10,
+discovery,chatgpt,Hood,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Hood,avg_rank,,,,0,*
+discovery,chatgpt,Hood,sentiment,,,,0,*
+discovery,chatgpt,Hood,sov,0.0,0.0,0.0,10,
+discovery,chatgpt,Friendship Dairies,mention,0.0,0.0,0.0,10,
+discovery,chatgpt,Friendship Dairies,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Friendship Dairies,avg_rank,,,,0,*
+discovery,chatgpt,Friendship Dairies,sentiment,,,,0,*
+discovery,chatgpt,Friendship Dairies,sov,0.0,0.0,0.0,10,
+discovery,chatgpt,Kalona SuperNatural,mention,0.2,0.0,0.6,10,
+discovery,chatgpt,Kalona SuperNatural,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Kalona SuperNatural,avg_rank,1.0,,,2,*
+discovery,chatgpt,Kalona SuperNatural,sentiment,1.0,,,2,*
+discovery,chatgpt,Kalona SuperNatural,sov,0.04444444444444444,0.0,0.1388888888888889,10,
+discovery,chatgpt,Nancy's,mention,0.4,0.0,0.8,10,
+discovery,chatgpt,Nancy's,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Nancy's,avg_rank,2.6666666666666665,,,4,*
+discovery,chatgpt,Nancy's,sentiment,1.3333333333333333,,,4,*
+discovery,chatgpt,Nancy's,sov,0.11111111111111112,0.0,0.2111111111111111,10,
+discovery,chatgpt,Organic Valley,mention,0.0,0.0,0.0,10,
+discovery,chatgpt,Organic Valley,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Organic Valley,avg_rank,,,,0,*
+discovery,chatgpt,Organic Valley,sentiment,,,,0,*
+discovery,chatgpt,Organic Valley,sov,0.0,0.0,0.0,10,
+discovery,chatgpt,Good & Gather,mention,0.0,,,10,
+discovery,chatgpt,Good & Gather,top_pick,0.0,,,10,
+discovery,chatgpt,Good & Gather,avg_rank,,,,0,*
+discovery,chatgpt,Good & Gather,sentiment,,,,0,*
+discovery,chatgpt,Good & Gather,sov,0.0,,,10,
+discovery,chatgpt,365 Everyday Value,mention,0.0,,,10,
+discovery,chatgpt,365 Everyday Value,top_pick,0.0,,,10,
+discovery,chatgpt,365 Everyday Value,avg_rank,,,,0,*
+discovery,chatgpt,365 Everyday Value,sentiment,,,,0,*
+discovery,chatgpt,365 Everyday Value,sov,0.0,,,10,
+discovery,chatgpt,Kirkland Signature,mention,0.0,,,10,
+discovery,chatgpt,Kirkland Signature,top_pick,0.0,,,10,
+discovery,chatgpt,Kirkland Signature,avg_rank,,,,0,*
+discovery,chatgpt,Kirkland Signature,sentiment,,,,0,*
+discovery,chatgpt,Kirkland Signature,sov,0.0,,,10,
+discovery,chatgpt,Trader Joe's,mention,0.1,0.0,0.4,10,
+discovery,chatgpt,Trader Joe's,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Trader Joe's,avg_rank,,,,0,*
+discovery,chatgpt,Trader Joe's,sentiment,,,,0,*
+discovery,chatgpt,Trader Joe's,sov,0.03333333333333333,0.0,0.1,10,
+discovery,chatgpt,store brand,mention,0.0,0.0,0.0,10,
+discovery,chatgpt,store brand,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,store brand,avg_rank,,,,0,*
+discovery,chatgpt,store brand,sentiment,,,,0,*
+discovery,chatgpt,store brand,sov,0.0,0.0,0.0,10,
+discovery,chatgpt,MULU,mention,0.0,0.0,0.0,10,
+discovery,chatgpt,MULU,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,MULU,avg_rank,,,,0,*
+discovery,chatgpt,MULU,sentiment,,,,0,*
+discovery,chatgpt,MULU,sov,0.0,0.0,0.0,10,
+discovery,chatgpt,Great Value,mention,0.1,0.0,0.4,10,
+discovery,chatgpt,Great Value,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Great Value,avg_rank,2.0,,,1,*
+discovery,chatgpt,Great Value,sentiment,1.0,,,1,*
+discovery,chatgpt,Great Value,sov,0.04,0.0,0.14666666666666667,10,
+discovery,chatgpt,Green Valley Creamery,mention,0.0,,,10,
+discovery,chatgpt,Green Valley Creamery,top_pick,0.0,,,10,
+discovery,chatgpt,Green Valley Creamery,avg_rank,,,,0,*
+discovery,chatgpt,Green Valley Creamery,sentiment,,,,0,*
+discovery,chatgpt,Green Valley Creamery,sov,0.0,,,10,
+discovery,chatgpt,Prairie Farms,mention,0.0,0.0,0.0,10,
+discovery,chatgpt,Prairie Farms,top_pick,0.0,0.0,0.0,10,
+discovery,chatgpt,Prairie Farms,avg_rank,,,,0,*
+discovery,chatgpt,Prairie Farms,sentiment,,,,0,*
+discovery,chatgpt,Prairie Farms,sov,0.0,0.0,0.0,10,
+discovery,chatgpt,Kemps,mention,0.1,,,10,
+discovery,chatgpt,Kemps,top_pick,0.0,,,10,
+discovery,chatgpt,Kemps,avg_rank,1.0,,,1,*
+discovery,chatgpt,Kemps,sentiment,0.0,,,1,*
+discovery,chatgpt,Kemps,sov,0.02222222222222222,,,10,
+discovery,chatgpt,Crowley,mention,0.0,,,10,
+discovery,chatgpt,Crowley,top_pick,0.0,,,10,
+discovery,chatgpt,Crowley,avg_rank,,,,0,*
+discovery,chatgpt,Crowley,sentiment,,,,0,*
+discovery,chatgpt,Crowley,sov,0.0,,,10,
+discovery,chatgpt,Friendly Farms,mention,0.0,,,10,
+discovery,chatgpt,Friendly Farms,top_pick,0.0,,,10,
+discovery,chatgpt,Friendly Farms,avg_rank,,,,0,*
+discovery,chatgpt,Friendly Farms,sentiment,,,,0,*
+discovery,chatgpt,Friendly Farms,sov,0.0,,,10,
+discovery,gemini,Good Culture,mention,0.8,0.4,1.0,10,
+discovery,gemini,Good Culture,top_pick,0.1,0.0,0.4,10,
+discovery,gemini,Good Culture,avg_rank,1.25,,,3,*
+discovery,gemini,Good Culture,sentiment,2.0,2.0,2.0,8,
+discovery,gemini,Good Culture,sov,0.20017316017316017,0.09341883116883118,0.31636363636363635,10,
+discovery,gemini,Daisy,mention,0.6,0.2,1.0,10,
+discovery,gemini,Daisy,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Daisy,avg_rank,1.5,,,4,*
+discovery,gemini,Daisy,sentiment,1.5,,,6,*
+discovery,gemini,Daisy,sov,0.13350649350649352,0.03636363636363636,0.23666666666666666,10,
+discovery,gemini,Breakstone's,mention,0.4,0.1,0.7,10,
+discovery,gemini,Breakstone's,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Breakstone's,avg_rank,4.0,,,1,*
+discovery,gemini,Breakstone's,sentiment,1.0,,,4,*
+discovery,gemini,Breakstone's,sov,0.10008658008658008,0.02,0.17047619047619045,10,
+discovery,gemini,Knudsen,mention,0.0,,,10,
+discovery,gemini,Knudsen,top_pick,0.0,,,10,
+discovery,gemini,Knudsen,avg_rank,,,,0,*
+discovery,gemini,Knudsen,sentiment,,,,0,*
+discovery,gemini,Knudsen,sov,0.0,,,10,
+discovery,gemini,Lactaid,mention,0.1,0.0,0.4,10,
+discovery,gemini,Lactaid,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Lactaid,avg_rank,,,,0,*
+discovery,gemini,Lactaid,sentiment,1.0,,,1,*
+discovery,gemini,Lactaid,sov,0.03333333333333333,0.0,0.1,10,
+discovery,gemini,Hood,mention,0.0,0.0,0.0,10,
+discovery,gemini,Hood,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Hood,avg_rank,,,,0,*
+discovery,gemini,Hood,sentiment,,,,0,*
+discovery,gemini,Hood,sov,0.0,0.0,0.0,10,
+discovery,gemini,Friendship Dairies,mention,0.0,0.0,0.0,10,
+discovery,gemini,Friendship Dairies,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Friendship Dairies,avg_rank,,,,0,*
+discovery,gemini,Friendship Dairies,sentiment,,,,0,*
+discovery,gemini,Friendship Dairies,sov,0.0,0.0,0.0,10,
+discovery,gemini,Kalona SuperNatural,mention,0.2,0.0,0.6,10,
+discovery,gemini,Kalona SuperNatural,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Kalona SuperNatural,avg_rank,,,,0,*
+discovery,gemini,Kalona SuperNatural,sentiment,2.0,,,2,*
+discovery,gemini,Kalona SuperNatural,sov,0.04,0.0,0.12000000000000002,10,
+discovery,gemini,Nancy's,mention,0.3,0.0,0.7,10,
+discovery,gemini,Nancy's,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Nancy's,avg_rank,,,,0,*
+discovery,gemini,Nancy's,sentiment,1.5,,,3,*
+discovery,gemini,Nancy's,sov,0.07333333333333333,0.0,0.16,10,
+discovery,gemini,Organic Valley,mention,0.5,0.1,0.9,10,
+discovery,gemini,Organic Valley,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Organic Valley,avg_rank,3.0,,,1,*
+discovery,gemini,Organic Valley,sentiment,2.0,,,5,*
+discovery,gemini,Organic Valley,sov,0.12865800865800864,0.03333333333333333,0.26669047619047603,10,
+discovery,gemini,Good & Gather,mention,0.0,,,10,
+discovery,gemini,Good & Gather,top_pick,0.0,,,10,
+discovery,gemini,Good & Gather,avg_rank,,,,0,*
+discovery,gemini,Good & Gather,sentiment,,,,0,*
+discovery,gemini,Good & Gather,sov,0.0,,,10,
+discovery,gemini,365 Everyday Value,mention,0.0,,,10,
+discovery,gemini,365 Everyday Value,top_pick,0.0,,,10,
+discovery,gemini,365 Everyday Value,avg_rank,,,,0,*
+discovery,gemini,365 Everyday Value,sentiment,,,,0,*
+discovery,gemini,365 Everyday Value,sov,0.0,,,10,
+discovery,gemini,Kirkland Signature,mention,0.0,,,10,
+discovery,gemini,Kirkland Signature,top_pick,0.0,,,10,
+discovery,gemini,Kirkland Signature,avg_rank,,,,0,*
+discovery,gemini,Kirkland Signature,sentiment,,,,0,*
+discovery,gemini,Kirkland Signature,sov,0.0,,,10,
+discovery,gemini,Trader Joe's,mention,0.2,0.0,0.6,10,
+discovery,gemini,Trader Joe's,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Trader Joe's,avg_rank,3.5,,,2,*
+discovery,gemini,Trader Joe's,sentiment,2.0,,,2,*
+discovery,gemini,Trader Joe's,sov,0.03636363636363636,0.0,0.11493506493506493,10,
+discovery,gemini,store brand,mention,0.1,0.0,0.4,10,
+discovery,gemini,store brand,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,store brand,avg_rank,5.0,,,1,*
+discovery,gemini,store brand,sentiment,2.0,,,1,*
+discovery,gemini,store brand,sov,0.01818181818181818,0.0,0.05714285714285714,10,
+discovery,gemini,MULU,mention,0.0,0.0,0.0,10,
+discovery,gemini,MULU,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,MULU,avg_rank,,,,0,*
+discovery,gemini,MULU,sentiment,,,,0,*
+discovery,gemini,MULU,sov,0.0,0.0,0.0,10,
+discovery,gemini,Great Value,mention,0.0,0.0,0.0,10,
+discovery,gemini,Great Value,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Great Value,avg_rank,,,,0,*
+discovery,gemini,Great Value,sentiment,,,,0,*
+discovery,gemini,Great Value,sov,0.0,0.0,0.0,10,
+discovery,gemini,Green Valley Creamery,mention,0.0,,,10,
+discovery,gemini,Green Valley Creamery,top_pick,0.0,,,10,
+discovery,gemini,Green Valley Creamery,avg_rank,,,,0,*
+discovery,gemini,Green Valley Creamery,sentiment,,,,0,*
+discovery,gemini,Green Valley Creamery,sov,0.0,,,10,
+discovery,gemini,Prairie Farms,mention,0.0,0.0,0.0,10,
+discovery,gemini,Prairie Farms,top_pick,0.0,0.0,0.0,10,
+discovery,gemini,Prairie Farms,avg_rank,,,,0,*
+discovery,gemini,Prairie Farms,sentiment,,,,0,*
+discovery,gemini,Prairie Farms,sov,0.0,0.0,0.0,10,
+discovery,gemini,Kemps,mention,0.0,,,10,
+discovery,gemini,Kemps,top_pick,0.0,,,10,
+discovery,gemini,Kemps,avg_rank,,,,0,*
+discovery,gemini,Kemps,sentiment,,,,0,*
+discovery,gemini,Kemps,sov,0.0,,,10,
+discovery,gemini,Crowley,mention,0.0,,,10,
+discovery,gemini,Crowley,top_pick,0.0,,,10,
+discovery,gemini,Crowley,avg_rank,,,,0,*
+discovery,gemini,Crowley,sentiment,,,,0,*
+discovery,gemini,Crowley,sov,0.0,,,10,
+discovery,gemini,Friendly Farms,mention,0.2,,,10,
+discovery,gemini,Friendly Farms,top_pick,0.0,,,10,
+discovery,gemini,Friendly Farms,avg_rank,2.0,,,1,*
+discovery,gemini,Friendly Farms,sentiment,,,,0,*
+discovery,gemini,Friendly Farms,sov,0.03636363636363636,,,10,
+discovery,perplexity,Good Culture,mention,0.8,0.4,1.0,10,
+discovery,perplexity,Good Culture,top_pick,0.5,0.1,0.9,10,
+discovery,perplexity,Good Culture,avg_rank,2.0,,,4,*
+discovery,perplexity,Good Culture,sentiment,1.875,1.5,2.0,8,
+discovery,perplexity,Good Culture,sov,0.22850241545893718,0.07850241545893719,0.39999999999999997,10,
+discovery,perplexity,Daisy,mention,0.5,0.1,0.9,10,
+discovery,perplexity,Daisy,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Daisy,avg_rank,1.0,,,2,*
+discovery,perplexity,Daisy,sentiment,0.8333333333333334,,,5,*
+discovery,perplexity,Daisy,sov,0.09516908212560385,0.016666666666666666,0.17777777777777776,10,
+discovery,perplexity,Breakstone's,mention,0.1,0.0,0.4,10,
+discovery,perplexity,Breakstone's,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Breakstone's,avg_rank,3.0,,,1,*
+discovery,perplexity,Breakstone's,sentiment,0.0,,,1,*
+discovery,perplexity,Breakstone's,sov,0.008695652173913044,0.0,0.03333333333333333,10,
+discovery,perplexity,Knudsen,mention,0.0,,,10,
+discovery,perplexity,Knudsen,top_pick,0.0,,,10,
+discovery,perplexity,Knudsen,avg_rank,,,,0,*
+discovery,perplexity,Knudsen,sentiment,,,,0,*
+discovery,perplexity,Knudsen,sov,0.0,,,10,
+discovery,perplexity,Lactaid,mention,0.4,0.0,0.8,10,
+discovery,perplexity,Lactaid,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Lactaid,avg_rank,5.0,,,2,*
+discovery,perplexity,Lactaid,sentiment,1.0,,,4,*
+discovery,perplexity,Lactaid,sov,0.06183574879227053,0.0,0.14707070707070707,10,
+discovery,perplexity,Hood,mention,0.4,0.0,0.8,10,
+discovery,perplexity,Hood,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Hood,avg_rank,2.0,,,1,*
+discovery,perplexity,Hood,sentiment,1.0,,,4,*
+discovery,perplexity,Hood,sov,0.14444444444444443,0.0,0.33999999999999997,10,
+discovery,perplexity,Friendship Dairies,mention,0.2,0.0,0.6,10,
+discovery,perplexity,Friendship Dairies,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Friendship Dairies,avg_rank,3.0,,,2,*
+discovery,perplexity,Friendship Dairies,sentiment,0.5,,,2,*
+discovery,perplexity,Friendship Dairies,sov,0.017391304347826087,0.0,0.052239789196310935,10,
+discovery,perplexity,Kalona SuperNatural,mention,0.2,0.0,0.6,10,
+discovery,perplexity,Kalona SuperNatural,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Kalona SuperNatural,avg_rank,4.0,,,2,*
+discovery,perplexity,Kalona SuperNatural,sentiment,1.0,,,2,*
+discovery,perplexity,Kalona SuperNatural,sov,0.017391304347826087,0.0,0.052239789196310935,10,
+discovery,perplexity,Nancy's,mention,0.2,0.0,0.6,10,
+discovery,perplexity,Nancy's,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Nancy's,avg_rank,3.0,,,2,*
+discovery,perplexity,Nancy's,sentiment,1.0,,,2,*
+discovery,perplexity,Nancy's,sov,0.017391304347826087,0.0,0.052239789196310935,10,
+discovery,perplexity,Organic Valley,mention,0.3,0.0,0.7,10,
+discovery,perplexity,Organic Valley,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Organic Valley,avg_rank,3.5,,,2,*
+discovery,perplexity,Organic Valley,sentiment,0.75,,,3,*
+discovery,perplexity,Organic Valley,sov,0.03961352657004831,0.0,0.09825505050505011,10,
+discovery,perplexity,Good & Gather,mention,0.0,,,10,
+discovery,perplexity,Good & Gather,top_pick,0.0,,,10,
+discovery,perplexity,Good & Gather,avg_rank,,,,0,*
+discovery,perplexity,Good & Gather,sentiment,,,,0,*
+discovery,perplexity,Good & Gather,sov,0.0,,,10,
+discovery,perplexity,365 Everyday Value,mention,0.2,,,10,
+discovery,perplexity,365 Everyday Value,top_pick,0.0,,,10,
+discovery,perplexity,365 Everyday Value,avg_rank,3.0,,,1,*
+discovery,perplexity,365 Everyday Value,sentiment,1.0,,,2,*
+discovery,perplexity,365 Everyday Value,sov,0.017391304347826087,,,10,
+discovery,perplexity,Kirkland Signature,mention,0.0,,,10,
+discovery,perplexity,Kirkland Signature,top_pick,0.0,,,10,
+discovery,perplexity,Kirkland Signature,avg_rank,,,,0,*
+discovery,perplexity,Kirkland Signature,sentiment,,,,0,*
+discovery,perplexity,Kirkland Signature,sov,0.0,,,10,
+discovery,perplexity,Trader Joe's,mention,0.2,0.0,0.6,10,
+discovery,perplexity,Trader Joe's,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Trader Joe's,avg_rank,5.5,,,2,*
+discovery,perplexity,Trader Joe's,sentiment,1.0,,,2,*
+discovery,perplexity,Trader Joe's,sov,0.017391304347826087,0.0,0.052239789196310935,10,
+discovery,perplexity,store brand,mention,0.3,0.0,0.7,10,
+discovery,perplexity,store brand,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,store brand,avg_rank,5.5,,,2,*
+discovery,perplexity,store brand,sentiment,1.0,,,1,*
+discovery,perplexity,store brand,sov,0.050724637681159424,0.0,0.11668478260869555,10,
+discovery,perplexity,MULU,mention,0.4,0.0,0.8,10,
+discovery,perplexity,MULU,top_pick,0.1,0.0,0.4,10,
+discovery,perplexity,MULU,avg_rank,1.0,,,2,*
+discovery,perplexity,MULU,sentiment,1.25,,,4,*
+discovery,perplexity,MULU,sov,0.08405797101449275,0.0,0.2333333333333333,10,
+discovery,perplexity,Great Value,mention,0.0,0.0,0.0,10,
+discovery,perplexity,Great Value,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Great Value,avg_rank,,,,0,*
+discovery,perplexity,Great Value,sentiment,,,,0,*
+discovery,perplexity,Great Value,sov,0.0,0.0,0.0,10,
+discovery,perplexity,Green Valley Creamery,mention,0.0,,,10,
+discovery,perplexity,Green Valley Creamery,top_pick,0.0,,,10,
+discovery,perplexity,Green Valley Creamery,avg_rank,,,,0,*
+discovery,perplexity,Green Valley Creamery,sentiment,,,,0,*
+discovery,perplexity,Green Valley Creamery,sov,0.0,,,10,
+discovery,perplexity,Prairie Farms,mention,0.0,0.0,0.0,10,
+discovery,perplexity,Prairie Farms,top_pick,0.0,0.0,0.0,10,
+discovery,perplexity,Prairie Farms,avg_rank,,,,0,*
+discovery,perplexity,Prairie Farms,sentiment,,,,0,*
+discovery,perplexity,Prairie Farms,sov,0.0,0.0,0.0,10,
+discovery,perplexity,Kemps,mention,0.0,,,10,
+discovery,perplexity,Kemps,top_pick,0.0,,,10,
+discovery,perplexity,Kemps,avg_rank,,,,0,*
+discovery,perplexity,Kemps,sentiment,,,,0,*
+discovery,perplexity,Kemps,sov,0.0,,,10,
+discovery,perplexity,Crowley,mention,0.0,,,10,
+discovery,perplexity,Crowley,top_pick,0.0,,,10,
+discovery,perplexity,Crowley,avg_rank,,,,0,*
+discovery,perplexity,Crowley,sentiment,,,,0,*
+discovery,perplexity,Crowley,sov,0.0,,,10,
+discovery,perplexity,Friendly Farms,mention,0.0,,,10,
+discovery,perplexity,Friendly Farms,top_pick,0.0,,,10,
+discovery,perplexity,Friendly Farms,avg_rank,,,,0,*
+discovery,perplexity,Friendly Farms,sentiment,,,,0,*
+discovery,perplexity,Friendly Farms,sov,0.0,,,10,
+discovery,ALL,Good Culture,mention,0.8,0.4,1.0,30,
+discovery,ALL,Good Culture,top_pick,0.4,0.1,0.7333333333333334,30,
+discovery,ALL,Good Culture,avg_rank,1.3958333333333335,1.0,2.2504166666666645,14,
+discovery,ALL,Good Culture,sentiment,1.9583333333333333,1.8333333333333333,2.0,24,
+discovery,ALL,Good Culture,sov,0.21084797555385792,0.0975824175824176,0.3224044242202809,30,
+discovery,ALL,Daisy,mention,0.6333333333333333,0.26666666666666666,0.9333333333333333,30,
+discovery,ALL,Daisy,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Daisy,avg_rank,1.875,1.1666666666666667,2.6875,14,
+discovery,ALL,Daisy,sentiment,1.2708333333333335,0.7777777777777777,1.777777777777778,19,
+discovery,ALL,Daisy,sov,0.15650623885918002,0.06808982683982684,0.24256242549720805,30,
+discovery,ALL,Breakstone's,mention,0.2,0.03333333333333333,0.39999999999999997,30,
+discovery,ALL,Breakstone's,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Breakstone's,avg_rank,4.0,,,3,*
+discovery,ALL,Breakstone's,sentiment,0.875,,,6,*
+discovery,ALL,Breakstone's,sov,0.048994143111790164,0.011764705882352941,0.09234455266955265,30,
+discovery,ALL,Knudsen,mention,0.0,,,30,
+discovery,ALL,Knudsen,top_pick,0.0,,,30,
+discovery,ALL,Knudsen,avg_rank,,,,0,*
+discovery,ALL,Knudsen,sentiment,,,,0,*
+discovery,ALL,Knudsen,sov,0.0,,,30,
+discovery,ALL,Lactaid,mention,0.16666666666666666,0.0,0.36666666666666664,30,
+discovery,ALL,Lactaid,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Lactaid,avg_rank,5.0,,,2,*
+discovery,ALL,Lactaid,sentiment,1.0,,,5,*
+discovery,ALL,Lactaid,sov,0.03947033358798065,0.0,0.08365150037621281,30,
+discovery,ALL,Hood,mention,0.13333333333333333,0.0,0.33333333333333337,30,
+discovery,ALL,Hood,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Hood,avg_rank,2.0,,,1,*
+discovery,ALL,Hood,sentiment,1.0,,,4,*
+discovery,ALL,Hood,sov,0.03722943722943723,0.0,0.10612881775517223,30,
+discovery,ALL,Friendship Dairies,mention,0.06666666666666667,0.0,0.2333333333333333,30,
+discovery,ALL,Friendship Dairies,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Friendship Dairies,avg_rank,3.0,,,2,*
+discovery,ALL,Friendship Dairies,sentiment,0.5,,,2,*
+discovery,ALL,Friendship Dairies,sov,0.009523809523809523,0.0,0.027608910371759693,30,
+discovery,ALL,Kalona SuperNatural,mention,0.2,0.0,0.6,30,
+discovery,ALL,Kalona SuperNatural,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Kalona SuperNatural,avg_rank,2.5,,,4,*
+discovery,ALL,Kalona SuperNatural,sentiment,1.3333333333333333,,,6,*
+discovery,ALL,Kalona SuperNatural,sov,0.02857142857142857,0.0,0.09393846794036761,30,
+discovery,ALL,Nancy's,mention,0.3,0.03333333333333333,0.6341666666666622,30,
+discovery,ALL,Nancy's,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Nancy's,avg_rank,3.0,,,6,*
+discovery,ALL,Nancy's,sentiment,1.3333333333333333,1.0,2.0,9,
+discovery,ALL,Nancy's,sov,0.05895085306850012,0.01,0.11543937271878445,30,
+discovery,ALL,Organic Valley,mention,0.26666666666666666,0.06666666666666667,0.5,30,
+discovery,ALL,Organic Valley,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Organic Valley,avg_rank,3.25,,,3,*
+discovery,ALL,Organic Valley,sentiment,1.6666666666666667,0.9137500000000001,2.0,8,
+discovery,ALL,Organic Valley,sov,0.06284695696460403,0.015384615384615385,0.11899710736614236,30,
+discovery,ALL,Good & Gather,mention,0.0,,,30,
+discovery,ALL,Good & Gather,top_pick,0.0,,,30,
+discovery,ALL,Good & Gather,avg_rank,,,,0,*
+discovery,ALL,Good & Gather,sentiment,,,,0,*
+discovery,ALL,Good & Gather,sov,0.0,,,30,
+discovery,ALL,365 Everyday Value,mention,0.06666666666666667,,,30,
+discovery,ALL,365 Everyday Value,top_pick,0.0,,,30,
+discovery,ALL,365 Everyday Value,avg_rank,3.0,,,1,*
+discovery,ALL,365 Everyday Value,sentiment,1.0,,,2,*
+discovery,ALL,365 Everyday Value,sov,0.009523809523809523,,,30,
+discovery,ALL,Kirkland Signature,mention,0.0,,,30,
+discovery,ALL,Kirkland Signature,top_pick,0.0,,,30,
+discovery,ALL,Kirkland Signature,avg_rank,,,,0,*
+discovery,ALL,Kirkland Signature,sentiment,,,,0,*
+discovery,ALL,Kirkland Signature,sov,0.0,,,30,
+discovery,ALL,Trader Joe's,mention,0.16666666666666666,0.0,0.4,30,
+discovery,ALL,Trader Joe's,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Trader Joe's,avg_rank,4.5,,,4,*
+discovery,ALL,Trader Joe's,sentiment,1.5,,,4,*
+discovery,ALL,Trader Joe's,sov,0.03809523809523809,0.0,0.09424590572545276,30,
+discovery,ALL,store brand,mention,0.13333333333333333,0.0,0.3,30,
+discovery,ALL,store brand,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,store brand,avg_rank,5.25,,,3,*
+discovery,ALL,store brand,sentiment,1.5,,,2,*
+discovery,ALL,store brand,sov,0.03081232492997199,0.0,0.06391658494061236,30,
+discovery,ALL,MULU,mention,0.13333333333333333,0.0,0.3333333333333333,30,
+discovery,ALL,MULU,top_pick,0.03333333333333333,0.0,0.13333333333333333,30,
+discovery,ALL,MULU,avg_rank,1.0,,,2,*
+discovery,ALL,MULU,sentiment,1.25,,,4,*
+discovery,ALL,MULU,sov,0.03305322128851541,0.0,0.09093041028468118,30,
+discovery,ALL,Great Value,mention,0.03333333333333333,0.0,0.13333333333333333,30,
+discovery,ALL,Great Value,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Great Value,avg_rank,2.0,,,1,*
+discovery,ALL,Great Value,sentiment,1.0,,,1,*
+discovery,ALL,Great Value,sov,0.011764705882352941,0.0,0.052156365177649974,30,
+discovery,ALL,Green Valley Creamery,mention,0.0,,,30,
+discovery,ALL,Green Valley Creamery,top_pick,0.0,,,30,
+discovery,ALL,Green Valley Creamery,avg_rank,,,,0,*
+discovery,ALL,Green Valley Creamery,sentiment,,,,0,*
+discovery,ALL,Green Valley Creamery,sov,0.0,,,30,
+discovery,ALL,Prairie Farms,mention,0.0,0.0,0.0,30,
+discovery,ALL,Prairie Farms,top_pick,0.0,0.0,0.0,30,
+discovery,ALL,Prairie Farms,avg_rank,,,,0,*
+discovery,ALL,Prairie Farms,sentiment,,,,0,*
+discovery,ALL,Prairie Farms,sov,0.0,0.0,0.0,30,
+discovery,ALL,Kemps,mention,0.03333333333333333,,,30,
+discovery,ALL,Kemps,top_pick,0.0,,,30,
+discovery,ALL,Kemps,avg_rank,1.0,,,1,*
+discovery,ALL,Kemps,sentiment,0.0,,,1,*
+discovery,ALL,Kemps,sov,0.0047619047619047615,,,30,
+discovery,ALL,Crowley,mention,0.0,,,30,
+discovery,ALL,Crowley,top_pick,0.0,,,30,
+discovery,ALL,Crowley,avg_rank,,,,0,*
+discovery,ALL,Crowley,sentiment,,,,0,*
+discovery,ALL,Crowley,sov,0.0,,,30,
+discovery,ALL,Friendly Farms,mention,0.06666666666666667,,,30,
+discovery,ALL,Friendly Farms,top_pick,0.0,,,30,
+discovery,ALL,Friendly Farms,avg_rank,2.0,,,1,*
+discovery,ALL,Friendly Farms,sentiment,,,,0,*
+discovery,ALL,Friendly Farms,sov,0.019047619047619046,,,30,
+attributes,chatgpt,Good Culture,mention,0.7777777777777778,0.4444444444444444,1.0,18,
+attributes,chatgpt,Good Culture,top_pick,0.16666666666666666,0.0,0.4444444444444444,18,
+attributes,chatgpt,Good Culture,avg_rank,1.6428571428571428,1.1666666666666667,2.25,13,
+attributes,chatgpt,Good Culture,sentiment,1.0714285714285714,0.5714285714285714,1.6,14,
+attributes,chatgpt,Good Culture,sov,0.2595238095238095,0.14995370370370373,0.37433862433862436,18,
+attributes,chatgpt,Daisy,mention,0.4444444444444444,0.16666666666666666,0.7236111111111035,18,
+attributes,chatgpt,Daisy,top_pick,0.2777777777777778,0.0,0.5555555555555556,18,
+attributes,chatgpt,Daisy,avg_rank,2.2,,,7,*
+attributes,chatgpt,Daisy,sentiment,1.3,0.621875,2.0,8,
+attributes,chatgpt,Daisy,sov,0.1373015873015873,0.05,0.22989417989417993,18,
+attributes,chatgpt,Breakstone's,mention,0.2222222222222222,0.0,0.5,18,
+attributes,chatgpt,Breakstone's,top_pick,0.0,0.0,0.0,18,
+attributes,chatgpt,Breakstone's,avg_rank,3.1666666666666665,,,4,*
+attributes,chatgpt,Breakstone's,sentiment,0.5,,,4,*
+attributes,chatgpt,Breakstone's,sov,0.06388888888888888,0.0,0.14078703703703677,18,
+attributes,chatgpt,Knudsen,mention,0.0,,,18,
+attributes,chatgpt,Knudsen,top_pick,0.0,,,18,
+attributes,chatgpt,Knudsen,avg_rank,,,,0,*
+attributes,chatgpt,Knudsen,sentiment,,,,0,*
+attributes,chatgpt,Knudsen,sov,0.0,,,18,
+attributes,chatgpt,Lactaid,mention,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,chatgpt,Lactaid,top_pick,0.0,0.0,0.0,18,
+attributes,chatgpt,Lactaid,avg_rank,1.0,,,2,*
+attributes,chatgpt,Lactaid,sentiment,1.0,,,2,*
+attributes,chatgpt,Lactaid,sov,0.027777777777777776,0.0,0.08333333333333333,18,
+attributes,chatgpt,Hood,mention,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,chatgpt,Hood,top_pick,0.0,0.0,0.0,18,
+attributes,chatgpt,Hood,avg_rank,,,,0,*
+attributes,chatgpt,Hood,sentiment,1.0,,,2,*
+attributes,chatgpt,Hood,sov,0.041666666666666664,0.0,0.10648148148148147,18,
+attributes,chatgpt,Friendship Dairies,mention,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,chatgpt,Friendship Dairies,top_pick,0.05555555555555555,0.0,0.2222222222222222,18,
+attributes,chatgpt,Friendship Dairies,avg_rank,1.0,,,2,*
+attributes,chatgpt,Friendship Dairies,sentiment,1.5,,,2,*
+attributes,chatgpt,Friendship Dairies,sov,0.05555555555555555,0.0,0.1388888888888889,18,
+attributes,chatgpt,Kalona SuperNatural,mention,0.16666666666666666,0.0,0.4444444444444444,18,
+attributes,chatgpt,Kalona SuperNatural,top_pick,0.0,0.0,0.0,18,
+attributes,chatgpt,Kalona SuperNatural,avg_rank,2.0,,,3,*
+attributes,chatgpt,Kalona SuperNatural,sentiment,0.75,,,3,*
+attributes,chatgpt,Kalona SuperNatural,sov,0.05396825396825397,0.0,0.12830687830687829,18,
+attributes,chatgpt,Nancy's,mention,0.3333333333333333,0.1111111111111111,0.6666666666666666,18,
+attributes,chatgpt,Nancy's,top_pick,0.0,0.0,0.0,18,
+attributes,chatgpt,Nancy's,avg_rank,2.8333333333333335,,,5,*
+attributes,chatgpt,Nancy's,sentiment,1.1666666666666667,,,6,*
+attributes,chatgpt,Nancy's,sov,0.11666666666666667,0.027777777777777776,0.24444444444444446,18,
+attributes,chatgpt,Organic Valley,mention,0.0,0.0,0.0,18,
+attributes,chatgpt,Organic Valley,top_pick,0.0,0.0,0.0,18,
+attributes,chatgpt,Organic Valley,avg_rank,,,,0,*
+attributes,chatgpt,Organic Valley,sentiment,,,,0,*
+attributes,chatgpt,Organic Valley,sov,0.0,0.0,0.0,18,
+attributes,chatgpt,Good & Gather,mention,0.0,,,18,
+attributes,chatgpt,Good & Gather,top_pick,0.0,,,18,
+attributes,chatgpt,Good & Gather,avg_rank,,,,0,*
+attributes,chatgpt,Good & Gather,sentiment,,,,0,*
+attributes,chatgpt,Good & Gather,sov,0.0,,,18,
+attributes,chatgpt,365 Everyday Value,mention,0.0,,,18,
+attributes,chatgpt,365 Everyday Value,top_pick,0.0,,,18,
+attributes,chatgpt,365 Everyday Value,avg_rank,,,,0,*
+attributes,chatgpt,365 Everyday Value,sentiment,,,,0,*
+attributes,chatgpt,365 Everyday Value,sov,0.0,,,18,
+attributes,chatgpt,Kirkland Signature,mention,0.0,,,18,
+attributes,chatgpt,Kirkland Signature,top_pick,0.0,,,18,
+attributes,chatgpt,Kirkland Signature,avg_rank,,,,0,*
+attributes,chatgpt,Kirkland Signature,sentiment,,,,0,*
+attributes,chatgpt,Kirkland Signature,sov,0.0,,,18,
+attributes,chatgpt,Trader Joe's,mention,0.05555555555555555,0.0,0.2222222222222222,18,
+attributes,chatgpt,Trader Joe's,top_pick,0.0,0.0,0.0,18,
+attributes,chatgpt,Trader Joe's,avg_rank,,,,0,*
+attributes,chatgpt,Trader Joe's,sentiment,,,,0,*
+attributes,chatgpt,Trader Joe's,sov,0.015873015873015872,0.0,0.05555555555555555,18,
+attributes,chatgpt,store brand,mention,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,chatgpt,store brand,top_pick,0.0,0.0,0.0,18,
+attributes,chatgpt,store brand,avg_rank,1.0,,,1,*
+attributes,chatgpt,store brand,sentiment,0.0,,,1,*
+attributes,chatgpt,store brand,sov,0.036111111111111115,0.0,0.09537037037037038,18,
+attributes,chatgpt,MULU,mention,0.0,0.0,0.0,18,
+attributes,chatgpt,MULU,top_pick,0.0,0.0,0.0,18,
+attributes,chatgpt,MULU,avg_rank,,,,0,*
+attributes,chatgpt,MULU,sentiment,,,,0,*
+attributes,chatgpt,MULU,sov,0.0,0.0,0.0,18,
+attributes,chatgpt,Great Value,mention,0.16666666666666666,0.0,0.3888888888888889,18,
+attributes,chatgpt,Great Value,top_pick,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,chatgpt,Great Value,avg_rank,1.5,,,3,*
+attributes,chatgpt,Great Value,sentiment,1.25,,,3,*
+attributes,chatgpt,Great Value,sov,0.058333333333333334,0.0,0.15092592592592594,18,
+attributes,chatgpt,Green Valley Creamery,mention,0.1111111111111111,,,18,
+attributes,chatgpt,Green Valley Creamery,top_pick,0.0,,,18,
+attributes,chatgpt,Green Valley Creamery,avg_rank,3.0,,,2,*
+attributes,chatgpt,Green Valley Creamery,sentiment,1.0,,,2,*
+attributes,chatgpt,Green Valley Creamery,sov,0.027777777777777776,,,18,
+attributes,chatgpt,Prairie Farms,mention,0.2222222222222222,0.0,0.5555555555555556,18,
+attributes,chatgpt,Prairie Farms,top_pick,0.0,0.0,0.0,18,
+attributes,chatgpt,Prairie Farms,avg_rank,3.0,,,4,*
+attributes,chatgpt,Prairie Farms,sentiment,1.25,,,4,*
+attributes,chatgpt,Prairie Farms,sov,0.08333333333333333,0.0,0.25925925925925924,18,
+attributes,chatgpt,Kemps,mention,0.0,,,18,
+attributes,chatgpt,Kemps,top_pick,0.0,,,18,
+attributes,chatgpt,Kemps,avg_rank,,,,0,*
+attributes,chatgpt,Kemps,sentiment,,,,0,*
+attributes,chatgpt,Kemps,sov,0.0,,,18,
+attributes,chatgpt,Crowley,mention,0.0,,,18,
+attributes,chatgpt,Crowley,top_pick,0.0,,,18,
+attributes,chatgpt,Crowley,avg_rank,,,,0,*
+attributes,chatgpt,Crowley,sentiment,,,,0,*
+attributes,chatgpt,Crowley,sov,0.0,,,18,
+attributes,chatgpt,Friendly Farms,mention,0.05555555555555555,,,18,
+attributes,chatgpt,Friendly Farms,top_pick,0.0,,,18,
+attributes,chatgpt,Friendly Farms,avg_rank,3.0,,,1,*
+attributes,chatgpt,Friendly Farms,sentiment,,,,0,*
+attributes,chatgpt,Friendly Farms,sov,0.022222222222222223,,,18,
+attributes,gemini,Good Culture,mention,0.8333333333333334,0.6111111111111112,1.0,18,
+attributes,gemini,Good Culture,top_pick,0.05555555555555555,0.0,0.2222222222222222,18,
+attributes,gemini,Good Culture,avg_rank,1.6,,,5,*
+attributes,gemini,Good Culture,sentiment,1.2777777777777777,0.6875,1.8333333333333333,15,
+attributes,gemini,Good Culture,sov,0.2013640680307347,0.13353929249762583,0.26319725028058355,18,
+attributes,gemini,Daisy,mention,0.8888888888888888,0.6666666666666666,1.0,18,
+attributes,gemini,Daisy,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Daisy,avg_rank,2.5,,,5,*
+attributes,gemini,Daisy,sentiment,1.0625,0.5714285714285714,1.4287946428571416,16,
+attributes,gemini,Daisy,sov,0.1922343089009756,0.13871703142536476,0.2461063627730294,18,
+attributes,gemini,Breakstone's,mention,0.3333333333333333,0.05555555555555555,0.6666666666666666,18,
+attributes,gemini,Breakstone's,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Breakstone's,avg_rank,1.5,,,3,*
+attributes,gemini,Breakstone's,sentiment,1.0,,,6,*
+attributes,gemini,Breakstone's,sov,0.059069325735992405,0.011111111111111112,0.11419753086419752,18,
+attributes,gemini,Knudsen,mention,0.0,,,18,
+attributes,gemini,Knudsen,top_pick,0.0,,,18,
+attributes,gemini,Knudsen,avg_rank,,,,0,*
+attributes,gemini,Knudsen,sentiment,,,,0,*
+attributes,gemini,Knudsen,sov,0.0,,,18,
+attributes,gemini,Lactaid,mention,0.2222222222222222,0.0,0.5555555555555556,18,
+attributes,gemini,Lactaid,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Lactaid,avg_rank,,,,0,*
+attributes,gemini,Lactaid,sentiment,1.0,,,4,*
+attributes,gemini,Lactaid,sov,0.0617283950617284,0.0,0.14814814814814814,18,
+attributes,gemini,Hood,mention,0.3888888888888889,0.1111111111111111,0.6666666666666666,18,
+attributes,gemini,Hood,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Hood,avg_rank,1.0,,,2,*
+attributes,gemini,Hood,sentiment,1.2,,,7,*
+attributes,gemini,Hood,sov,0.07225675559008893,0.018518518518518517,0.1327216610549944,18,
+attributes,gemini,Friendship Dairies,mention,0.05555555555555555,0.0,0.2222222222222222,18,
+attributes,gemini,Friendship Dairies,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Friendship Dairies,avg_rank,2.0,,,1,*
+attributes,gemini,Friendship Dairies,sentiment,1.0,,,1,*
+attributes,gemini,Friendship Dairies,sov,0.008547008547008548,0.0,0.027777777777777776,18,
+attributes,gemini,Kalona SuperNatural,mention,0.2222222222222222,0.0,0.5,18,
+attributes,gemini,Kalona SuperNatural,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Kalona SuperNatural,avg_rank,2.0,,,1,*
+attributes,gemini,Kalona SuperNatural,sentiment,2.0,,,4,*
+attributes,gemini,Kalona SuperNatural,sov,0.05246913580246913,0.0,0.11790123456790123,18,
+attributes,gemini,Nancy's,mention,0.5,0.2222222222222222,0.7777777777777778,18,
+attributes,gemini,Nancy's,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Nancy's,avg_rank,2.0,,,2,*
+attributes,gemini,Nancy's,sentiment,1.5833333333333333,1.125,2.0,9,
+attributes,gemini,Nancy's,sov,0.11616809116809115,0.04487179487179487,0.19136396011396006,18,
+attributes,gemini,Organic Valley,mention,0.05555555555555555,0.0,0.2222222222222222,18,
+attributes,gemini,Organic Valley,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Organic Valley,avg_rank,3.0,,,1,*
+attributes,gemini,Organic Valley,sentiment,2.0,,,1,*
+attributes,gemini,Organic Valley,sov,0.013888888888888888,0.0,0.05555555555555555,18,
+attributes,gemini,Good & Gather,mention,0.05555555555555555,,,18,
+attributes,gemini,Good & Gather,top_pick,0.0,,,18,
+attributes,gemini,Good & Gather,avg_rank,,,,0,*
+attributes,gemini,Good & Gather,sentiment,1.0,,,1,*
+attributes,gemini,Good & Gather,sov,0.010101010101010102,,,18,
+attributes,gemini,365 Everyday Value,mention,0.05555555555555555,,,18,
+attributes,gemini,365 Everyday Value,top_pick,0.0,,,18,
+attributes,gemini,365 Everyday Value,avg_rank,,,,0,*
+attributes,gemini,365 Everyday Value,sentiment,1.0,,,1,*
+attributes,gemini,365 Everyday Value,sov,0.008547008547008548,,,18,
+attributes,gemini,Kirkland Signature,mention,0.0,,,18,
+attributes,gemini,Kirkland Signature,top_pick,0.0,,,18,
+attributes,gemini,Kirkland Signature,avg_rank,,,,0,*
+attributes,gemini,Kirkland Signature,sentiment,,,,0,*
+attributes,gemini,Kirkland Signature,sov,0.0,,,18,
+attributes,gemini,Trader Joe's,mention,0.0,0.0,0.0,18,
+attributes,gemini,Trader Joe's,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Trader Joe's,avg_rank,,,,0,*
+attributes,gemini,Trader Joe's,sentiment,,,,0,*
+attributes,gemini,Trader Joe's,sov,0.0,0.0,0.0,18,
+attributes,gemini,store brand,mention,0.2222222222222222,0.0,0.5555555555555556,18,
+attributes,gemini,store brand,top_pick,0.05555555555555555,0.0,0.2222222222222222,18,
+attributes,gemini,store brand,avg_rank,2.0,,,2,*
+attributes,gemini,store brand,sentiment,1.5,,,3,*
+attributes,gemini,store brand,sov,0.038720538720538725,0.0,0.09427609427609428,18,
+attributes,gemini,MULU,mention,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,gemini,MULU,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,MULU,avg_rank,1.0,,,1,*
+attributes,gemini,MULU,sentiment,1.5,,,2,*
+attributes,gemini,MULU,sov,0.022222222222222223,0.0,0.07222222222222223,18,
+attributes,gemini,Great Value,mention,0.2222222222222222,0.0,0.5555555555555556,18,
+attributes,gemini,Great Value,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Great Value,avg_rank,2.0,,,2,*
+attributes,gemini,Great Value,sentiment,1.25,,,4,*
+attributes,gemini,Great Value,sov,0.038720538720538725,0.0,0.09427609427609428,18,
+attributes,gemini,Green Valley Creamery,mention,0.0,,,18,
+attributes,gemini,Green Valley Creamery,top_pick,0.0,,,18,
+attributes,gemini,Green Valley Creamery,avg_rank,,,,0,*
+attributes,gemini,Green Valley Creamery,sentiment,,,,0,*
+attributes,gemini,Green Valley Creamery,sov,0.0,,,18,
+attributes,gemini,Prairie Farms,mention,0.2222222222222222,0.0,0.4444444444444444,18,
+attributes,gemini,Prairie Farms,top_pick,0.0,0.0,0.0,18,
+attributes,gemini,Prairie Farms,avg_rank,3.0,,,2,*
+attributes,gemini,Prairie Farms,sentiment,1.25,,,4,*
+attributes,gemini,Prairie Farms,sov,0.05413105413105413,0.0,0.1282051282051282,18,
+attributes,gemini,Kemps,mention,0.05555555555555555,,,18,
+attributes,gemini,Kemps,top_pick,0.0,,,18,
+attributes,gemini,Kemps,avg_rank,,,,0,*
+attributes,gemini,Kemps,sentiment,1.0,,,1,*
+attributes,gemini,Kemps,sov,0.011111111111111112,,,18,
+attributes,gemini,Crowley,mention,0.1111111111111111,,,18,
+attributes,gemini,Crowley,top_pick,0.0,,,18,
+attributes,gemini,Crowley,avg_rank,,,,0,*
+attributes,gemini,Crowley,sentiment,1.0,,,2,*
+attributes,gemini,Crowley,sov,0.020202020202020204,,,18,
+attributes,gemini,Friendly Farms,mention,0.1111111111111111,,,18,
+attributes,gemini,Friendly Farms,top_pick,0.0,,,18,
+attributes,gemini,Friendly Farms,avg_rank,2.0,,,2,*
+attributes,gemini,Friendly Farms,sentiment,,,,0,*
+attributes,gemini,Friendly Farms,sov,0.018518518518518517,,,18,
+attributes,perplexity,Good Culture,mention,0.6666666666666666,0.3333333333333333,0.8888888888888888,18,
+attributes,perplexity,Good Culture,top_pick,0.2222222222222222,0.0,0.5,18,
+attributes,perplexity,Good Culture,avg_rank,2.25,,,4,*
+attributes,perplexity,Good Culture,sentiment,1.5,1.125,1.8916666666666515,12,
+attributes,perplexity,Good Culture,sov,0.19197530864197532,0.08703703703703704,0.3,18,
+attributes,perplexity,Daisy,mention,0.5,0.16666666666666666,0.7777777777777778,18,
+attributes,perplexity,Daisy,top_pick,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,perplexity,Daisy,avg_rank,2.3333333333333335,,,4,*
+attributes,perplexity,Daisy,sentiment,0.8,-0.1,1.7,9,
+attributes,perplexity,Daisy,sov,0.12098765432098764,0.040123456790123455,0.1962962962962963,18,
+attributes,perplexity,Breakstone's,mention,0.2777777777777778,0.0,0.5555555555555556,18,
+attributes,perplexity,Breakstone's,top_pick,0.0,0.0,0.0,18,
+attributes,perplexity,Breakstone's,avg_rank,2.0,,,1,*
+attributes,perplexity,Breakstone's,sentiment,0.3333333333333333,,,5,*
+attributes,perplexity,Breakstone's,sov,0.05925925925925926,0.0,0.12100308641975302,18,
+attributes,perplexity,Knudsen,mention,0.05555555555555555,,,18,
+attributes,perplexity,Knudsen,top_pick,0.0,,,18,
+attributes,perplexity,Knudsen,avg_rank,,,,0,*
+attributes,perplexity,Knudsen,sentiment,1.0,,,1,*
+attributes,perplexity,Knudsen,sov,0.011111111111111112,,,18,
+attributes,perplexity,Lactaid,mention,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,perplexity,Lactaid,top_pick,0.0,0.0,0.0,18,
+attributes,perplexity,Lactaid,avg_rank,3.0,,,1,*
+attributes,perplexity,Lactaid,sentiment,1.0,,,2,*
+attributes,perplexity,Lactaid,sov,0.027777777777777776,0.0,0.08333333333333333,18,
+attributes,perplexity,Hood,mention,0.2222222222222222,0.0,0.5555555555555556,18,
+attributes,perplexity,Hood,top_pick,0.0,0.0,0.0,18,
+attributes,perplexity,Hood,avg_rank,,,,0,*
+attributes,perplexity,Hood,sentiment,1.25,,,4,*
+attributes,perplexity,Hood,sov,0.04938271604938271,0.0,0.12160493827160496,18,
+attributes,perplexity,Friendship Dairies,mention,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,perplexity,Friendship Dairies,top_pick,0.05555555555555555,0.0,0.2222222222222222,18,
+attributes,perplexity,Friendship Dairies,avg_rank,,,,0,*
+attributes,perplexity,Friendship Dairies,sentiment,1.5,,,2,*
+attributes,perplexity,Friendship Dairies,sov,0.024691358024691357,0.0,0.07777777777777778,18,
+attributes,perplexity,Kalona SuperNatural,mention,0.16666666666666666,0.0,0.4444444444444444,18,
+attributes,perplexity,Kalona SuperNatural,top_pick,0.0,0.0,0.0,18,
+attributes,perplexity,Kalona SuperNatural,avg_rank,4.0,,,1,*
+attributes,perplexity,Kalona SuperNatural,sentiment,1.25,,,3,*
+attributes,perplexity,Kalona SuperNatural,sov,0.037037037037037035,0.0,0.0993827160493827,18,
+attributes,perplexity,Nancy's,mention,0.3333333333333333,0.0,0.6666666666666666,18,
+attributes,perplexity,Nancy's,top_pick,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,perplexity,Nancy's,avg_rank,1.0,,,1,*
+attributes,perplexity,Nancy's,sentiment,1.8333333333333333,,,6,*
+attributes,perplexity,Nancy's,sov,0.11728395061728393,0.0,0.2469135802469136,18,
+attributes,perplexity,Organic Valley,mention,0.0,0.0,0.0,18,
+attributes,perplexity,Organic Valley,top_pick,0.0,0.0,0.0,18,
+attributes,perplexity,Organic Valley,avg_rank,,,,0,*
+attributes,perplexity,Organic Valley,sentiment,,,,0,*
+attributes,perplexity,Organic Valley,sov,0.0,0.0,0.0,18,
+attributes,perplexity,Good & Gather,mention,0.05555555555555555,,,18,
+attributes,perplexity,Good & Gather,top_pick,0.0,,,18,
+attributes,perplexity,Good & Gather,avg_rank,,,,0,*
+attributes,perplexity,Good & Gather,sentiment,1.0,,,1,*
+attributes,perplexity,Good & Gather,sov,0.012345679012345678,,,18,
+attributes,perplexity,365 Everyday Value,mention,0.0,,,18,
+attributes,perplexity,365 Everyday Value,top_pick,0.0,,,18,
+attributes,perplexity,365 Everyday Value,avg_rank,,,,0,*
+attributes,perplexity,365 Everyday Value,sentiment,,,,0,*
+attributes,perplexity,365 Everyday Value,sov,0.0,,,18,
+attributes,perplexity,Kirkland Signature,mention,0.05555555555555555,,,18,
+attributes,perplexity,Kirkland Signature,top_pick,0.0,,,18,
+attributes,perplexity,Kirkland Signature,avg_rank,,,,0,*
+attributes,perplexity,Kirkland Signature,sentiment,1.0,,,1,*
+attributes,perplexity,Kirkland Signature,sov,0.012345679012345678,,,18,
+attributes,perplexity,Trader Joe's,mention,0.05555555555555555,0.0,0.2222222222222222,18,
+attributes,perplexity,Trader Joe's,top_pick,0.0,0.0,0.0,18,
+attributes,perplexity,Trader Joe's,avg_rank,,,,0,*
+attributes,perplexity,Trader Joe's,sentiment,1.0,,,1,*
+attributes,perplexity,Trader Joe's,sov,0.012345679012345678,0.0,0.043209876543209874,18,
+attributes,perplexity,store brand,mention,0.2777777777777778,0.0,0.5555555555555556,18,
+attributes,perplexity,store brand,top_pick,0.0,0.0,0.0,18,
+attributes,perplexity,store brand,avg_rank,3.0,,,1,*
+attributes,perplexity,store brand,sentiment,0.6666666666666666,,,5,*
+attributes,perplexity,store brand,sov,0.05925925925925926,0.0,0.1271913580246912,18,
+attributes,perplexity,MULU,mention,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,perplexity,MULU,top_pick,0.05555555555555555,0.0,0.2222222222222222,18,
+attributes,perplexity,MULU,avg_rank,1.0,,,1,*
+attributes,perplexity,MULU,sentiment,1.5,,,2,*
+attributes,perplexity,MULU,sov,0.1111111111111111,0.0,0.3333333333333333,18,
+attributes,perplexity,Great Value,mention,0.2222222222222222,0.0,0.5,18,
+attributes,perplexity,Great Value,top_pick,0.05555555555555555,0.0,0.2222222222222222,18,
+attributes,perplexity,Great Value,avg_rank,4.5,,,2,*
+attributes,perplexity,Great Value,sentiment,1.1666666666666667,,,4,*
+attributes,perplexity,Great Value,sov,0.04814814814814815,0.0,0.11484567901234552,18,
+attributes,perplexity,Green Valley Creamery,mention,0.1111111111111111,,,18,
+attributes,perplexity,Green Valley Creamery,top_pick,0.0,,,18,
+attributes,perplexity,Green Valley Creamery,avg_rank,,,,0,*
+attributes,perplexity,Green Valley Creamery,sentiment,1.0,,,2,*
+attributes,perplexity,Green Valley Creamery,sov,0.027777777777777776,,,18,
+attributes,perplexity,Prairie Farms,mention,0.2222222222222222,0.0,0.5555555555555556,18,
+attributes,perplexity,Prairie Farms,top_pick,0.0,0.0,0.0,18,
+attributes,perplexity,Prairie Farms,avg_rank,,,,0,*
+attributes,perplexity,Prairie Farms,sentiment,0.5,,,4,*
+attributes,perplexity,Prairie Farms,sov,0.05246913580246913,0.0,0.12962962962962962,18,
+attributes,perplexity,Kemps,mention,0.05555555555555555,,,18,
+attributes,perplexity,Kemps,top_pick,0.0,,,18,
+attributes,perplexity,Kemps,avg_rank,,,,0,*
+attributes,perplexity,Kemps,sentiment,1.0,,,1,*
+attributes,perplexity,Kemps,sov,0.012345679012345678,,,18,
+attributes,perplexity,Crowley,mention,0.0,,,18,
+attributes,perplexity,Crowley,top_pick,0.0,,,18,
+attributes,perplexity,Crowley,avg_rank,,,,0,*
+attributes,perplexity,Crowley,sentiment,,,,0,*
+attributes,perplexity,Crowley,sov,0.0,,,18,
+attributes,perplexity,Friendly Farms,mention,0.05555555555555555,,,18,
+attributes,perplexity,Friendly Farms,top_pick,0.0,,,18,
+attributes,perplexity,Friendly Farms,avg_rank,,,,0,*
+attributes,perplexity,Friendly Farms,sentiment,,,,0,*
+attributes,perplexity,Friendly Farms,sov,0.012345679012345678,,,18,
+attributes,ALL,Good Culture,mention,0.7592592592592593,0.5,0.9629629629629631,54,
+attributes,ALL,Good Culture,top_pick,0.14814814814814814,0.018518518518518517,0.3148148148148148,54,
+attributes,ALL,Good Culture,avg_rank,1.7142857142857142,1.2291666666666665,2.333333333333333,22,
+attributes,ALL,Good Culture,sentiment,1.075925925925926,0.583287037037037,1.6355034722222217,41,
+attributes,ALL,Good Culture,sov,0.21651385651385655,0.14059695187880397,0.2918993439661598,54,
+attributes,ALL,Daisy,mention,0.6111111111111112,0.3703703703703704,0.8333333333333334,54,
+attributes,ALL,Daisy,top_pick,0.12962962962962965,0.0,0.31481481481481477,54,
+attributes,ALL,Daisy,avg_rank,2.7142857142857144,1.3333333333333333,3.6666666666666665,16,
+attributes,ALL,Daisy,sentiment,1.0208333333333335,0.5523735119047619,1.4166666666666667,33,
+attributes,ALL,Daisy,sov,0.16279914529914527,0.10342785984344591,0.21373213585712755,54,
+attributes,ALL,Breakstone's,mention,0.2777777777777778,0.07407407407407407,0.537037037037037,54,
+attributes,ALL,Breakstone's,top_pick,0.0,0.0,0.0,54,
+attributes,ALL,Breakstone's,avg_rank,2.5625,1.2275,4.0,8,
+attributes,ALL,Breakstone's,sentiment,0.5666666666666667,-0.041726190476190465,1.0,15,
+attributes,ALL,Breakstone's,sov,0.06352564102564102,0.017970628482796,0.11530500067504136,54,
+attributes,ALL,Knudsen,mention,0.018518518518518517,,,54,
+attributes,ALL,Knudsen,top_pick,0.0,,,54,
+attributes,ALL,Knudsen,avg_rank,,,,0,*
+attributes,ALL,Knudsen,sentiment,1.0,,,1,*
+attributes,ALL,Knudsen,sov,0.003703703703703704,,,54,
+attributes,ALL,Lactaid,mention,0.14814814814814814,0.0,0.3888888888888889,54,
+attributes,ALL,Lactaid,top_pick,0.0,0.0,0.0,54,
+attributes,ALL,Lactaid,avg_rank,1.6666666666666667,,,3,*
+attributes,ALL,Lactaid,sentiment,0.8333333333333334,0.0,1.3333333333333333,8,
+attributes,ALL,Lactaid,sov,0.04141414141414141,0.0,0.10628907867494822,54,
+attributes,ALL,Hood,mention,0.24074074074074078,0.037037037037037035,0.48148148148148157,54,
+attributes,ALL,Hood,top_pick,0.0,0.0,0.0,54,
+attributes,ALL,Hood,avg_rank,1.0,,,2,*
+attributes,ALL,Hood,sentiment,1.12,1.0,1.4309166666666664,13,
+attributes,ALL,Hood,sov,0.057827635327635324,0.01000101056430606,0.1132755914576566,54,
+attributes,ALL,Friendship Dairies,mention,0.09259259259259259,0.0,0.2592592592592593,54,
+attributes,ALL,Friendship Dairies,top_pick,0.037037037037037035,0.0,0.14814814814814814,54,
+attributes,ALL,Friendship Dairies,avg_rank,1.25,,,3,*
+attributes,ALL,Friendship Dairies,sentiment,1.25,,,5,*
+attributes,ALL,Friendship Dairies,sov,0.02403846153846154,0.0,0.06954930340255733,54,
+attributes,ALL,Kalona SuperNatural,mention,0.18518518518518517,0.0,0.4444444444444444,54,
+attributes,ALL,Kalona SuperNatural,top_pick,0.0,0.0,0.0,54,
+attributes,ALL,Kalona SuperNatural,avg_rank,2.777777777777778,,,5,*
+attributes,ALL,Kalona SuperNatural,sentiment,1.388888888888889,0.5,2.0,10,
+attributes,ALL,Kalona SuperNatural,sov,0.04743589743589744,0.0,0.10996224084310466,54,
+attributes,ALL,Nancy's,mention,0.3888888888888889,0.14814814814814814,0.6666666666666666,54,
+attributes,ALL,Nancy's,top_pick,0.037037037037037035,0.0,0.14814814814814814,54,
+attributes,ALL,Nancy's,avg_rank,2.5000000000000004,1.5,3.637499999999998,8,
+attributes,ALL,Nancy's,sentiment,1.3888888888888886,1.0663888888888888,1.7777777777777777,21,
+attributes,ALL,Nancy's,sov,0.11997863247863247,0.03629276895943563,0.22022681007172343,54,
+attributes,ALL,Organic Valley,mention,0.018518518518518517,0.0,0.07407407407407407,54,
+attributes,ALL,Organic Valley,top_pick,0.0,0.0,0.0,54,
+attributes,ALL,Organic Valley,avg_rank,3.0,,,1,*
+attributes,ALL,Organic Valley,sentiment,2.0,,,1,*
+attributes,ALL,Organic Valley,sov,0.004629629629629629,0.0,0.0196048215069954,54,
+attributes,ALL,Good & Gather,mention,0.037037037037037035,,,54,
+attributes,ALL,Good & Gather,top_pick,0.0,,,54,
+attributes,ALL,Good & Gather,avg_rank,,,,0,*
+attributes,ALL,Good & Gather,sentiment,1.0,,,2,*
+attributes,ALL,Good & Gather,sov,0.008888888888888889,,,54,
+attributes,ALL,365 Everyday Value,mention,0.018518518518518517,,,54,
+attributes,ALL,365 Everyday Value,top_pick,0.0,,,54,
+attributes,ALL,365 Everyday Value,avg_rank,,,,0,*
+attributes,ALL,365 Everyday Value,sentiment,1.0,,,1,*
+attributes,ALL,365 Everyday Value,sov,0.004273504273504274,,,54,
+attributes,ALL,Kirkland Signature,mention,0.018518518518518517,,,54,
+attributes,ALL,Kirkland Signature,top_pick,0.0,,,54,
+attributes,ALL,Kirkland Signature,avg_rank,,,,0,*
+attributes,ALL,Kirkland Signature,sentiment,1.0,,,1,*
+attributes,ALL,Kirkland Signature,sov,0.0044444444444444444,,,54,
+attributes,ALL,Trader Joe's,mention,0.037037037037037035,0.0,0.12962962962962962,54,
+attributes,ALL,Trader Joe's,top_pick,0.0,0.0,0.0,54,
+attributes,ALL,Trader Joe's,avg_rank,,,,0,*
+attributes,ALL,Trader Joe's,sentiment,1.0,,,1,*
+attributes,ALL,Trader Joe's,sov,0.009074074074074075,0.0,0.02838195218630001,54,
+attributes,ALL,store brand,mention,0.20370370370370372,0.0,0.4629629629629629,54,
+attributes,ALL,store brand,top_pick,0.018518518518518517,0.0,0.07407407407407407,54,
+attributes,ALL,store brand,avg_rank,2.0,,,4,*
+attributes,ALL,store brand,sentiment,0.7333333333333334,0.0,1.4166666666666665,9,
+attributes,ALL,store brand,sov,0.045014245014245016,0.0,0.09850725462992015,54,
+attributes,ALL,MULU,mention,0.07407407407407407,0.0,0.24074074074074073,54,
+attributes,ALL,MULU,top_pick,0.018518518518518517,0.0,0.07407407407407407,54,
+attributes,ALL,MULU,avg_rank,1.0,,,2,*
+attributes,ALL,MULU,sentiment,1.5,,,4,*
+attributes,ALL,MULU,sov,0.027777777777777776,0.0,0.10417493386243382,54,
+attributes,ALL,Great Value,mention,0.20370370370370372,0.0,0.4444444444444444,54,
+attributes,ALL,Great Value,top_pick,0.05555555555555555,0.0,0.1851851851851852,54,
+attributes,ALL,Great Value,avg_rank,2.777777777777778,,,7,*
+attributes,ALL,Great Value,sentiment,1.1666666666666667,1.0,1.6666666666666665,11,
+attributes,ALL,Great Value,sov,0.045754985754985746,0.0,0.1047174698402061,54,
+attributes,ALL,Green Valley Creamery,mention,0.07407407407407407,,,54,
+attributes,ALL,Green Valley Creamery,top_pick,0.0,,,54,
+attributes,ALL,Green Valley Creamery,avg_rank,3.0,,,2,*
+attributes,ALL,Green Valley Creamery,sentiment,1.0,,,4,*
+attributes,ALL,Green Valley Creamery,sov,0.020202020202020204,,,54,
+attributes,ALL,Prairie Farms,mention,0.2222222222222222,0.0,0.5555555555555556,54,
+attributes,ALL,Prairie Farms,top_pick,0.0,0.0,0.0,54,
+attributes,ALL,Prairie Farms,avg_rank,3.25,,,6,*
+attributes,ALL,Prairie Farms,sentiment,1.0,0.5,1.3333333333333335,12,
+attributes,ALL,Prairie Farms,sov,0.05594405594405595,0.0,0.138896131095882,54,
+attributes,ALL,Kemps,mention,0.037037037037037035,,,54,
+attributes,ALL,Kemps,top_pick,0.0,,,54,
+attributes,ALL,Kemps,avg_rank,,,,0,*
+attributes,ALL,Kemps,sentiment,1.0,,,2,*
+attributes,ALL,Kemps,sov,0.01138888888888889,,,54,
+attributes,ALL,Crowley,mention,0.037037037037037035,,,54,
+attributes,ALL,Crowley,top_pick,0.0,,,54,
+attributes,ALL,Crowley,avg_rank,,,,0,*
+attributes,ALL,Crowley,sentiment,1.0,,,2,*
+attributes,ALL,Crowley,sov,0.008888888888888889,,,54,
+attributes,ALL,Friendly Farms,mention,0.07407407407407407,,,54,
+attributes,ALL,Friendly Farms,top_pick,0.0,,,54,
+attributes,ALL,Friendly Farms,avg_rank,2.5,,,3,*
+attributes,ALL,Friendly Farms,sentiment,,,,0,*
+attributes,ALL,Friendly Farms,sov,0.01648148148148148,,,54,
+personas,chatgpt,Good Culture,mention,0.8,0.5,1.0,10,
+personas,chatgpt,Good Culture,top_pick,0.4,0.0,0.8,10,
+personas,chatgpt,Good Culture,avg_rank,2.25,,,4,*
+personas,chatgpt,Good Culture,sentiment,0.9,0.0,2.0,8,
+personas,chatgpt,Good Culture,sov,0.28214285714285714,0.148797619047619,0.4,10,
+personas,chatgpt,Daisy,mention,0.6,0.2,1.0,10,
+personas,chatgpt,Daisy,top_pick,0.4,0.0,0.8,10,
+personas,chatgpt,Daisy,avg_rank,1.6666666666666667,,,3,*
+personas,chatgpt,Daisy,sentiment,1.5,,,6,*
+personas,chatgpt,Daisy,sov,0.20833333333333331,0.06666666666666667,0.35,10,
+personas,chatgpt,Breakstone's,mention,0.3,0.0,0.7,10,
+personas,chatgpt,Breakstone's,top_pick,0.0,0.0,0.0,10,
+personas,chatgpt,Breakstone's,avg_rank,3.25,,,3,*
+personas,chatgpt,Breakstone's,sentiment,0.5,,,3,*
+personas,chatgpt,Breakstone's,sov,0.08333333333333333,0.0,0.2,10,
+personas,chatgpt,Knudsen,mention,0.0,,,10,
+personas,chatgpt,Knudsen,top_pick,0.0,,,10,
+personas,chatgpt,Knudsen,avg_rank,,,,0,*
+personas,chatgpt,Knudsen,sentiment,,,,0,*
+personas,chatgpt,Knudsen,sov,0.0,,,10,
+personas,chatgpt,Lactaid,mention,0.2,0.0,0.6,10,
+personas,chatgpt,Lactaid,top_pick,0.0,0.0,0.0,10,
+personas,chatgpt,Lactaid,avg_rank,2.0,,,1,*
+personas,chatgpt,Lactaid,sentiment,1.0,,,2,*
+personas,chatgpt,Lactaid,sov,0.05714285714285714,0.0,0.1738095238095238,10,
+personas,chatgpt,Hood,mention,0.1,0.0,0.4,10,
+personas,chatgpt,Hood,top_pick,0.1,0.0,0.4,10,
+personas,chatgpt,Hood,avg_rank,,,,0,*
+personas,chatgpt,Hood,sentiment,2.0,,,1,*
+personas,chatgpt,Hood,sov,0.025,0.0,0.08,10,
+personas,chatgpt,Friendship Dairies,mention,0.1,0.0,0.4,10,
+personas,chatgpt,Friendship Dairies,top_pick,0.1,0.0,0.4,10,
+personas,chatgpt,Friendship Dairies,avg_rank,1.0,,,1,*
+personas,chatgpt,Friendship Dairies,sentiment,2.0,,,1,*
+personas,chatgpt,Friendship Dairies,sov,0.025,0.0,0.13333333333333333,10,
+personas,chatgpt,Kalona SuperNatural,mention,0.0,0.0,0.0,10,
+personas,chatgpt,Kalona SuperNatural,top_pick,0.0,0.0,0.0,10,
+personas,chatgpt,Kalona SuperNatural,avg_rank,,,,0,*
+personas,chatgpt,Kalona SuperNatural,sentiment,,,,0,*
+personas,chatgpt,Kalona SuperNatural,sov,0.0,0.0,0.0,10,
+personas,chatgpt,Nancy's,mention,0.1,0.0,0.4,10,
+personas,chatgpt,Nancy's,top_pick,0.0,0.0,0.0,10,
+personas,chatgpt,Nancy's,avg_rank,2.0,,,1,*
+personas,chatgpt,Nancy's,sentiment,0.0,,,1,*
+personas,chatgpt,Nancy's,sov,0.025,0.0,0.08,10,
+personas,chatgpt,Organic Valley,mention,0.0,0.0,0.0,10,
+personas,chatgpt,Organic Valley,top_pick,0.0,0.0,0.0,10,
+personas,chatgpt,Organic Valley,avg_rank,,,,0,*
+personas,chatgpt,Organic Valley,sentiment,,,,0,*
+personas,chatgpt,Organic Valley,sov,0.0,0.0,0.0,10,
+personas,chatgpt,Good & Gather,mention,0.0,,,10,
+personas,chatgpt,Good & Gather,top_pick,0.0,,,10,
+personas,chatgpt,Good & Gather,avg_rank,,,,0,*
+personas,chatgpt,Good & Gather,sentiment,,,,0,*
+personas,chatgpt,Good & Gather,sov,0.0,,,10,
+personas,chatgpt,365 Everyday Value,mention,0.0,,,10,
+personas,chatgpt,365 Everyday Value,top_pick,0.0,,,10,
+personas,chatgpt,365 Everyday Value,avg_rank,,,,0,*
+personas,chatgpt,365 Everyday Value,sentiment,,,,0,*
+personas,chatgpt,365 Everyday Value,sov,0.0,,,10,
+personas,chatgpt,Kirkland Signature,mention,0.0,,,10,
+personas,chatgpt,Kirkland Signature,top_pick,0.0,,,10,
+personas,chatgpt,Kirkland Signature,avg_rank,,,,0,*
+personas,chatgpt,Kirkland Signature,sentiment,,,,0,*
+personas,chatgpt,Kirkland Signature,sov,0.0,,,10,
+personas,chatgpt,Trader Joe's,mention,0.6,0.2,1.0,10,
+personas,chatgpt,Trader Joe's,top_pick,0.0,0.0,0.0,10,
+personas,chatgpt,Trader Joe's,avg_rank,,,,0,*
+personas,chatgpt,Trader Joe's,sentiment,,,,0,*
+personas,chatgpt,Trader Joe's,sov,0.1988095238095238,0.06666666666666667,0.32499999999999996,10,
+personas,chatgpt,store brand,mention,0.1,0.0,0.4,10,
+personas,chatgpt,store brand,top_pick,0.0,0.0,0.0,10,
+personas,chatgpt,store brand,avg_rank,,,,0,*
+personas,chatgpt,store brand,sentiment,1.0,,,1,*
+personas,chatgpt,store brand,sov,0.03333333333333333,0.0,0.13333333333333333,10,
+personas,chatgpt,MULU,mention,0.0,0.0,0.0,10,
+personas,chatgpt,MULU,top_pick,0.0,0.0,0.0,10,
+personas,chatgpt,MULU,avg_rank,,,,0,*
+personas,chatgpt,MULU,sentiment,,,,0,*
+personas,chatgpt,MULU,sov,0.0,0.0,0.0,10,
+personas,chatgpt,Great Value,mention,0.1,0.0,0.4,10,
+personas,chatgpt,Great Value,top_pick,0.0,0.0,0.0,10,
+personas,chatgpt,Great Value,avg_rank,,,,0,*
+personas,chatgpt,Great Value,sentiment,1.0,,,1,*
+personas,chatgpt,Great Value,sov,0.03333333333333333,0.0,0.13333333333333333,10,
+personas,chatgpt,Green Valley Creamery,mention,0.1,,,10,
+personas,chatgpt,Green Valley Creamery,top_pick,0.0,,,10,
+personas,chatgpt,Green Valley Creamery,avg_rank,3.0,,,1,*
+personas,chatgpt,Green Valley Creamery,sentiment,1.0,,,1,*
+personas,chatgpt,Green Valley Creamery,sov,0.02857142857142857,,,10,
+personas,chatgpt,Prairie Farms,mention,0.0,0.0,0.0,10,
+personas,chatgpt,Prairie Farms,top_pick,0.0,0.0,0.0,10,
+personas,chatgpt,Prairie Farms,avg_rank,,,,0,*
+personas,chatgpt,Prairie Farms,sentiment,,,,0,*
+personas,chatgpt,Prairie Farms,sov,0.0,0.0,0.0,10,
+personas,chatgpt,Kemps,mention,0.0,,,10,
+personas,chatgpt,Kemps,top_pick,0.0,,,10,
+personas,chatgpt,Kemps,avg_rank,,,,0,*
+personas,chatgpt,Kemps,sentiment,,,,0,*
+personas,chatgpt,Kemps,sov,0.0,,,10,
+personas,chatgpt,Crowley,mention,0.0,,,10,
+personas,chatgpt,Crowley,top_pick,0.0,,,10,
+personas,chatgpt,Crowley,avg_rank,,,,0,*
+personas,chatgpt,Crowley,sentiment,,,,0,*
+personas,chatgpt,Crowley,sov,0.0,,,10,
+personas,chatgpt,Friendly Farms,mention,0.0,,,10,
+personas,chatgpt,Friendly Farms,top_pick,0.0,,,10,
+personas,chatgpt,Friendly Farms,avg_rank,,,,0,*
+personas,chatgpt,Friendly Farms,sentiment,,,,0,*
+personas,chatgpt,Friendly Farms,sov,0.0,,,10,
+personas,gemini,Good Culture,mention,0.8,0.5,1.0,10,
+personas,gemini,Good Culture,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Good Culture,avg_rank,1.0,,,2,*
+personas,gemini,Good Culture,sentiment,1.6,1.2,2.0,8,
+personas,gemini,Good Culture,sov,0.20863858363858362,0.10021367521367522,0.3238095238095238,10,
+personas,gemini,Daisy,mention,0.9,0.6,1.0,10,
+personas,gemini,Daisy,top_pick,0.1,0.0,0.4,10,
+personas,gemini,Daisy,avg_rank,2.0,,,2,*
+personas,gemini,Daisy,sentiment,1.3,1.0,1.75,9,
+personas,gemini,Daisy,sov,0.21568986568986567,0.14595970695970698,0.2643134920634919,10,
+personas,gemini,Breakstone's,mention,0.3,0.0,0.7,10,
+personas,gemini,Breakstone's,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Breakstone's,avg_rank,,,,0,*
+personas,gemini,Breakstone's,sentiment,1.0,,,3,*
+personas,gemini,Breakstone's,sov,0.05299145299145299,0.0,0.13377777777777772,10,
+personas,gemini,Knudsen,mention,0.1,,,10,
+personas,gemini,Knudsen,top_pick,0.0,,,10,
+personas,gemini,Knudsen,avg_rank,,,,0,*
+personas,gemini,Knudsen,sentiment,1.0,,,1,*
+personas,gemini,Knudsen,sov,0.015384615384615385,,,10,
+personas,gemini,Lactaid,mention,0.2,0.0,0.6,10,
+personas,gemini,Lactaid,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Lactaid,avg_rank,,,,0,*
+personas,gemini,Lactaid,sentiment,1.5,,,2,*
+personas,gemini,Lactaid,sov,0.06666666666666667,0.0,0.21708333333333105,10,
+personas,gemini,Hood,mention,0.5,0.1,1.0,10,
+personas,gemini,Hood,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Hood,avg_rank,,,,0,*
+personas,gemini,Hood,sentiment,1.0,,,5,*
+personas,gemini,Hood,sov,0.10299145299145299,0.02222222222222222,0.19576923076923075,10,
+personas,gemini,Friendship Dairies,mention,0.1,0.0,0.4,10,
+personas,gemini,Friendship Dairies,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Friendship Dairies,avg_rank,,,,0,*
+personas,gemini,Friendship Dairies,sentiment,1.0,,,1,*
+personas,gemini,Friendship Dairies,sov,0.025,0.0,0.1,10,
+personas,gemini,Kalona SuperNatural,mention,0.1,0.0,0.4,10,
+personas,gemini,Kalona SuperNatural,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Kalona SuperNatural,avg_rank,,,,0,*
+personas,gemini,Kalona SuperNatural,sentiment,1.0,,,1,*
+personas,gemini,Kalona SuperNatural,sov,0.015384615384615385,0.0,0.05,10,
+personas,gemini,Nancy's,mention,0.4,0.0,0.8,10,
+personas,gemini,Nancy's,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Nancy's,avg_rank,,,,0,*
+personas,gemini,Nancy's,sentiment,1.0,,,4,*
+personas,gemini,Nancy's,sov,0.09395604395604396,0.0,0.19395604395604396,10,
+personas,gemini,Organic Valley,mention,0.3,0.0,0.6,10,
+personas,gemini,Organic Valley,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Organic Valley,avg_rank,3.0,,,1,*
+personas,gemini,Organic Valley,sentiment,1.0,,,3,*
+personas,gemini,Organic Valley,sov,0.06617826617826618,0.0,0.14395604395604394,10,
+personas,gemini,Good & Gather,mention,0.0,,,10,
+personas,gemini,Good & Gather,top_pick,0.0,,,10,
+personas,gemini,Good & Gather,avg_rank,,,,0,*
+personas,gemini,Good & Gather,sentiment,,,,0,*
+personas,gemini,Good & Gather,sov,0.0,,,10,
+personas,gemini,365 Everyday Value,mention,0.0,,,10,
+personas,gemini,365 Everyday Value,top_pick,0.0,,,10,
+personas,gemini,365 Everyday Value,avg_rank,,,,0,*
+personas,gemini,365 Everyday Value,sentiment,,,,0,*
+personas,gemini,365 Everyday Value,sov,0.0,,,10,
+personas,gemini,Kirkland Signature,mention,0.0,,,10,
+personas,gemini,Kirkland Signature,top_pick,0.0,,,10,
+personas,gemini,Kirkland Signature,avg_rank,,,,0,*
+personas,gemini,Kirkland Signature,sentiment,,,,0,*
+personas,gemini,Kirkland Signature,sov,0.0,,,10,
+personas,gemini,Trader Joe's,mention,0.1,0.0,0.4,10,
+personas,gemini,Trader Joe's,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Trader Joe's,avg_rank,3.0,,,1,*
+personas,gemini,Trader Joe's,sentiment,1.0,,,1,*
+personas,gemini,Trader Joe's,sov,0.02857142857142857,0.0,0.12380952380952381,10,
+personas,gemini,store brand,mention,0.1,0.0,0.4,10,
+personas,gemini,store brand,top_pick,0.0,0.0,0.0,10,
+personas,gemini,store brand,avg_rank,,,,0,*
+personas,gemini,store brand,sentiment,,,,0,*
+personas,gemini,store brand,sov,0.015384615384615385,0.0,0.07099999999999874,10,
+personas,gemini,MULU,mention,0.0,0.0,0.0,10,
+personas,gemini,MULU,top_pick,0.0,0.0,0.0,10,
+personas,gemini,MULU,avg_rank,,,,0,*
+personas,gemini,MULU,sentiment,,,,0,*
+personas,gemini,MULU,sov,0.0,0.0,0.0,10,
+personas,gemini,Great Value,mention,0.2,0.0,0.5,10,
+personas,gemini,Great Value,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Great Value,avg_rank,,,,0,*
+personas,gemini,Great Value,sentiment,1.0,,,2,*
+personas,gemini,Great Value,sov,0.037606837606837605,0.0,0.10222222222222221,10,
+personas,gemini,Green Valley Creamery,mention,0.0,,,10,
+personas,gemini,Green Valley Creamery,top_pick,0.0,,,10,
+personas,gemini,Green Valley Creamery,avg_rank,,,,0,*
+personas,gemini,Green Valley Creamery,sentiment,,,,0,*
+personas,gemini,Green Valley Creamery,sov,0.0,,,10,
+personas,gemini,Prairie Farms,mention,0.1,0.0,0.4,10,
+personas,gemini,Prairie Farms,top_pick,0.0,0.0,0.0,10,
+personas,gemini,Prairie Farms,avg_rank,,,,0,*
+personas,gemini,Prairie Farms,sentiment,1.0,,,1,*
+personas,gemini,Prairie Farms,sov,0.03333333333333333,0.0,0.1,10,
+personas,gemini,Kemps,mention,0.0,,,10,
+personas,gemini,Kemps,top_pick,0.0,,,10,
+personas,gemini,Kemps,avg_rank,,,,0,*
+personas,gemini,Kemps,sentiment,,,,0,*
+personas,gemini,Kemps,sov,0.0,,,10,
+personas,gemini,Crowley,mention,0.1,,,10,
+personas,gemini,Crowley,top_pick,0.0,,,10,
+personas,gemini,Crowley,avg_rank,,,,0,*
+personas,gemini,Crowley,sentiment,1.0,,,1,*
+personas,gemini,Crowley,sov,0.02222222222222222,,,10,
+personas,gemini,Friendly Farms,mention,0.0,,,10,
+personas,gemini,Friendly Farms,top_pick,0.0,,,10,
+personas,gemini,Friendly Farms,avg_rank,,,,0,*
+personas,gemini,Friendly Farms,sentiment,,,,0,*
+personas,gemini,Friendly Farms,sov,0.0,,,10,
+personas,perplexity,Good Culture,mention,1.0,1.0,1.0,10,
+personas,perplexity,Good Culture,top_pick,0.4,0.0,0.8,10,
+personas,perplexity,Good Culture,avg_rank,2.3333333333333335,,,4,*
+personas,perplexity,Good Culture,sentiment,0.7,-0.4,1.7,10,
+personas,perplexity,Good Culture,sov,0.3349206349206349,0.26579365079365086,0.4333333333333333,10,
+personas,perplexity,Daisy,mention,0.5,0.1,0.9,10,
+personas,perplexity,Daisy,top_pick,0.2,0.0,0.6,10,
+personas,perplexity,Daisy,avg_rank,1.0,,,1,*
+personas,perplexity,Daisy,sentiment,0.75,,,5,*
+personas,perplexity,Daisy,sov,0.18412698412698408,0.03333333333333333,0.35001984126984115,10,
+personas,perplexity,Breakstone's,mention,0.1,0.0,0.4,10,
+personas,perplexity,Breakstone's,top_pick,0.0,0.0,0.0,10,
+personas,perplexity,Breakstone's,avg_rank,,,,0,*
+personas,perplexity,Breakstone's,sentiment,1.0,,,1,*
+personas,perplexity,Breakstone's,sov,0.02222222222222222,0.0,0.06666666666666667,10,
+personas,perplexity,Knudsen,mention,0.0,,,10,
+personas,perplexity,Knudsen,top_pick,0.0,,,10,
+personas,perplexity,Knudsen,avg_rank,,,,0,*
+personas,perplexity,Knudsen,sentiment,,,,0,*
+personas,perplexity,Knudsen,sov,0.0,,,10,
+personas,perplexity,Lactaid,mention,0.2,0.0,0.6,10,
+personas,perplexity,Lactaid,top_pick,0.0,0.0,0.0,10,
+personas,perplexity,Lactaid,avg_rank,,,,0,*
+personas,perplexity,Lactaid,sentiment,0.5,,,2,*
+personas,perplexity,Lactaid,sov,0.06666666666666667,0.0,0.2,10,
+personas,perplexity,Hood,mention,0.6,0.2,1.0,10,
+personas,perplexity,Hood,top_pick,0.3,0.0,0.7,10,
+personas,perplexity,Hood,avg_rank,1.0,,,1,*
+personas,perplexity,Hood,sentiment,1.0,,,6,*
+personas,perplexity,Hood,sov,0.16825396825396827,0.06666666666666667,0.27777777777777773,10,
+personas,perplexity,Friendship Dairies,mention,0.2,0.0,0.6,10,
+personas,perplexity,Friendship Dairies,top_pick,0.1,0.0,0.4,10,
+personas,perplexity,Friendship Dairies,avg_rank,1.0,,,2,*
+personas,perplexity,Friendship Dairies,sentiment,1.5,,,2,*
+personas,perplexity,Friendship Dairies,sov,0.04444444444444444,0.0,0.15555555555555556,10,
+personas,perplexity,Kalona SuperNatural,mention,0.0,0.0,0.0,10,
+personas,perplexity,Kalona SuperNatural,top_pick,0.0,0.0,0.0,10,
+personas,perplexity,Kalona SuperNatural,avg_rank,,,,0,*
+personas,perplexity,Kalona SuperNatural,sentiment,,,,0,*
+personas,perplexity,Kalona SuperNatural,sov,0.0,0.0,0.0,10,
+personas,perplexity,Nancy's,mention,0.0,0.0,0.0,10,
+personas,perplexity,Nancy's,top_pick,0.0,0.0,0.0,10,
+personas,perplexity,Nancy's,avg_rank,,,,0,*
+personas,perplexity,Nancy's,sentiment,,,,0,*
+personas,perplexity,Nancy's,sov,0.0,0.0,0.0,10,
+personas,perplexity,Organic Valley,mention,0.0,0.0,0.0,10,
+personas,perplexity,Organic Valley,top_pick,0.0,0.0,0.0,10,
+personas,perplexity,Organic Valley,avg_rank,,,,0,*
+personas,perplexity,Organic Valley,sentiment,,,,0,*
+personas,perplexity,Organic Valley,sov,0.0,0.0,0.0,10,
+personas,perplexity,Good & Gather,mention,0.0,,,10,
+personas,perplexity,Good & Gather,top_pick,0.0,,,10,
+personas,perplexity,Good & Gather,avg_rank,,,,0,*
+personas,perplexity,Good & Gather,sentiment,,,,0,*
+personas,perplexity,Good & Gather,sov,0.0,,,10,
+personas,perplexity,365 Everyday Value,mention,0.0,,,10,
+personas,perplexity,365 Everyday Value,top_pick,0.0,,,10,
+personas,perplexity,365 Everyday Value,avg_rank,,,,0,*
+personas,perplexity,365 Everyday Value,sentiment,,,,0,*
+personas,perplexity,365 Everyday Value,sov,0.0,,,10,
+personas,perplexity,Kirkland Signature,mention,0.0,,,10,
+personas,perplexity,Kirkland Signature,top_pick,0.0,,,10,
+personas,perplexity,Kirkland Signature,avg_rank,,,,0,*
+personas,perplexity,Kirkland Signature,sentiment,,,,0,*
+personas,perplexity,Kirkland Signature,sov,0.0,,,10,
+personas,perplexity,Trader Joe's,mention,0.0,0.0,0.0,10,
+personas,perplexity,Trader Joe's,top_pick,0.0,0.0,0.0,10,
+personas,perplexity,Trader Joe's,avg_rank,,,,0,*
+personas,perplexity,Trader Joe's,sentiment,,,,0,*
+personas,perplexity,Trader Joe's,sov,0.0,0.0,0.0,10,
+personas,perplexity,store brand,mention,0.3,0.0,0.7,10,
+personas,perplexity,store brand,top_pick,0.0,0.0,0.0,10,
+personas,perplexity,store brand,avg_rank,2.0,,,2,*
+personas,perplexity,store brand,sentiment,0.75,,,3,*
+personas,perplexity,store brand,sov,0.07936507936507936,0.0,0.18333333333333332,10,
+personas,perplexity,MULU,mention,0.2,0.0,0.6,10,
+personas,perplexity,MULU,top_pick,0.0,0.0,0.0,10,
+personas,perplexity,MULU,avg_rank,,,,0,*
+personas,perplexity,MULU,sentiment,1.0,,,2,*
+personas,perplexity,MULU,sov,0.06666666666666667,0.0,0.2,10,
+personas,perplexity,Great Value,mention,0.0,0.0,0.0,10,
+personas,perplexity,Great Value,top_pick,0.0,0.0,0.0,10,
+personas,perplexity,Great Value,avg_rank,,,,0,*
+personas,perplexity,Great Value,sentiment,,,,0,*
+personas,perplexity,Great Value,sov,0.0,0.0,0.0,10,
+personas,perplexity,Green Valley Creamery,mention,0.1,,,10,
+personas,perplexity,Green Valley Creamery,top_pick,0.0,,,10,
+personas,perplexity,Green Valley Creamery,avg_rank,,,,0,*
+personas,perplexity,Green Valley Creamery,sentiment,1.0,,,1,*
+personas,perplexity,Green Valley Creamery,sov,0.03333333333333333,,,10,
+personas,perplexity,Prairie Farms,mention,0.0,0.0,0.0,10,
+personas,perplexity,Prairie Farms,top_pick,0.0,0.0,0.0,10,
+personas,perplexity,Prairie Farms,avg_rank,,,,0,*
+personas,perplexity,Prairie Farms,sentiment,,,,0,*
+personas,perplexity,Prairie Farms,sov,0.0,0.0,0.0,10,
+personas,perplexity,Kemps,mention,0.0,,,10,
+personas,perplexity,Kemps,top_pick,0.0,,,10,
+personas,perplexity,Kemps,avg_rank,,,,0,*
+personas,perplexity,Kemps,sentiment,,,,0,*
+personas,perplexity,Kemps,sov,0.0,,,10,
+personas,perplexity,Crowley,mention,0.0,,,10,
+personas,perplexity,Crowley,top_pick,0.0,,,10,
+personas,perplexity,Crowley,avg_rank,,,,0,*
+personas,perplexity,Crowley,sentiment,,,,0,*
+personas,perplexity,Crowley,sov,0.0,,,10,
+personas,perplexity,Friendly Farms,mention,0.0,,,10,
+personas,perplexity,Friendly Farms,top_pick,0.0,,,10,
+personas,perplexity,Friendly Farms,avg_rank,,,,0,*
+personas,perplexity,Friendly Farms,sentiment,,,,0,*
+personas,perplexity,Friendly Farms,sov,0.0,,,10,
+personas,ALL,Good Culture,mention,0.8666666666666666,0.6666666666666666,1.0,30,
+personas,ALL,Good Culture,top_pick,0.26666666666666666,0.0,0.6,30,
+personas,ALL,Good Culture,avg_rank,1.8333333333333335,1.0,3.0,10,
+personas,ALL,Good Culture,sentiment,1.0333333333333334,0.07975,1.8666666666666665,26,
+personas,ALL,Good Culture,sov,0.2596732555370326,0.1779955557935318,0.33933471546513344,30,
+personas,ALL,Daisy,mention,0.6666666666666666,0.3666666666666667,0.9008333333333288,30,
+personas,ALL,Daisy,top_pick,0.2333333333333333,0.0,0.5333333333333333,30,
+personas,ALL,Daisy,avg_rank,1.8333333333333333,,,6,*
+personas,ALL,Daisy,sentiment,1.23,0.7132499999999999,1.7300833333333328,20,
+personas,ALL,Daisy,sov,0.19368135270302453,0.10055036755944198,0.2919551359410693,30,
+personas,ALL,Breakstone's,mention,0.23333333333333334,0.03333333333333333,0.4674999999999955,30,
+personas,ALL,Breakstone's,top_pick,0.0,0.0,0.0,30,
+personas,ALL,Breakstone's,avg_rank,3.25,,,3,*
+personas,ALL,Breakstone's,sentiment,0.7777777777777777,,,7,*
+personas,ALL,Breakstone's,sov,0.057603238866396754,0.008333333333333333,0.11475544313096907,30,
+personas,ALL,Knudsen,mention,0.03333333333333333,,,30,
+personas,ALL,Knudsen,top_pick,0.0,,,30,
+personas,ALL,Knudsen,avg_rank,,,,0,*
+personas,ALL,Knudsen,sentiment,1.0,,,1,*
+personas,ALL,Knudsen,sov,0.007692307692307693,,,30,
+personas,ALL,Lactaid,mention,0.2,0.0,0.6,30,
+personas,ALL,Lactaid,top_pick,0.0,0.0,0.0,30,
+personas,ALL,Lactaid,avg_rank,2.0,,,1,*
+personas,ALL,Lactaid,sentiment,1.0,,,6,*
+personas,ALL,Lactaid,sov,0.06315789473684211,0.0,0.19299122807017538,30,
+personas,ALL,Hood,mention,0.39999999999999997,0.1,0.7000000000000001,30,
+personas,ALL,Hood,top_pick,0.13333333333333333,0.0,0.3333333333333333,30,
+personas,ALL,Hood,avg_rank,1.0,,,1,*
+personas,ALL,Hood,sentiment,0.9125,0.4,1.5,12,
+personas,ALL,Hood,sov,0.10234817813765182,0.03215964912280701,0.17332891916512605,30,
+personas,ALL,Friendship Dairies,mention,0.13333333333333333,0.0,0.4333333333333333,30,
+personas,ALL,Friendship Dairies,top_pick,0.06666666666666667,0.0,0.2333333333333333,30,
+personas,ALL,Friendship Dairies,avg_rank,1.0,,,3,*
+personas,ALL,Friendship Dairies,sentiment,1.5,,,4,*
+personas,ALL,Friendship Dairies,sov,0.032,0.0,0.10590208101077667,30,
+personas,ALL,Kalona SuperNatural,mention,0.03333333333333333,0.0,0.13333333333333333,30,
+personas,ALL,Kalona SuperNatural,top_pick,0.0,0.0,0.0,30,
+personas,ALL,Kalona SuperNatural,avg_rank,,,,0,*
+personas,ALL,Kalona SuperNatural,sentiment,1.0,,,1,*
+personas,ALL,Kalona SuperNatural,sov,0.007692307692307693,0.0,0.02666740823136818,30,
+personas,ALL,Nancy's,mention,0.16666666666666666,0.0,0.39999999999999997,30,
+personas,ALL,Nancy's,top_pick,0.0,0.0,0.0,30,
+personas,ALL,Nancy's,avg_rank,2.0,,,1,*
+personas,ALL,Nancy's,sentiment,0.8888888888888888,,,5,*
+personas,ALL,Nancy's,sov,0.04345701357466063,0.0,0.09656297210871685,30,
+personas,ALL,Organic Valley,mention,0.1,0.0,0.2333333333333333,30,
+personas,ALL,Organic Valley,top_pick,0.0,0.0,0.0,30,
+personas,ALL,Organic Valley,avg_rank,3.0,,,1,*
+personas,ALL,Organic Valley,sentiment,1.0,,,3,*
+personas,ALL,Organic Valley,sov,0.029983329364134316,0.0,0.06563467492260062,30,
+personas,ALL,Good & Gather,mention,0.0,,,30,
+personas,ALL,Good & Gather,top_pick,0.0,,,30,
+personas,ALL,Good & Gather,avg_rank,,,,0,*
+personas,ALL,Good & Gather,sentiment,,,,0,*
+personas,ALL,Good & Gather,sov,0.0,,,30,
+personas,ALL,365 Everyday Value,mention,0.0,,,30,
+personas,ALL,365 Everyday Value,top_pick,0.0,,,30,
+personas,ALL,365 Everyday Value,avg_rank,,,,0,*
+personas,ALL,365 Everyday Value,sentiment,,,,0,*
+personas,ALL,365 Everyday Value,sov,0.0,,,30,
+personas,ALL,Kirkland Signature,mention,0.0,,,30,
+personas,ALL,Kirkland Signature,top_pick,0.0,,,30,
+personas,ALL,Kirkland Signature,avg_rank,,,,0,*
+personas,ALL,Kirkland Signature,sentiment,,,,0,*
+personas,ALL,Kirkland Signature,sov,0.0,,,30,
+personas,ALL,Trader Joe's,mention,0.23333333333333334,0.06666666666666667,0.4341666666666622,30,
+personas,ALL,Trader Joe's,top_pick,0.0,0.0,0.0,30,
+personas,ALL,Trader Joe's,avg_rank,3.0,,,1,*
+personas,ALL,Trader Joe's,sentiment,1.0,,,1,*
+personas,ALL,Trader Joe's,sov,0.07487306501547988,0.017203105590062114,0.14847450064555315,30,
+personas,ALL,store brand,mention,0.16666666666666666,0.0,0.4333333333333334,30,
+personas,ALL,store brand,top_pick,0.0,0.0,0.0,30,
+personas,ALL,store brand,avg_rank,2.0,,,2,*
+personas,ALL,store brand,sentiment,0.8333333333333333,,,4,*
+personas,ALL,store brand,sov,0.03876923076923077,0.0,0.10979180287675706,30,
+personas,ALL,MULU,mention,0.06666666666666667,0.0,0.2333333333333333,30,
+personas,ALL,MULU,top_pick,0.0,0.0,0.0,30,
+personas,ALL,MULU,avg_rank,,,,0,*
+personas,ALL,MULU,sentiment,1.0,,,2,*
+personas,ALL,MULU,sov,0.021052631578947368,0.0,0.07777818627450979,30,
+personas,ALL,Great Value,mention,0.1,0.0,0.26666666666666666,30,
+personas,ALL,Great Value,top_pick,0.0,0.0,0.0,30,
+personas,ALL,Great Value,avg_rank,,,,0,*
+personas,ALL,Great Value,sentiment,1.0,,,3,*
+personas,ALL,Great Value,sov,0.025910931174089068,0.0,0.06960143499678728,30,
+personas,ALL,Green Valley Creamery,mention,0.06666666666666667,,,30,
+personas,ALL,Green Valley Creamery,top_pick,0.0,,,30,
+personas,ALL,Green Valley Creamery,avg_rank,3.0,,,1,*
+personas,ALL,Green Valley Creamery,sentiment,1.0,,,2,*
+personas,ALL,Green Valley Creamery,sov,0.021052631578947368,,,30,
+personas,ALL,Prairie Farms,mention,0.03333333333333333,0.0,0.13333333333333333,30,
+personas,ALL,Prairie Farms,top_pick,0.0,0.0,0.0,30,
+personas,ALL,Prairie Farms,avg_rank,,,,0,*
+personas,ALL,Prairie Farms,sentiment,1.0,,,1,*
+personas,ALL,Prairie Farms,sov,0.010526315789473684,0.0,0.04177321981424144,30,
+personas,ALL,Kemps,mention,0.0,,,30,
+personas,ALL,Kemps,top_pick,0.0,,,30,
+personas,ALL,Kemps,avg_rank,,,,0,*
+personas,ALL,Kemps,sentiment,,,,0,*
+personas,ALL,Kemps,sov,0.0,,,30,
+personas,ALL,Crowley,mention,0.03333333333333333,,,30,
+personas,ALL,Crowley,top_pick,0.0,,,30,
+personas,ALL,Crowley,avg_rank,,,,0,*
+personas,ALL,Crowley,sentiment,1.0,,,1,*
+personas,ALL,Crowley,sov,0.010526315789473684,,,30,
+personas,ALL,Friendly Farms,mention,0.0,,,30,
+personas,ALL,Friendly Farms,top_pick,0.0,,,30,
+personas,ALL,Friendly Farms,avg_rank,,,,0,*
+personas,ALL,Friendly Farms,sentiment,,,,0,*
+personas,ALL,Friendly Farms,sov,0.0,,,30,
