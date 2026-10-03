@@ -42,6 +42,15 @@ gemini:
   model_label: ".model-selector-button .label"
   sources_panel: "bottom-sheet.sources"
 
+gemini-judge:
+  url: https://gemini.google.com/app
+  private_window: false
+  port: 9223
+  input_box: ["rich-textarea div[contenteditable='true']", "div[contenteditable='true']"]
+  reply_blocks: ["message-content", ".model-response-text"]
+  busy_indicator: ["button[aria-label*='Stop']"]
+  copy_button: "mat-icon[data-mat-icon-name='copy']"
+
 perplexity:
   url: https://www.perplexity.ai/
   private_window: false #requires signin
