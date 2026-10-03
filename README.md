@@ -102,20 +102,6 @@ python bench.py run good_culture --wave 2026_Q4
 python bench.py status good_culture --wave 2026_Q4
 ```
 
-| Command | What it does |
-|---|---|
-| `check` | Validates `prompts.yaml` and `brand_profile.yaml` and prints how many distinct prompts they produce |
-| `plan` | Expands the YAML into the full list of runs and writes `plan.csv`. Run order is shuffled within each rep (seed in `prompts.yaml`) |
-| `chrome` | Starts a private (incognito) Chrome with remote debugging on port 9222. ChatGPT and Gemini use this one |
-| `chrome --profile regular` | Starts a normal Chrome on port 9223. Log in to Perplexity here. The Gemini judge also uses this one |
-| `probe <engine>` | Opens the chatbot and reports whether the selectors in `engines.yaml` match. Add `--ask "prompt 1" "prompt 2"` to test a full conversation. Use this when a run fails |
-| `run` | Sends the prompts and saves answers. `--limit 12` does a 12-run pilot first. Running the same command again resumes where it stopped |
-| `status` | Shows how many runs are saved and how many failed |
-
-`run` types at human speed and waits 20 to 60 seconds between runs, with a longer break every 12 to 18 runs, so a full wave takes several hours. The `plan` command prints a rough estimate. After 5 failures in a row it stops, which usually means a selector in `engines.yaml` needs fixing.
-
-If you change the prompts after answers exist, `plan` will refuse to overwrite them. Use a new `--wave` name, or `--force`.
-
 ### 3. Process the answers with `analyze.py`
 
 ```
@@ -125,23 +111,6 @@ python analyze.py review good_culture --wave 2026_Q4
 python analyze.py parse good_culture --wave 2026_Q4
 python analyze.py judge-api good_culture --wave 2026_Q4
 ```
-
-| Command | What it does |
-|---|---|
-| `check` | Quality filter. Excludes runs with an empty answer (under 40 characters), a refusal, or a second turn that repeated the first answer. Runs with no citations are flagged but kept. Writes `quality_report.csv` |
-| `parse` | Finds known brands in each answer by name matching, reads list positions from the HTML, collects possible new brand names, and classifies every cited link by website type. Writes `mentions.csv`, `citations.csv`, `unknown_brands.csv`, `unknown_domains.csv` |
-| `review` | Interactive. Asks you whether each unknown brand is new, an alias of a known brand, or not a brand, and what type each unknown website is. Saves to `learned.yaml`. Run `parse` again afterward |
-| `judge-api` | Sends the answers to Gemini in batches of 6 and writes `judgments.csv`. Needs the `GEMINI_API_KEY` environment variable. Progress is saved, so rerunning continues. `--fresh` starts over |
-| `judge-ui` | Same as `judge-api` but types into the Gemini website through the logged-in Chrome on port 9223 instead of using the API |
-
-What the judge returns depends on the prompt group:
-
-| Prompt group | Judge returns |
-|---|---|
-| Open-category, feature-led, shopper-segment | Every brand named, each with a role (`top_pick`, `recommended`, `listed`, `discouraged`), a sentiment score from -2 to +2, and a quote from the answer |
-| Head-to-head | The same, plus a winner (a brand, `tie`, or `none`) |
-
-A `top_pick` means the answer explicitly picks one brand as the single best choice. A list of options with no clear choice has no top pick. Each quote is checked against the answer text, and the share found word for word is reported.
 
 ### 4. Run the notebook
 
@@ -176,12 +145,6 @@ The notebook uses the open-category, feature-led and shopper-segment prompts (19
 | Cross-engine consistency | Open-category, feature-led, shopper-segment | 19 | 114, split 38 per chatbot |
 | Citation source mix | Open-category, feature-led, shopper-segment | 19 | Cited links in those 114 answers |
 
-Notes on these numbers:
-
-- Head-to-head uses 6 of the 8 prompts because the store brand comparison is left out. Store brand is not in the notebook's 7-brand comparison list.
-- For prompts with two messages, only the answer to the last message is scored and counted.
-- The 95% ranges are not drawn for the head-to-head result, the heatmaps or the citation shares. Those are raw counts and percentages.
-- Cells with fewer than 8 answers get no range and are marked with `*`.
 
 ## Output files
 
@@ -215,15 +178,5 @@ cp -r evaluations/_template evaluations/my_brand
 4. Run `python bench.py check my_brand`. It reports unknown placeholders, duplicate test names and brands missing from the profile.
 5. Collect and process as described in [Running a wave](#running-a-wave), replacing `good_culture` with `my_brand`.
 
-To repeat the Good Culture evaluation later, keep the same folder and use a new wave name such as `2027_Q1`.
+To repeat the evaluation for the same brand later, keep the same folder and use a new wave name such as `2027_Q1`.
 
-### What in the notebook is specific to Good Culture
-
-The target and market leader are read from `brand_profile.yaml`. These parts are written for Good Culture and need editing for a new evaluation:
-
-- `BRANDS_7`, the fixed list of brands used in every chart
-- `OWNED_DOMAINS`, which maps brand websites to brands for the citation chart
-- `STAGE_LABEL`, the chart names for each group
-- The label for the long feature search ("all of our positioning") in the heatmap cell
-- Chart titles and finding text that include "Good Culture"
-- The closing "investment case" table, which is a blank template to fill in by hand
