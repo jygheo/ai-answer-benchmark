@@ -1,3 +1,13 @@
 pandas>=2.0.0
 pyyaml>=6.0
 playwright>=1.40.0
+beautifulsoup4 
+lxml 
+requests 
+tldextract 
+rapidfuzz
+google-genai
+matplotlib
+plotly
+nbformat>=4.2.0
+kaleido

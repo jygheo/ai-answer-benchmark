@@ -1,0 +1,5 @@
+venv
+*.png
+notes.md
+run.py
+__pycache__
