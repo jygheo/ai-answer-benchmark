@@ -1,0 +1,50 @@
+kind,brand,engine,citations
+Another brand's site,Breakstone's,chatgpt,2
+Another brand's site,Breakstone's,perplexity,5
+Another brand's site,Daisy,chatgpt,26
+Another brand's site,Daisy,perplexity,11
+Another brand's site,Good Culture,chatgpt,6
+Another brand's site,Good Culture,perplexity,14
+Another brand's site,Hood,chatgpt,1
+Another brand's site,Hood,perplexity,7
+Another brand's site,Lactaid,chatgpt,5
+Another brand's site,Lactaid,perplexity,7
+Another brand's site,Nancy's,chatgpt,11
+Another brand's site,Nancy's,perplexity,5
+First-party (brand site),Daisy,perplexity,2
+First-party (brand site),Good Culture,chatgpt,32
+First-party (brand site),Good Culture,perplexity,14
+First-party (brand site),Hood,chatgpt,1
+First-party (brand site),Hood,perplexity,7
+First-party (brand site),Nancy's,chatgpt,1
+First-party (brand site),Nancy's,perplexity,2
+Other,Breakstone's,chatgpt,1
+Other,Daisy,chatgpt,2
+Other,Good Culture,chatgpt,3
+Other,Hood,chatgpt,1
+Other,Nancy's,chatgpt,2
+Retailer,Breakstone's,chatgpt,7
+Retailer,Breakstone's,perplexity,1
+Retailer,Daisy,chatgpt,9
+Retailer,Daisy,perplexity,9
+Retailer,Good Culture,chatgpt,20
+Retailer,Good Culture,perplexity,17
+Retailer,Hood,chatgpt,2
+Retailer,Hood,perplexity,8
+Retailer,Lactaid,chatgpt,8
+Retailer,Lactaid,perplexity,7
+Retailer,Nancy's,chatgpt,5
+Retailer,Nancy's,perplexity,2
+Third-party,Breakstone's,chatgpt,14
+Third-party,Breakstone's,perplexity,18
+Third-party,Daisy,chatgpt,56
+Third-party,Daisy,perplexity,45
+Third-party,Good Culture,chatgpt,57
+Third-party,Good Culture,perplexity,57
+Third-party,Hood,chatgpt,8
+Third-party,Hood,perplexity,39
+Third-party,Knudsen,perplexity,2
+Third-party,Lactaid,chatgpt,1
+Third-party,Lactaid,perplexity,10
+Third-party,Nancy's,chatgpt,27
+Third-party,Nancy's,perplexity,10
