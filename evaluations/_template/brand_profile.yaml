@@ -1,0 +1,32 @@
+# BRAND PROFILE: WHO is being measured and WHAT is true about them.
+# Nothing here is a question. Questions live in prompts.yaml.
+# Names you write here are the names that get filled into prompt placeholders and later matched in answers.
+
+category: <what the product is, lowercase, e.g. "cottage cheese">
+# -> fills {category} in prompts
+
+target: <brand being evaluated, exactly as in `brands` below>
+# -> fills {target} in prompts
+
+market_leader: <the dominant brand in the category, exactly as in `brands` below>
+# -> fills {market_leader} in prompts. If this equals target, the first other brand in `brands` is used.
+
+serving: <the unit all facts are measured per, e.g. "1/2 cup" or "roll">
+# facts rows with a different serving are flagged and must not be compared per-serving
+
+location_note: <city, state; IP-based, no VPN>
+# copied into every saved answer so you can state it in the method
+
+brands:
+  # Every brand that could show up in an answer. Format:  Brand Name: [other ways answers might write it]
+  # Used later to find brand mentions in answers. Include store/private-label brands. Include target and leader.
+  <Brand A>: [<alias>, <alias>]
+  <Brand B>: []
+
+
+domains:
+  # Used later to classify cited URLs. Brand-owned sites are detected from `brands` aliases that look like domains.
+  retailer: [<example.com>]
+  editorial: []
+  health_authority: []
+  community: []

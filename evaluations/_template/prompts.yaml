@@ -1,0 +1,44 @@
+# PROMPTS: WHAT gets asked, to which chatbots, how many times.
+# Everything here is plain data. bench.py has no hidden question logic: it only fills placeholders and repeats.
+#
+# PLACEHOLDERS usable inside any prompt (filled from brand_profile.yaml):
+#     {category}  {target}  {market_leader}
+#   plus any key you define under `matrix:` (e.g. {rival}, {question}, {persona}),
+#   plus {brand} {product} {serving} when a test sets `per_fact_row: true`.
+#
+# A TEST has these fields:
+#     name           short unique id; becomes part of every prompt id (keep stable between quarters)
+#     stage          what business question it answers. One of:
+#                      discovery      does the chatbot bring up the brand for generic category questions?
+#                      attributes     is the brand linked to specific features (protein, price, ...)?
+#                      personas       is the brand recommended for a described type of buyer?
+#                      comparisons    head-to-head vs a named rival: who wins?
+#                      objections     what doubts / negatives does it raise? (price, complaints, switching)
+#                      hallucination  does it quote real specs, or invent them? (graded against `facts`)
+#     turns          the messages sent in ONE fresh chat, in order. One item = single question; two = follow-up chat.
+#     matrix         optional. Each key is a placeholder; the test runs once per value (all combinations).
+#                      list form:   rival: [A, B]                 -> ids come from the values
+#                      dict form:   question: {id1: "text", ...}  -> ids come from the keys (better for long text)
+#     counterbalance true -> also run each prompt with {target} and {rival} swapped (needs a `rival` key in matrix).
+#                      Exists because answers can favor whichever brand is named first.
+#     per_fact_row   true -> one prompt per row of `facts` (fills {brand} {product} {serving}); no matrix needed.
+#     reps           how many times each prompt is asked on each chatbot (default 1)
+#     engines        optional; overrides the top-level engines for this test
+#     also_without_web_search  true -> add one extra run with web search off, on chatbots whose
+#                      engines.yaml `web_search_off` is filled in
+
+engines: [chatgpt, gemini, perplexity]    # keys of ../../engines.yaml
+seed: 42                                  # fixes the shuffled run order
+
+# CORE TESTS: the brand-performance results the whole write-up is built on.
+core_tests:
+  - name: <short_name>
+    stage: discovery
+    turns: ["<question with {category}>"]
+    reps: 2
+
+# DIAGNOSTIC TESTS: checks on how trustworthy the core results are. Run after (or alongside) core, analyzed separately.
+diagnostic_tests:
+  - name: <short_name>
+    stage: attributes
+    turns: ["<question>"]
